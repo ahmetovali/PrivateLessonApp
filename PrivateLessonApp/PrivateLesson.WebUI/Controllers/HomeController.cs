@@ -1,32 +1,52 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using PrivateLesson.WebUI.Models;
+﻿using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Mvc;
+using PrivateLesson.Business.Abstract;
+using PrivateLesson.Entity.Concrete;
+using PrivateLesson.WebUI.Models.ViewModels;
 using System.Diagnostics;
 
 namespace PrivateLesson.WebUI.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private ITeacherService _teacherService;
+        private IBranchService _branchService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ITeacherService teacherService, IBranchService branchService)
         {
-            _logger = logger;
+            _teacherService = teacherService;
+            _branchService = branchService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index(string branchurl)
         {
-            return View();
+            List<Teacher> teachers = await _teacherService.GetAllTeachersFullDataAsync(true, branchurl);
+            List<TeacherModel> teacherModelList = new List<TeacherModel>();
+            teacherModelList = teachers.Select(t=> new TeacherModel 
+            {
+                Id= t.Id,
+                FirstName= t.User.FirstName,
+                LastName= t.User.LastName,
+                CreatedDate= t.CreatedDate,
+                UpdatedDate= t.UpdatedDate,
+                IsApproved= t.IsApproved,
+                Url= t.Url,
+                Graduation= t.Graduation,
+                Price= t.Price,
+                UserId = t.UserId,
+                Image= t.Image,
+                TeacherBranches= t.TeacherBranches.Select(tb=> tb.Branch).ToList(),
+                TeacherStudents=t.TeacherStudents.Select(ts=>ts.Student).ToList()
+            }).ToList();
+            if (RouteData.Values["branchurl"] != null)
+            {
+                ViewBag.SelectedBranchName = await _branchService.GetBranchNameByUrlAsync(RouteData.Values["branchurl"].ToString());
+            }
+
+            return View(teacherModelList);
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+       
+        
     }
 }

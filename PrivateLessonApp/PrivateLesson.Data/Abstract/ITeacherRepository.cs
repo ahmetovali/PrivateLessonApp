@@ -1,3 +1,4 @@
+using PrivateLesson.Entity.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,9 @@ using System.Threading.Tasks;
 
 namespace PrivateLesson.Data.Abstract
 {
-    public class ITeacherRepository
+    public interface ITeacherRepository : IGenericRepository<Teacher>
     {
+        Task<List<Teacher>> GetAllTeachersFullDataAsync(bool ApprovedStatus, string branchurl = null);
+        Task CreateTeacher(Teacher teacher, int[] SelectedBranches);
     }
 }

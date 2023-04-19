@@ -1,0 +1,17 @@
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Data\bin\Debug\net7.0\PrivateLesson.Data.deps.json
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Data\bin\Debug\net7.0\PrivateLesson.Data.runtimeconfig.json
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Data\bin\Debug\net7.0\PrivateLesson.Data.dll
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Data\bin\Debug\net7.0\PrivateLesson.Data.pdb
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Data\bin\Debug\net7.0\PrivateLesson.Entity.dll
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Data\bin\Debug\net7.0\PrivateLesson.Entity.pdb
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Data\obj\Debug\net7.0\PrivateLesson.Data.csproj.AssemblyReference.cache
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Data\obj\Debug\net7.0\PrivateLesson.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Data\obj\Debug\net7.0\PrivateLesson.Data.AssemblyInfoInputs.cache
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Data\obj\Debug\net7.0\PrivateLesson.Data.AssemblyInfo.cs
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Data\obj\Debug\net7.0\PrivateLesson.Data.csproj.CoreCompileInputs.cache
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Data\obj\Debug\net7.0\PrivateLesson.Data.csproj.CopyComplete
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Data\obj\Debug\net7.0\PrivateLesson.Data.dll
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Data\obj\Debug\net7.0\refint\PrivateLesson.Data.dll
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Data\obj\Debug\net7.0\PrivateLesson.Data.pdb
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Data\obj\Debug\net7.0\PrivateLesson.Data.genruntimeconfig.cache
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Data\obj\Debug\net7.0\ref\PrivateLesson.Data.dll

@@ -1,3 +1,4 @@
+using PrivateLesson.Entity.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,9 @@ using System.Threading.Tasks;
 
 namespace PrivateLesson.Data.Abstract
 {
-    public class IBranchRepository
+    public interface IBranchRepository: IGenericRepository<Branch>
     {
+        Task<string> GetBranchNameByUrlAsync(string url);
+        Task<List<Branch>> GetBranchesAsync(bool ApprovedStatus);
     }
 }

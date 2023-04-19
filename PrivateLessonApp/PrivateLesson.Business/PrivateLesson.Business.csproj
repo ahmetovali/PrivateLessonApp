@@ -10,9 +10,4 @@
     <ProjectReference Include="..\PrivateLesson.Data\PrivateLesson.Data.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Abstract\" />
-    <Folder Include="Concrete\" />
-  </ItemGroup>
-
 </Project>

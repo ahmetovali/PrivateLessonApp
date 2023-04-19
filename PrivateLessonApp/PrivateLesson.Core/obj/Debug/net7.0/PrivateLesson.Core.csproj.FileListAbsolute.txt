@@ -1,0 +1,12 @@
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Core\bin\Debug\net7.0\PrivateLesson.Core.deps.json
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Core\bin\Debug\net7.0\PrivateLesson.Core.dll
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Core\bin\Debug\net7.0\PrivateLesson.Core.pdb
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Core\obj\Debug\net7.0\PrivateLesson.Core.csproj.AssemblyReference.cache
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Core\obj\Debug\net7.0\PrivateLesson.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Core\obj\Debug\net7.0\PrivateLesson.Core.AssemblyInfoInputs.cache
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Core\obj\Debug\net7.0\PrivateLesson.Core.AssemblyInfo.cs
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Core\obj\Debug\net7.0\PrivateLesson.Core.csproj.CoreCompileInputs.cache
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Core\obj\Debug\net7.0\PrivateLesson.Core.dll
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Core\obj\Debug\net7.0\refint\PrivateLesson.Core.dll
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Core\obj\Debug\net7.0\PrivateLesson.Core.pdb
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.Core\obj\Debug\net7.0\ref\PrivateLesson.Core.dll

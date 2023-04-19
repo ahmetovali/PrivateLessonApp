@@ -27,7 +27,7 @@ namespace PrivateLesson.Data.Concrete.EfCore.Context
         protected override void OnModelCreating(ModelBuilder modelbuilder)
         {
             modelbuilder.SeedData();
-            modelbuilder.ApplyConfigurationsFromAssembly(typeof(StudentConfig).Assembly);
+            modelbuilder.ApplyConfigurationsFromAssembly(typeof(BranchConfig).Assembly);
             base.OnModelCreating(modelbuilder);
         }
 

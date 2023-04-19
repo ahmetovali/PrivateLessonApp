@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace PrivateLesson.Data.Abstract
 {
-    public class IGenericRepository
+    public interface IGenericRepository<TEntity>
     {
+        Task CreateAsync(TEntity entity);
+        Task<List<TEntity>> GetAllAsync();
+        Task<TEntity> GetByIdAsync(int id);
+        void Update(TEntity entity);
+        void Delete(TEntity entity);
+
     }
 }

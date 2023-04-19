@@ -1,3 +1,4 @@
+using PrivateLesson.Entity.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PrivateLesson.Data.Abstract
 {
-    public class IImageRepository
+    public interface IImageRepository: IGenericRepository<Image>
     {
     }
 }
