@@ -16,8 +16,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Views/Shared/_AboutPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BYm91dFBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Views/Shared/_CarouselPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJvdXNlbFBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Views/Shared/_CarouselPartPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJvdXNlbFBhcnRQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Views/Shared/_FooterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXJQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Views/Shared/_HeaderPartial.cshtml]
@@ -26,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Views/Shared/_NoRecord.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob1JlY29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Views/Shared/_TopMenuPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ub3BNZW51UGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Views/Shared/_ValidationScriptsPartial.cshtml]
