@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using PrivateLesson.Business.Abstract;
+using PrivateLesson.Core;
+using PrivateLesson.Entity.Concrete;
 using PrivateLesson.Entity.Concrete.Identity;
 using PrivateLesson.WebUI.Models.ViewModels.AccountModels;
 
@@ -49,8 +51,33 @@ namespace PrivateLesson.WebUI.Controllers
                     Phone=registerViewModel.Phone,
                 };
                 var result = await _userManager.CreateAsync(user, registerViewModel.Password);
-            }
 
+                if (result.Succeeded)
+                {
+                    await _userManager.AddToRoleAsync(user, "OGRETMEN");
+                    Teacher teacher = new Teacher
+                    {
+                        CreatedDate = DateTime.Now,
+                        UpdatedDate = DateTime.Now,
+                        Url = Jobs.GetUrl(registerViewModel.FirstName + registerViewModel.LastName),
+                        Graduation = registerViewModel.Graduation,
+                        User = user,
+                        IsApproved = true,
+                        UserId = user.Id,
+                        Image = new Image
+                        {
+                            CreatedDate = DateTime.Now,
+                            UpdatedDate = DateTime.Now,
+                            IsApproved = true,
+                            Url = Jobs.UploadImage(registerViewModel.Image)
+                        }
+
+                    };
+                    await _teacherService.CreateTeacher(teacher, registerViewModel.SelectedBranches);
+                    return RedirectToAction("Login", "Account");
+                }
+            }
+            registerViewModel.Branches = await _branchService.GetBranchesAsync(true);
             return View(registerViewModel);
         }
 

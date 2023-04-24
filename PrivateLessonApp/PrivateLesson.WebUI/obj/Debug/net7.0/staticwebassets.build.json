@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7fpyuULtm3sf1dmcWBOZk4YdD7qQkh8ZJ+Wb7SE303o=",
+  "Hash": "otgLTymsb+bb4waugvyFXe+LsPvIfAW1ytGcsOSoRTc=",
   "Source": "PrivateLesson.WebUI",
   "BasePath": "_content/PrivateLesson.WebUI",
   "Mode": "Default",
@@ -901,6 +901,23 @@
       "OriginalItemSpec": "wwwroot\\images\\58.jpg"
     },
     {
+      "Identity": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\a7533612-6c7b-4769-a5e3-5a2ebab5adad.jpg",
+      "SourceId": "PrivateLesson.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\",
+      "BasePath": "_content/PrivateLesson.WebUI",
+      "RelativePath": "images/a7533612-6c7b-4769-a5e3-5a2ebab5adad.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\a7533612-6c7b-4769-a5e3-5a2ebab5adad.jpg"
+    },
+    {
       "Identity": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\about-1.jpg",
       "SourceId": "PrivateLesson.WebUI",
       "SourceType": "Discovered",
@@ -1528,6 +1545,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\post-3.jpg"
+    },
+    {
+      "Identity": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\register.jpg",
+      "SourceId": "PrivateLesson.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\",
+      "BasePath": "_content/PrivateLesson.WebUI",
+      "RelativePath": "images/register.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\register.jpg"
     },
     {
       "Identity": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\team-1.jpg",
