@@ -26,4 +26,12 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.6" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Models\ViewModels\Accounts\" />
+    <Folder Include="Areas\Admin\Views\Branches\" />
+    <Folder Include="Areas\Admin\Views\Users\" />
+    <Folder Include="Areas\Admin\Views\Roles\" />
+    <Folder Include="Areas\Admin\Views\Students\" />
+  </ItemGroup>
+
 </Project>

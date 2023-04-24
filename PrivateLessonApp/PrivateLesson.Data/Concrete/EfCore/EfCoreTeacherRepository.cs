@@ -55,6 +55,7 @@ namespace PrivateLesson.Data.Concrete.EfCore
             return await teachers
                 .Include(t=>t.TeacherStudents)
                 .ThenInclude(ts=>ts.Student)
+                .ThenInclude(tu=> tu.User)
                 .ToListAsync();
         }
     }
