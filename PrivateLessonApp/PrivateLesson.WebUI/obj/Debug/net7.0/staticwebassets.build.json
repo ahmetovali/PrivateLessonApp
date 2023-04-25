@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Q5xc4SSXc8jjG1PcIQiCpPK+xufoOsBclgZBX4R/cQs=",
+  "Hash": "qvbF5faBzwOfFzpKlWw0kyxNHcf1H3HatFSRmX27GPU=",
   "Source": "PrivateLesson.WebUI",
   "BasePath": "_content/PrivateLesson.WebUI",
   "Mode": "Default",
@@ -2191,6 +2191,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\45.jpg"
+    },
+    {
+      "Identity": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\455b7572-5f44-423d-baaf-489f8bd9d5de.jpg",
+      "SourceId": "PrivateLesson.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\",
+      "BasePath": "_content/PrivateLesson.WebUI",
+      "RelativePath": "images/455b7572-5f44-423d-baaf-489f8bd9d5de.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\455b7572-5f44-423d-baaf-489f8bd9d5de.jpg"
     },
     {
       "Identity": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\5.jpg",
