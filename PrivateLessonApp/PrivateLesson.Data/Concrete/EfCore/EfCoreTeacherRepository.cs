@@ -58,5 +58,45 @@ namespace PrivateLesson.Data.Concrete.EfCore
                 .ThenInclude(tu=> tu.User)
                 .ToListAsync();
         }
+
+        public async Task<Teacher> GetTeacherFullDataAsync(int id)
+        {
+            var teacher  = await AppContext
+                .Teachers
+                .Where(t=> t.Id == id)
+                .Include(u => u.User)
+                .Include(t=>t.TeacherBranches)
+                .ThenInclude(tb=> tb.Branch)
+                .Include(t=>t.Image)
+                .FirstOrDefaultAsync();
+            return teacher;
+        }
+
+        public async Task UpdateTeacher(Teacher teacher, int[] SelectedBranches)
+        {
+            Teacher updateTeacher = AppContext
+               .Teachers
+               .Include(t => t.User)
+               .Include(t => t.TeacherBranches)
+               .FirstOrDefault(t => t.Id == teacher.Id);
+            updateTeacher.User.FirstName = teacher.User.FirstName;
+            updateTeacher.User.LastName = teacher.User.LastName;
+            updateTeacher.User.DateOfBirth = teacher.User.DateOfBirth;
+            updateTeacher.User.Gender = teacher.User.Gender;
+            updateTeacher.User.City = teacher.User.City;
+            updateTeacher.User.Phone = teacher.User.Phone;
+            updateTeacher.IsApproved = teacher.IsApproved;
+            updateTeacher.UpdatedDate = teacher.UpdatedDate;
+            updateTeacher.Graduation = teacher.Graduation;
+            updateTeacher.Image = teacher.Image;
+            updateTeacher.TeacherBranches = SelectedBranches
+                .Select(sb => new TeacherBranch
+                {
+                    TeacherId = updateTeacher.Id,
+                    BranchId = sb
+                }).ToList();
+            AppContext.Update(teacher);
+            await AppContext.SaveChangesAsync();
+        }
     }
 }

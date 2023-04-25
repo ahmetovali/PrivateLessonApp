@@ -11,5 +11,7 @@ namespace PrivateLesson.Data.Abstract
     {
         Task<List<Teacher>> GetAllTeachersFullDataAsync(bool ApprovedStatus, string branchurl = null);
         Task CreateTeacher(Teacher teacher, int[] SelectedBranches);
+        Task<Teacher> GetTeacherFullDataAsync(int id);
+        Task UpdateTeacher(Teacher teacher, int[] SelectedBranches);
     }
 }

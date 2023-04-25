@@ -48,11 +48,19 @@ namespace PrivateLesson.Business.Concrete
             return await _teacherRepository.GetByIdAsync(id);
         }
 
-       
+        public async Task<Teacher> GetTeacherFullDataAsync(int id)
+        {
+            return await _teacherRepository.GetTeacherFullDataAsync(id);
+        }
 
         public void Update(Teacher teacher)
         {
             _teacherRepository.Update(teacher);
+        }
+
+        public async Task UpdateTeacher(Teacher teacher, int[] SelectedBranches)
+        {
+            await _teacherRepository.UpdateTeacher(teacher, SelectedBranches);
         }
     }
 }

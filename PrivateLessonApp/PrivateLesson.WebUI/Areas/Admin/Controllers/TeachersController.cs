@@ -155,8 +155,36 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(TeacherUpdateViewModel teacherUpdateViewModel)
         {
+            if (ModelState.IsValid)
+            {
+                Teacher teacher = await _teacherService.GetTeacherFullDataAsync(teacherUpdateViewModel.Id);
+                teacher.User.FirstName = teacherUpdateViewModel.FirstName;
+                teacher.User.LastName = teacherUpdateViewModel.LastName;
+                teacher.User.DateOfBirth = teacherUpdateViewModel.DateOfBirth;
+                teacher.User.Gender = teacherUpdateViewModel.Gender;
+                teacher.User.Phone = teacherUpdateViewModel.Phone;
+                teacher.User.City = teacherUpdateViewModel.City;
+                teacher.IsApproved = teacherUpdateViewModel.IsApproved;
+                teacher.UpdatedDate= DateTime.Now;
+                teacher.Graduation = teacherUpdateViewModel.Graduation;
+                teacher.User.UserName = teacherUpdateViewModel.UserName;
+                teacher.User.Email = teacherUpdateViewModel.Email;
 
-
+                if (teacherUpdateViewModel.ImageFile !=null)
+                {
+                    teacher.Image = new Image
+                    {
+                        CreatedDate = DateTime.Now,
+                        UpdatedDate = DateTime.Now,
+                        IsApproved = true,
+                        Url = Jobs.UploadImage(teacherUpdateViewModel.ImageFile)
+                    };
+                    await _imageService.CreateAsync(teacher.Image);
+                }
+                await _teacherService.UpdateTeacher(teacher, teacherUpdateViewModel.SelectedBranches);
+                return RedirectToAction("Index");
+            }
+            teacherUpdateViewModel.Branches = await _branchService.GetBranchesAsync(true);
             return View(teacherUpdateViewModel);
         }
 
