@@ -32,6 +32,20 @@ namespace PrivateLesson.WebUI.Areas.Admin.Models.ViewModels
         public DateTime CreatedDate { get; set; }
         public DateTime UpdatedDate { get; set; }
 
+        [DisplayName("Kullanıcı Adı")]
+        [Required(ErrorMessage = "Kullanıcı Adı alanı boş bırakılmamalıdır")]
+        public string UserName { get; set; }
+
+        [DisplayName("Eposta")]
+        [Required(ErrorMessage = "Eposta alanı boş bırakılmamalıdır")]
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
+
+        [DisplayName("Parola")]
+        [Required(ErrorMessage = "Parola alanı boş bırakılmamalıdır")]
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
+
         [DisplayName("Mezuniyet")]
         [Required(ErrorMessage = "Mezuniyet alanı boş bırakılmamalıdır")]
         public string Graduation { get; set; }
@@ -40,22 +54,6 @@ namespace PrivateLesson.WebUI.Areas.Admin.Models.ViewModels
         [Required(ErrorMessage = "En az bir branş seçilmelidir")]
         public int[] SelectedBranches { get; set; }
         public List<Branch> Branches { get; set; }
-
-        [DisplayName("Kullanıcı Adı")]
-        [Required(ErrorMessage = "Kullanıcı Adı alanı boş bırakılmamalıdır")]
-        public string UserName { get; set; }
-        [DisplayName("Eposta")]
-        [Required(ErrorMessage = "Eposta alanı boş bırakılmamalıdır")]
-        [DataType(DataType.EmailAddress)]
-        public string Email { get; set; }
-        [DisplayName("Parola")]
-        [Required(ErrorMessage = "Parola alanı boş bırakılmamalıdır")]
-        [DataType(DataType.Password)]
-        public string Password { get; set; }
-
-        [DisplayName("Resim")]
-        [Required(ErrorMessage = "Resim seçilmelidir")]
-        
         public IFormFile Image { get; set; }
     }
 }

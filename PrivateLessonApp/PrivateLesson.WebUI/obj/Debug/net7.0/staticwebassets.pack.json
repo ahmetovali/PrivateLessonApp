@@ -605,6 +605,10 @@
       "PackagePath": "staticwebassets\\images\\course_6.jpg"
     },
     {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\d40e6b82-f684-48f8-b0c6-f12db73b96dd.jpg",
+      "PackagePath": "staticwebassets\\images\\d40e6b82-f684-48f8-b0c6-f12db73b96dd.jpg"
+    },
+    {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\detail.jpg",
       "PackagePath": "staticwebassets\\images\\detail.jpg"
     },

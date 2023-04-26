@@ -44,11 +44,6 @@ namespace PrivateLesson.WebUI.Areas.Admin.Models.ViewModels
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
-        [DisplayName("Parola")]
-        [Required(ErrorMessage = "Parola alanı boş bırakılmamalıdır")]
-        [DataType(DataType.Password)]
-        public string Password { get; set; }
-
         [DisplayName("Mezuniyet")]
         [Required(ErrorMessage = "Mezuniyet alanı boş bırakılmamalıdır")]
         public string Graduation { get; set; }
@@ -58,7 +53,6 @@ namespace PrivateLesson.WebUI.Areas.Admin.Models.ViewModels
         public List<Branch> Branches { get; set; }
 
         [DisplayName("Resim")]
-        [Required(ErrorMessage = "Resim seçilmelidir")]
         public Image Image { get; set; }
         public IFormFile ImageFile { get; set; }
     }
