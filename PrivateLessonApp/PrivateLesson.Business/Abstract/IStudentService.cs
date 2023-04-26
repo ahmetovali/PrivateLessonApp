@@ -14,5 +14,8 @@ namespace PrivateLesson.Business.Abstract
         Task<Student> GetByIdAsync(int id);
         void Update(Student student);
         void Delete(Student student);
+        Task<List<Student>> GetAllStudentsWithTeachersAsync(bool ApprovedStatus);
+
+        Task<Student> GetStudentFullDataAsync(int id);
     }
 }

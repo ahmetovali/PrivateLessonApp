@@ -19,5 +19,30 @@ namespace PrivateLesson.Data.Concrete.EfCore
         {
             get { return _dbContext as PrivateLessonContext; }
         }
+
+        public async Task<List<Student>> GetAllStudentsWithTeachersAsync(bool ApprovedStatus)
+        {
+            List<Student> students = await AppContext.Students
+                .Where(s => s.IsApproved == ApprovedStatus)
+                .Include(u => u.User)
+                .Include(i => i.Image)
+                .Include(s => s.TeacherStudents)
+                .ThenInclude(s => s.Teacher)
+                .ThenInclude(u => u.User)
+                .ToListAsync();
+            return students;
+        }
+
+        public Task<Student> GetStudentFullDataAsync(int id)
+        {
+            var student = AppContext.Students
+                .Where(s => s.Id == id)
+                .Include(u => u.User)
+                .Include(t => t.TeacherStudents)
+                .ThenInclude(ts => ts.Teacher)
+                .Include(i => i.Image)
+                .FirstOrDefaultAsync();
+            return student;
+        }
     }
 }

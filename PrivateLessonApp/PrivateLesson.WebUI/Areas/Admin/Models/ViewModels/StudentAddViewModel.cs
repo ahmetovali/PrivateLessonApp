@@ -1,14 +1,10 @@
-﻿using PrivateLesson.Entity.Concrete;
-using PrivateLesson.Entity.Concrete.Identity;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
 
 namespace PrivateLesson.WebUI.Areas.Admin.Models.ViewModels
 {
-    public class StudentViewModel
+    public class StudentAddViewModel
     {
-        public int Id { get; set; }
-
         [DisplayName("Ad")]
         [Required(ErrorMessage = "Ad alanı boş bırakılmamalıdır")]
         public string FirstName { get; set; }
@@ -34,16 +30,23 @@ namespace PrivateLesson.WebUI.Areas.Admin.Models.ViewModels
         public string Phone { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime UpdatedDate { get; set; }
-
-        [DisplayName("Onaylı")]
         public bool IsApproved { get; set; }
         public string Url { get; set; }
-        public string UserId { get; set; }
-        public User User { get; set; }
 
-        [Required(ErrorMessage = "En az bir öğretmen seçilmelidir")]
-        public List<TeacherViewModel> Teachers { get; set; }
-        public int ImageId { get; set; }
-        public Image Image { get; set; }
+        [DisplayName("Kullanıcı Adı")]
+        [Required(ErrorMessage = "Kullanıcı Adı alanı boş bırakılmamalıdır")]
+        public string UserName { get; set; }
+
+        [DisplayName("Eposta")]
+        [Required(ErrorMessage = "Eposta alanı boş bırakılmamalıdır")]
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
+
+        [DisplayName("Parola")]
+        [Required(ErrorMessage = "Parola alanı boş bırakılmamalıdır")]
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
+        //public List<Teacher>? Teachers { get; set; }
+        public IFormFile Image { get; set; }
     }
 }

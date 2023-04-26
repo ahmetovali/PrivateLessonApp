@@ -188,6 +188,55 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
             return View(teacherUpdateViewModel);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            Teacher deletedTeacher = await _teacherService.GetTeacherFullDataAsync(id);
+            TeacherViewModel teacherViewModel = new TeacherViewModel()
+            {
+                Id = deletedTeacher.Id,
+                FirstName = deletedTeacher.User.FirstName,
+                LastName = deletedTeacher.User.LastName,
+                Gender = deletedTeacher.User.Gender,
+                DateOfBirth = deletedTeacher.User.DateOfBirth,
+                City = deletedTeacher.User.City,
+                Graduation = deletedTeacher.Graduation,
+                Phone = deletedTeacher.User.Phone,
+                CreatedDate = deletedTeacher.CreatedDate,
+                UpdatedDate = deletedTeacher.UpdatedDate,
+                IsApproved = deletedTeacher.IsApproved,
+                Image = deletedTeacher.Image,
+                Url = deletedTeacher.Url
+            };
+            List<Branch> branches = deletedTeacher.TeacherBranches.Select(tb=>tb.Branch).ToList();
+            teacherViewModel.Branches = branches.Select(b => new BranchViewModel { BranchName = b.BranchName }).ToList();
+          return View(teacherViewModel);
+        }
 
+        [HttpPost]
+        public async Task<IActionResult> Delete(TeacherViewModel teacherViewModel)
+        {
+            Teacher deletedTeacher = await _teacherService.GetByIdAsync(teacherViewModel.Id);
+            if (deletedTeacher != null)
+            {
+                _teacherService.Delete(deletedTeacher);
+            }
+            return RedirectToAction("Index");
+        }
+
+        public async Task<IActionResult> UpdateIsApproved(int id, bool ApprovedStatus)
+        {
+            Teacher teacher = await _teacherService.GetByIdAsync(id);
+            if (teacher != null)
+            {
+                teacher.IsApproved= !teacher.IsApproved;
+                _teacherService.Update(teacher);
+            }
+            TeacherListViewModel teacherListViewModel = new TeacherListViewModel()
+            {
+                ApprovedStatus = ApprovedStatus
+            };
+            return RedirectToAction("Index", teacherListViewModel);
+        }
     }
 }

@@ -31,7 +31,6 @@
     <Folder Include="Areas\Admin\Views\Branches\" />
     <Folder Include="Areas\Admin\Views\Users\" />
     <Folder Include="Areas\Admin\Views\Roles\" />
-    <Folder Include="Areas\Admin\Views\Students\" />
   </ItemGroup>
 
 </Project>

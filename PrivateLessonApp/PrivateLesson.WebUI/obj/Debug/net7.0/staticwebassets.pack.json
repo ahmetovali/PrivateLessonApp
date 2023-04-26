@@ -501,6 +501,10 @@
       "PackagePath": "staticwebassets\\images\\32.jpg"
     },
     {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\337a51cc-e566-4e65-a0e4-e495fd300f70.jpg",
+      "PackagePath": "staticwebassets\\images\\337a51cc-e566-4e65-a0e4-e495fd300f70.jpg"
+    },
+    {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\4.jpg",
       "PackagePath": "staticwebassets\\images\\4.jpg"
     },
@@ -611,6 +615,10 @@
     {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\detail.jpg",
       "PackagePath": "staticwebassets\\images\\detail.jpg"
+    },
+    {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\f3449671-0a5a-49ee-9036-ac6c43a4701a.jpg",
+      "PackagePath": "staticwebassets\\images\\f3449671-0a5a-49ee-9036-ac6c43a4701a.jpg"
     },
     {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\header.png",

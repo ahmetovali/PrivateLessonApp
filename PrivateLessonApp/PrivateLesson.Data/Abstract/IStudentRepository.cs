@@ -9,7 +9,8 @@ namespace PrivateLesson.Data.Abstract
 {
     public interface IStudentRepository: IGenericRepository<Student>
     {
-    
+        Task<List<Student>> GetAllStudentsWithTeachersAsync(bool ApprovedStatus);
+        Task<Student> GetStudentFullDataAsync(int id);
     }
     
 }
