@@ -195,6 +195,7 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
             TeacherViewModel teacherViewModel = new TeacherViewModel()
             {
                 Id = deletedTeacher.Id,
+                User=deletedTeacher.User,
                 FirstName = deletedTeacher.User.FirstName,
                 LastName = deletedTeacher.User.LastName,
                 Gender = deletedTeacher.User.Gender,
@@ -217,9 +218,11 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
         public async Task<IActionResult> Delete(TeacherViewModel teacherViewModel)
         {
             Teacher deletedTeacher = await _teacherService.GetByIdAsync(teacherViewModel.Id);
+            User deletedTeacherByUser = await _userManager.FindByIdAsync(teacherViewModel.User.Id);
             if (deletedTeacher != null)
             {
                 _teacherService.Delete(deletedTeacher);
+                await _userManager.DeleteAsync(deletedTeacherByUser);
             }
             return RedirectToAction("Index");
         }

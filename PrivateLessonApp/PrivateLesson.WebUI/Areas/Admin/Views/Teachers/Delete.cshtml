@@ -4,6 +4,7 @@
 <hr />
 
 <form asp-area="Admin" asp-controller="Teachers" asp-action="Delete" method="post">
+    <input type="hidden" asp-for="User.Id" />
     <div class="row">
         <div class="col-9">
             <div class="row">
