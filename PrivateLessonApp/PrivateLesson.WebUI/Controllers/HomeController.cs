@@ -32,7 +32,6 @@ namespace PrivateLesson.WebUI.Controllers
                 IsApproved= t.IsApproved,
                 Url= t.Url,
                 Graduation= t.Graduation,
-                Price= t.Price,
                 UserId = t.UserId,
                 Image= t.Image,
                 TeacherBranches= t.TeacherBranches.Select(tb=> tb.Branch).ToList(),

@@ -47,6 +47,8 @@ namespace PrivateLesson.WebUI.Areas.Admin.Models.ViewModels
         [DataType(DataType.Password)]
         public string Password { get; set; }
         //public List<Teacher>? Teachers { get; set; }
+        [DisplayName("Resim")]
+        [Required(ErrorMessage = "Resim alanı boş bırakılmamalıdır")]
         public IFormFile Image { get; set; }
     }
 }

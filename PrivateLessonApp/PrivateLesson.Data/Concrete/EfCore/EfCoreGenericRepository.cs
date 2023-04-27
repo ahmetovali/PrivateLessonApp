@@ -21,7 +21,7 @@ namespace PrivateLesson.Data.Concrete.EfCore
         public async Task CreateAsync(TEntity entity)
         {
             await _dbContext.Set<TEntity>().AddAsync(entity);
-            _dbContext.SaveChanges();
+            await _dbContext.SaveChangesAsync();
         }
 
         public void Delete(TEntity entity)

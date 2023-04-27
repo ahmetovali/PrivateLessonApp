@@ -45,6 +45,8 @@ namespace PrivateLesson.WebUI.Areas.Admin.Models.ViewModels
         public string Email { get; set; }
 
         //public List<Teacher> Teachers { get; set; }
+        [DisplayName("Resim")]
+        [Required(ErrorMessage = "Resim alanı boş bırakılmamalıdır")]
         public Image Image { get; set; }
         public IFormFile ImageFile { get; set; }
     }

@@ -16,7 +16,6 @@ namespace PrivateLesson.Entity.Concrete
         public bool IsApproved { get; set; }
         public string Url { get; set; }
         public string Graduation { get; set; }
-        public decimal? Price { get; set; }
         public string UserId { get; set; }
         public User User { get; set; }
         public List<TeacherStudent> TeacherStudents { get; set; }

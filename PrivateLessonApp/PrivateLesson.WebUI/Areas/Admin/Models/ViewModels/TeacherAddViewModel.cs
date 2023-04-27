@@ -54,6 +54,9 @@ namespace PrivateLesson.WebUI.Areas.Admin.Models.ViewModels
         [Required(ErrorMessage = "En az bir branş seçilmelidir")]
         public int[] SelectedBranches { get; set; }
         public List<Branch> Branches { get; set; }
+
+        [DisplayName("Resim")]
+        [Required(ErrorMessage = "Resim alanı boş bırakılmamalıdır")]
         public IFormFile Image { get; set; }
     }
 }

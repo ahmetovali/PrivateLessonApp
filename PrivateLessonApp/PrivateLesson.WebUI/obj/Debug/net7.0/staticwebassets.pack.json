@@ -481,8 +481,16 @@
       "PackagePath": "staticwebassets\\images\\.DS_Store"
     },
     {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\0e329ee7-dd9b-4854-b276-9d2228262ec6.jpg",
+      "PackagePath": "staticwebassets\\images\\0e329ee7-dd9b-4854-b276-9d2228262ec6.jpg"
+    },
+    {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\1.jpg",
       "PackagePath": "staticwebassets\\images\\1.jpg"
+    },
+    {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\18c785f9-2e08-4d12-bea0-aa927cea674c.jpg",
+      "PackagePath": "staticwebassets\\images\\18c785f9-2e08-4d12-bea0-aa927cea674c.jpg"
     },
     {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\2.jpg",
@@ -491,6 +499,14 @@
     {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\20.jpg",
       "PackagePath": "staticwebassets\\images\\20.jpg"
+    },
+    {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\2ab2279d-e1e6-4030-a604-aba5242d3504.jpg",
+      "PackagePath": "staticwebassets\\images\\2ab2279d-e1e6-4030-a604-aba5242d3504.jpg"
+    },
+    {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\2bf2e356-d0ba-425e-8cbc-bb51f2e443ce.jpg",
+      "PackagePath": "staticwebassets\\images\\2bf2e356-d0ba-425e-8cbc-bb51f2e443ce.jpg"
     },
     {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\3.jpg",
@@ -503,6 +519,10 @@
     {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\337a51cc-e566-4e65-a0e4-e495fd300f70.jpg",
       "PackagePath": "staticwebassets\\images\\337a51cc-e566-4e65-a0e4-e495fd300f70.jpg"
+    },
+    {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\34b024f6-a37a-486f-bec1-31dc46bef8a4.jpg",
+      "PackagePath": "staticwebassets\\images\\34b024f6-a37a-486f-bec1-31dc46bef8a4.jpg"
     },
     {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\4.jpg",
@@ -521,20 +541,68 @@
       "PackagePath": "staticwebassets\\images\\5.jpg"
     },
     {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\520ec658-aee0-4cb0-8355-ca7950c91b4e.jpg",
+      "PackagePath": "staticwebassets\\images\\520ec658-aee0-4cb0-8355-ca7950c91b4e.jpg"
+    },
+    {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\55.jpg",
       "PackagePath": "staticwebassets\\images\\55.jpg"
+    },
+    {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\5715b28b-63cb-4dad-8708-dd8e00d0d16f.jpg",
+      "PackagePath": "staticwebassets\\images\\5715b28b-63cb-4dad-8708-dd8e00d0d16f.jpg"
     },
     {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\58.jpg",
       "PackagePath": "staticwebassets\\images\\58.jpg"
     },
     {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\60c3632a-defe-4211-a9cc-30cdabc385ec.jpg",
+      "PackagePath": "staticwebassets\\images\\60c3632a-defe-4211-a9cc-30cdabc385ec.jpg"
+    },
+    {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\612d8f5e-ad3f-4a0b-a524-7aa9e83130d2.png",
+      "PackagePath": "staticwebassets\\images\\612d8f5e-ad3f-4a0b-a524-7aa9e83130d2.png"
+    },
+    {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\631f2739-4de8-419b-b8fe-6388eb99f8e4.jpg",
+      "PackagePath": "staticwebassets\\images\\631f2739-4de8-419b-b8fe-6388eb99f8e4.jpg"
+    },
+    {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\71db995e-158f-4c3c-94b8-d87306bf0019.jpg",
       "PackagePath": "staticwebassets\\images\\71db995e-158f-4c3c-94b8-d87306bf0019.jpg"
     },
     {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\75a08ef1-f85d-42e8-baca-8b37264a0e80.jpg",
+      "PackagePath": "staticwebassets\\images\\75a08ef1-f85d-42e8-baca-8b37264a0e80.jpg"
+    },
+    {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\8fae844d-059b-4763-b492-98a0fefbc5a8.jpg",
+      "PackagePath": "staticwebassets\\images\\8fae844d-059b-4763-b492-98a0fefbc5a8.jpg"
+    },
+    {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\954ecf79-9d27-460b-b9ba-3ea7922bfed7.jpg",
+      "PackagePath": "staticwebassets\\images\\954ecf79-9d27-460b-b9ba-3ea7922bfed7.jpg"
+    },
+    {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\99ea075c-744d-4e8f-8220-d41b009d8009.jpg",
+      "PackagePath": "staticwebassets\\images\\99ea075c-744d-4e8f-8220-d41b009d8009.jpg"
+    },
+    {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\9be73c72-0b82-4413-afbf-b650ed9b7f81.jpg",
+      "PackagePath": "staticwebassets\\images\\9be73c72-0b82-4413-afbf-b650ed9b7f81.jpg"
+    },
+    {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\a407afe1-d4c9-405b-8f8f-7b5f492f828a.jpg",
+      "PackagePath": "staticwebassets\\images\\a407afe1-d4c9-405b-8f8f-7b5f492f828a.jpg"
+    },
+    {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\a7533612-6c7b-4769-a5e3-5a2ebab5adad.jpg",
       "PackagePath": "staticwebassets\\images\\a7533612-6c7b-4769-a5e3-5a2ebab5adad.jpg"
+    },
+    {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\a9901663-c7c0-42d3-ac8d-9ada70b13233.jpg",
+      "PackagePath": "staticwebassets\\images\\a9901663-c7c0-42d3-ac8d-9ada70b13233.jpg"
     },
     {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\about-1.jpg",
@@ -543,6 +611,14 @@
     {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\about-2.jpg",
       "PackagePath": "staticwebassets\\images\\about-2.jpg"
+    },
+    {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\b6354efe-71a0-4227-aaa6-d9facd37cd15.jpg",
+      "PackagePath": "staticwebassets\\images\\b6354efe-71a0-4227-aaa6-d9facd37cd15.jpg"
+    },
+    {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\b89acbb1-17a1-422c-b910-9bfc244252a0.jpg",
+      "PackagePath": "staticwebassets\\images\\b89acbb1-17a1-422c-b910-9bfc244252a0.jpg"
     },
     {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\bg_1.jpg",
@@ -571,6 +647,10 @@
     {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\blog_large_1.jpg",
       "PackagePath": "staticwebassets\\images\\blog_large_1.jpg"
+    },
+    {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\c8155a81-0a7b-4eb3-b215-597c42e160bb.jpg",
+      "PackagePath": "staticwebassets\\images\\c8155a81-0a7b-4eb3-b215-597c42e160bb.jpg"
     },
     {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\class-1.jpg",
@@ -613,12 +693,24 @@
       "PackagePath": "staticwebassets\\images\\d40e6b82-f684-48f8-b0c6-f12db73b96dd.jpg"
     },
     {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\d709b289-e753-40e7-9a2f-01cf89554311.jpg",
+      "PackagePath": "staticwebassets\\images\\d709b289-e753-40e7-9a2f-01cf89554311.jpg"
+    },
+    {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\d9074950-f01d-49b3-a349-01ffde92ed43.jpg",
+      "PackagePath": "staticwebassets\\images\\d9074950-f01d-49b3-a349-01ffde92ed43.jpg"
+    },
+    {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\detail.jpg",
       "PackagePath": "staticwebassets\\images\\detail.jpg"
     },
     {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\f3449671-0a5a-49ee-9036-ac6c43a4701a.jpg",
       "PackagePath": "staticwebassets\\images\\f3449671-0a5a-49ee-9036-ac6c43a4701a.jpg"
+    },
+    {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\fa574f37-0022-4bec-b518-6f4dff7058a1.jpg",
+      "PackagePath": "staticwebassets\\images\\fa574f37-0022-4bec-b518-6f4dff7058a1.jpg"
     },
     {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\header.png",

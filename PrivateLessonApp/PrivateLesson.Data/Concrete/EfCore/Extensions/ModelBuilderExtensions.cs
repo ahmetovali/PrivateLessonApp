@@ -19,8 +19,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
             List<Role> roles = new List<Role>()
             {
                new Role{Name="Admin", Description="Yöneticiler", NormalizedName="ADMIN"},
-                new Role{Name="Öğretmen", Description="Öğretmenler", NormalizedName="OGRETMEN"},
-                new Role {Name="Öğrenci", Description="Öğrenciler", NormalizedName="OGRENCI"}
+                new Role{Name="Ogretmen", Description="Öğretmenler", NormalizedName="OGRETMEN"},
+                new Role {Name="Ogrenci", Description="Öğrenciler", NormalizedName="OGRENCI"}
             };
             modelBuilder.Entity<Role>().HasData(roles);
             #endregion
@@ -407,7 +407,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     UpdatedDate= DateTime.Now,
                     IsApproved= true,
                     Graduation= "Kırıkkale Üniversitesi",
-                    Price= 300,
                     ImageId=1,
                     UserId=users[11].Id
                 },
@@ -418,7 +417,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
                     Graduation = "Orta Doğu Teknik Üniversitesi",
-                    Price = 400,
                     ImageId = 2,
                     UserId=users[12].Id
                 },
@@ -429,7 +427,7 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
                     Graduation = "İstanbul Teknik Üniversitesi",
-                    Price = 350,
+
                     ImageId = 3,
                     UserId=users[13].Id
                 },
@@ -440,7 +438,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
                     Graduation = "Yıldız Teknik Üniversitesi",
-                    Price = 380,
                     ImageId = 4,
                     UserId=users[14].Id
                 },
@@ -451,7 +448,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
                     Graduation = "Akdeniz Üniversitesi",
-                    Price = 320,
                     ImageId = 5,
                     UserId=users[15].Id
                 },
@@ -462,7 +458,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
                     Graduation = "Erciyes Üniversitesi",
-                    Price = 400,
                     ImageId = 5,
                     UserId=users[16].Id
                 },
@@ -473,7 +468,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
                     Graduation = "Çukurova Üniversitesi",
-                    Price = 420,
                     ImageId = 5,
                     UserId=users[17].Id
                 },
@@ -484,7 +478,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
                     Graduation = "Uludağ Üniversitesi",
-                    Price = 380,
                     ImageId = 5,
                     UserId=users[18].Id
                 }
@@ -530,25 +523,25 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
             {
                 new IdentityUserRole<string>{UserId= users[0].Id, RoleId=roles.FirstOrDefault(r=>r.Name=="Admin").Id },
 
-                new IdentityUserRole<string>{UserId=users[1].Id, RoleId= roles.FirstOrDefault(r=> r.Name == "Öğrenci").Id },
-                new IdentityUserRole<string>{UserId=users[2].Id, RoleId= roles.FirstOrDefault(r=> r.Name == "Öğrenci").Id },
-                new IdentityUserRole<string>{UserId=users[3].Id, RoleId= roles.FirstOrDefault(r=> r.Name == "Öğrenci").Id },
-                new IdentityUserRole<string>{UserId=users[4].Id, RoleId= roles.FirstOrDefault(r=> r.Name == "Öğrenci").Id },
-                new IdentityUserRole<string>{UserId=users[5].Id, RoleId= roles.FirstOrDefault(r=> r.Name == "Öğrenci").Id },
-                new IdentityUserRole<string>{UserId=users[6].Id, RoleId= roles.FirstOrDefault(r=> r.Name == "Öğrenci").Id },
-                new IdentityUserRole<string>{UserId=users[7].Id, RoleId= roles.FirstOrDefault(r=> r.Name == "Öğrenci").Id },
-                new IdentityUserRole<string>{UserId=users[8].Id, RoleId= roles.FirstOrDefault(r=> r.Name == "Öğrenci").Id },
-                new IdentityUserRole<string>{UserId=users[9].Id, RoleId= roles.FirstOrDefault(r=> r.Name == "Öğrenci").Id },
-                new IdentityUserRole<string>{UserId=users[10].Id, RoleId= roles.FirstOrDefault(r=> r.Name == "Öğrenci").Id },
+                new IdentityUserRole<string>{UserId=users[1].Id, RoleId= roles.FirstOrDefault(r=> r.Name == "Ogrenci").Id },
+                new IdentityUserRole<string>{UserId=users[2].Id, RoleId= roles.FirstOrDefault(r=> r.Name == "Ogrenci").Id },
+                new IdentityUserRole<string>{UserId=users[3].Id, RoleId= roles.FirstOrDefault(r=> r.Name == "Ogrenci").Id },
+                new IdentityUserRole<string>{UserId=users[4].Id, RoleId= roles.FirstOrDefault(r=> r.Name == "Ogrenci").Id },
+                new IdentityUserRole<string>{UserId=users[5].Id, RoleId= roles.FirstOrDefault(r=> r.Name == "Ogrenci").Id },
+                new IdentityUserRole<string>{UserId=users[6].Id, RoleId= roles.FirstOrDefault(r=> r.Name == "Ogrenci").Id },
+                new IdentityUserRole<string>{UserId=users[7].Id, RoleId= roles.FirstOrDefault(r=> r.Name == "Ogrenci").Id },
+                new IdentityUserRole<string>{UserId=users[8].Id, RoleId= roles.FirstOrDefault(r=> r.Name == "Ogrenci").Id },
+                new IdentityUserRole<string>{UserId=users[9].Id, RoleId= roles.FirstOrDefault(r=> r.Name == "Ogrenci").Id },
+                new IdentityUserRole<string>{UserId=users[10].Id, RoleId= roles.FirstOrDefault(r=> r.Name =="Ogrenci").Id },
 
-                new IdentityUserRole<string>{UserId=users[11].Id,RoleId= roles.FirstOrDefault(r=>r.Name=="Öğretmen").Id},
-                new IdentityUserRole<string>{UserId=users[12].Id,RoleId= roles.FirstOrDefault(r=>r.Name=="Öğretmen").Id},
-                new IdentityUserRole<string>{UserId=users[13].Id,RoleId= roles.FirstOrDefault(r=>r.Name=="Öğretmen").Id},
-                new IdentityUserRole<string>{UserId=users[14].Id,RoleId= roles.FirstOrDefault(r=>r.Name=="Öğretmen").Id},
-                new IdentityUserRole<string>{UserId=users[15].Id,RoleId= roles.FirstOrDefault(r=>r.Name=="Öğretmen").Id},
-                new IdentityUserRole<string>{UserId=users[16].Id,RoleId= roles.FirstOrDefault(r=>r.Name=="Öğretmen").Id},
-                new IdentityUserRole<string>{UserId=users[17].Id,RoleId= roles.FirstOrDefault(r=>r.Name=="Öğretmen").Id},
-                new IdentityUserRole<string>{UserId=users[18].Id,RoleId= roles.FirstOrDefault(r=>r.Name=="Öğretmen").Id}
+                new IdentityUserRole<string>{UserId=users[11].Id,RoleId= roles.FirstOrDefault(r=>r.Name=="Ogretmen").Id},
+                new IdentityUserRole<string>{UserId=users[12].Id,RoleId= roles.FirstOrDefault(r=>r.Name=="Ogretmen").Id},
+                new IdentityUserRole<string>{UserId=users[13].Id,RoleId= roles.FirstOrDefault(r=>r.Name=="Ogretmen").Id},
+                new IdentityUserRole<string>{UserId=users[14].Id,RoleId= roles.FirstOrDefault(r=>r.Name=="Ogretmen").Id},
+                new IdentityUserRole<string>{UserId=users[15].Id,RoleId= roles.FirstOrDefault(r=>r.Name=="Ogretmen").Id},
+                new IdentityUserRole<string>{UserId=users[16].Id,RoleId= roles.FirstOrDefault(r=>r.Name=="Ogretmen").Id},
+                new IdentityUserRole<string>{UserId=users[17].Id,RoleId= roles.FirstOrDefault(r=>r.Name=="Ogretmen").Id},
+                new IdentityUserRole<string>{UserId=users[18].Id,RoleId= roles.FirstOrDefault(r=>r.Name=="Ogretmen").Id}
             };
             modelBuilder.Entity<IdentityUserRole<string>>().HasData(userRoles);
 
