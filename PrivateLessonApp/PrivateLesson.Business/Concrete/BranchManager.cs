@@ -32,9 +32,19 @@ namespace PrivateLesson.Business.Concrete
             return await _branchRepository.GetAllAsync();
         }
 
+        public async Task<List<Branch>> GetAllBranchesFullDataAsync(bool ApprovedStatus)
+        {
+            return await _branchRepository.GetAllBranchesFullDataAsync(ApprovedStatus);
+        }
+
         public async Task<List<Branch>> GetBranchesAsync(bool ApprovedStatus)
         {
             return await _branchRepository.GetBranchesAsync(ApprovedStatus);
+        }
+
+        public async Task<Branch> GetBranchFullDataAsync(int id)
+        {
+            return await _branchRepository.GetBranchFullDataAsync(id);
         }
 
         public async Task<string> GetBranchNameByUrlAsync(string url)

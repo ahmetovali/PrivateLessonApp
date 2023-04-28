@@ -11,6 +11,6 @@ namespace PrivateLesson.WebUI.Areas.Admin.Models.ViewModels
         public DateTime UpdatedDate { get; set; }
         public bool IsApproved { get; set; }
         public string Url { get; set; }
-        public List<TeacherBranch> TeacherBranches { get; set; }
+        public List<TeacherViewModel> Teachers { get; set; }
     }
 }

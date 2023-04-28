@@ -16,6 +16,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Areas/Admin/Views/Branches/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQnJhbmNoZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Areas/Admin/Views/Branches/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQnJhbmNoZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Areas/Admin/Views/Branches/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQnJhbmNoZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Areas/Admin/Views/Branches/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQnJhbmNoZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -20,11 +20,33 @@ namespace PrivateLesson.Data.Concrete.EfCore
             get { return _dbContext as PrivateLessonContext; }
         }
 
+        public async Task<List<Branch>> GetAllBranchesFullDataAsync(bool ApprovedStatus)
+        {
+            return await AppContext
+                 .Branches
+                 .Where(b => b.IsApproved == ApprovedStatus)
+                 .Include(s => s.TeacherBranches)
+                 .ThenInclude(s => s.Teacher)
+                 .ThenInclude(s => s.User)
+                 .ToListAsync();
+        }
+
         public async Task<List<Branch>> GetBranchesAsync(bool ApprovedStatus)
         {
             return await AppContext.Branches
                 .Where(c=>c.IsApproved== ApprovedStatus)
                 .ToListAsync();
+        }
+
+        public async Task<Branch> GetBranchFullDataAsync(int id)
+        {
+            return await AppContext
+               .Branches
+               .Where(b => b.Id == id)
+               .Include(t => t.TeacherBranches)
+               .ThenInclude(tb => tb.Teacher)
+               .ThenInclude(u => u.User)
+               .FirstOrDefaultAsync();
         }
 
         public async Task<string> GetBranchNameByUrlAsync(string url)

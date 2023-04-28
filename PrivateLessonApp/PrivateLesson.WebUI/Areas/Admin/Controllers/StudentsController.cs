@@ -194,6 +194,20 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
             }
             return RedirectToAction("Index");
         }
+        public async Task<IActionResult> UpdateIsApproved(int id, bool ApprovedStatus)
+        {
+            Student student = await _studentService.GetByIdAsync(id);
+            if (student != null)
+            {
+                student.IsApproved = !student.IsApproved;
+                _studentService.Update(student);
+            }
+            StudentListViewModel studentListViewModel = new StudentListViewModel()
+            {
+                ApprovedStatus = ApprovedStatus
+            };
+            return RedirectToAction("Index", studentListViewModel);
+        }
 
     }
 }

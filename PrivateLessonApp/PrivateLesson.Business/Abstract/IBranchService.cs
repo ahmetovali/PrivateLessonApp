@@ -16,5 +16,8 @@ namespace PrivateLesson.Business.Abstract
         void Delete(Branch branch);
         Task<List<Branch>> GetBranchesAsync(bool ApprovedStatus);
         Task<string> GetBranchNameByUrlAsync(string url);
+        Task<List<Branch>> GetAllBranchesFullDataAsync(bool ApprovedStatus);
+
+        Task<Branch> GetBranchFullDataAsync(int id);
     }
 }
