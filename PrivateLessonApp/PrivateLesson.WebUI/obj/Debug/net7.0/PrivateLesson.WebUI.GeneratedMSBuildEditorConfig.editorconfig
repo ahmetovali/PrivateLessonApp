@@ -36,6 +36,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Areas/Admin/Views/Roles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Areas/Admin/Views/Roles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9sZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Areas/Admin/Views/Roles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9sZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Areas/Admin/Views/Roles/RoleAssignment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9sZXNcUm9sZUFzc2lnbm1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Areas/Admin/Views/Shared/_DataTablesScriptsPartialView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9EYXRhVGFibGVzU2NyaXB0c1BhcnRpYWxWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -90,6 +106,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Areas/Admin/Views/Teachers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVhY2hlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Areas/Admin/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Areas/Admin/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Git/PrivateLesson/PrivateLessonApp/PrivateLessonApp/PrivateLesson.WebUI/Areas/Admin/Views/_ViewImports.cshtml]

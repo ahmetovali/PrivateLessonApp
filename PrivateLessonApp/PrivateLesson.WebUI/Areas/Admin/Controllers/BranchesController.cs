@@ -3,6 +3,7 @@ using PrivateLesson.WebUI.Areas.Admin.Models.ViewModels;
 using PrivateLesson.Business.Abstract;
 using PrivateLesson.Entity.Concrete;
 using Microsoft.AspNetCore.Authorization;
+using PrivateLesson.Core;
 
 namespace PrivateLesson.WebUI.Areas.Admin.Controllers
 {
@@ -45,6 +46,104 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
             branchListViewModel.Branches = branches;
 
             return View(branchListViewModel);
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            BranchAddViewModel branchAddViewModel = new BranchAddViewModel();
+            return View(branchAddViewModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(BranchViewModel branchViewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                Branch branch = new Branch
+                {
+                    BranchName = branchViewModel.BranchName,
+                    Description = branchViewModel.Description,
+                    CreatedDate = DateTime.Now,
+                    UpdatedDate = DateTime.Now,
+                    Url = Jobs.GetUrl(branchViewModel.BranchName),
+                    IsApproved = true
+                };
+                await _branchService.CreateAsync(branch);
+                return RedirectToAction("Index");
+            }
+            return View(branchViewModel);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            Branch branch = await _branchService.GetBranchFullDataAsync(id);
+            BranchUpdateViewModel branchUpdateViewModel = new BranchUpdateViewModel
+            {
+                Id = branch.Id,
+                BranchName = branch.BranchName,
+                Description = branch.Description,
+                UpdatedDate = branch.UpdatedDate,
+                Url = branch.Url,
+                IsApproved = branch.IsApproved
+            };
+            return View(branchUpdateViewModel);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Edit(BranchUpdateViewModel branchUpdateViewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                Branch branch = await _branchService.GetBranchFullDataAsync(branchUpdateViewModel.Id);
+                branch.BranchName = branchUpdateViewModel.BranchName;
+                branch.Description = branchUpdateViewModel.Description;
+                branch.UpdatedDate = DateTime.Now;
+                branch.Url = Jobs.GetUrl(branchUpdateViewModel.BranchName);
+                branch.IsApproved = branchUpdateViewModel.IsApproved;
+                _branchService.Update(branch);
+                return RedirectToAction("Index");
+            }
+            return View(branchUpdateViewModel);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            Branch deletedBranch = await _branchService.GetByIdAsync(id);
+            BranchViewModel branchViewModel = new BranchViewModel
+            {
+                Id = deletedBranch.Id,
+                BranchName = deletedBranch.BranchName,
+                Description = deletedBranch.Description
+            };
+            return View(branchViewModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(BranchViewModel branchViewModel)
+        {
+            Branch deletedBranch = await _branchService.GetBranchFullDataAsync(branchViewModel.Id);
+            if (deletedBranch != null)
+            {
+                _branchService.Delete(deletedBranch);
+            }
+            return RedirectToAction("Index");
+        }
+
+        public async Task<IActionResult> UpdateIsApproved(int id, bool ApprovedStatus)
+        {
+            Branch branch = await _branchService.GetByIdAsync(id);
+            if (branch != null)
+            {
+                branch.IsApproved = !branch.IsApproved;
+                _branchService.Update(branch);
+            }
+            BranchListViewModel branchListViewModel = new BranchListViewModel()
+            {
+                ApprovedStatus = ApprovedStatus
+            };
+            return RedirectToAction("Index", branchListViewModel);
         }
     }
 }
