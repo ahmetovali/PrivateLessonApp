@@ -16,9 +16,9 @@ namespace PrivateLesson.Data.Concrete.EfCore.Config
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
             builder.Property(x => x.CreatedDate).IsRequired();
-            builder.Property(x => x.UpdatedDate).IsRequired();
-            builder.Property(x => x.UserId);
+            builder.Property(x => x.UpdatedDate).IsRequired();            
             builder.Property(x => x.Graduation).IsRequired();
+            builder.HasOne(t => t.User).WithOne(t => t.Teacher).HasForeignKey<Teacher>(t => t.UserId).OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

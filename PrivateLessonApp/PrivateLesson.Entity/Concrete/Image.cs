@@ -1,4 +1,5 @@
 ﻿using PrivateLesson.Entity.Abstract;
+using PrivateLesson.Entity.Concrete.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,6 @@ namespace PrivateLesson.Entity.Concrete
         public DateTime UpdatedDate { get; set; }
         public bool IsApproved { get; set; }
         public string Url { get; set; }
+        
     }
 }

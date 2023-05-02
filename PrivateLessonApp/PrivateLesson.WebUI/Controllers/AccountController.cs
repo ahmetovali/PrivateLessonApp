@@ -87,6 +87,7 @@ namespace PrivateLesson.WebUI.Controllers
             return View(new LoginViewModel { ReturnUrl = returnUrl });
         }
 
+        [HttpPost]  
         public async Task<IActionResult> Login(LoginViewModel loginViewModel)
         {
             if (ModelState.IsValid)

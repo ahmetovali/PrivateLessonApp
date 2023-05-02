@@ -14,6 +14,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Config
         public void Configure(EntityTypeBuilder<TeacherStudent> builder)
         {
             builder.HasKey(ts => new { ts.TeacherId, ts.StudentId });
+            builder.HasOne(t => t.Teacher).WithMany(t => t.TeacherStudents).HasForeignKey(t => t.TeacherId).OnDelete(DeleteBehavior.Cascade);
+            builder.HasOne(t => t.Student).WithMany(t => t.TeacherStudents).HasForeignKey(t => t.StudentId).OnDelete(DeleteBehavior.Cascade);
             builder.HasData(
                 new TeacherStudent { TeacherId = 1, StudentId = 2 },
                 new TeacherStudent { TeacherId = 7, StudentId = 1 },

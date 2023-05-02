@@ -11,6 +11,7 @@ namespace PrivateLesson.Data.Abstract
     {
         Task<List<Student>> GetAllStudentsWithTeachersAsync(bool ApprovedStatus);
         Task<Student> GetStudentFullDataAsync(int id);
+        Task<List<Student>> GetStudentsByTeacher(int id);
     }
     
 }

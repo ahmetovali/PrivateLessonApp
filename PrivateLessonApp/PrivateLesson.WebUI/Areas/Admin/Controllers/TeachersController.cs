@@ -145,7 +145,7 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
                 UserName = teacher.User.UserName,
                 Email = teacher.User.Email,
                 Graduation = teacher.Graduation,
-                Image = teacher.Image,
+                Image = teacher.User.Image,
                 SelectedBranches = teacher.TeacherBranches.Select(tb => tb.Branch.Id).ToArray()
             };
             teacherUpdateViewModel.Branches = await _branchService.GetBranchesAsync(true);

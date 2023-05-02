@@ -11,8 +11,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<PrivateLessonContext>(options=>options.UseSqlite
 (builder.Configuration.GetConnectionString("SqliteConnection")));
 
@@ -40,11 +38,19 @@ builder.Services.AddScoped<IBranchService, BranchManager>();
 builder.Services.AddScoped<IImageService, ImageManager>();
 builder.Services.AddScoped<IStudentService, StudentManager>();
 builder.Services.AddScoped<ITeacherService, TeacherManager>();
+builder.Services.AddScoped<IOrderService, OrderManager>();
+builder.Services.AddScoped<ICartService, CartManager>();
+builder.Services.AddScoped<ICartItemService, CartItemManager>();
+
 
 builder.Services.AddScoped<IBranchRepository, EfCoreBranchRepository>();
 builder.Services.AddScoped<IImageRepository, EfCoreImageRepository>();
 builder.Services.AddScoped<IStudentRepository, EfCoreStudentRepository>();
 builder.Services.AddScoped<ITeacherRepository, EfCoreTeacherRepository>();
+builder.Services.AddScoped<IOrderRepository, EfCoreOrderRepository>();
+builder.Services.AddScoped<ICartRepository, EfCoreCartRepository>();
+builder.Services.AddScoped<ICartItemRepository, EfCoreCartItemRepository>();
+
 
 
 var app = builder.Build();
@@ -53,7 +59,6 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -63,6 +68,12 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "branches",
+    pattern: "teachers/{branchurl?}",
+    defaults: new { controller = "Home", action = "Index" }
+    );
 
 app.MapAreaControllerRoute(
     name: "Admin",

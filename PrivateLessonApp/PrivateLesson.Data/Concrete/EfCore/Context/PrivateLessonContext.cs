@@ -21,6 +21,10 @@ namespace PrivateLesson.Data.Concrete.EfCore.Context
         public DbSet<Student> Students { get; set; }
         public DbSet<Branch> Branches { get; set; }
         public DbSet<Image> Images { get; set; }
+        public DbSet<Cart> Carts { get; set; }
+        public DbSet<CartItem> CartItems { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<TeacherBranch> TeacherBranches { get; set; }
         public DbSet<TeacherStudent> TeacherStudents { get; set; }
 

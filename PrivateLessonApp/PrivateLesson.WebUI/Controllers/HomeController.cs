@@ -11,15 +11,18 @@ namespace PrivateLesson.WebUI.Controllers
     {
         private ITeacherService _teacherService;
         private IBranchService _branchService;
+        private IImageService _imageService;
 
-        public HomeController(ITeacherService teacherService, IBranchService branchService)
+        public HomeController(ITeacherService teacherService, IBranchService branchService, IImageService imageService)
         {
             _teacherService = teacherService;
             _branchService = branchService;
+            _imageService = imageService;
         }
 
         public async Task<IActionResult> Index(string branchurl)
         {
+            var images= await _imageService.GetAllAsync();
             List<Teacher> teachers = await _teacherService.GetAllTeachersFullDataAsync(true, branchurl);
             List<TeacherModel> teacherModelList = new List<TeacherModel>();
             teacherModelList = teachers.Select(t=> new TeacherModel 
@@ -33,7 +36,7 @@ namespace PrivateLesson.WebUI.Controllers
                 Url= t.Url,
                 Graduation= t.Graduation,
                 UserId = t.UserId,
-                Image= t.Image,
+                Image= t.User.Image,
                 TeacherBranches= t.TeacherBranches.Select(tb=> tb.Branch).ToList(),
                 TeacherStudents=t.TeacherStudents.Select(ts=>ts.Student).ToList()
             }).ToList();

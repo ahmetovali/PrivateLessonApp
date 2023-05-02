@@ -102,98 +102,98 @@ namespace PrivateLesson.Data.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "29d7ab6f-9b07-40a6-9d56-d3df22c4365d",
-                            RoleId = "31dc642c-b780-4cfd-a253-fa5bcdb2c574"
+                            UserId = "4f67603c-224f-43bc-a46c-c09a4ceb48a9",
+                            RoleId = "6b588377-b6bc-440d-813a-771eeaa79253"
                         },
                         new
                         {
-                            UserId = "28e85c10-3800-4a53-9961-96f4e1f4186c",
-                            RoleId = "80108e5d-aa70-42f2-ab65-c38208c28a8b"
+                            UserId = "aa91d4a0-9b30-4593-82a6-051048902a2f",
+                            RoleId = "4425cdbf-decb-42d2-a980-8f6a4fa1ca8c"
                         },
                         new
                         {
-                            UserId = "2e75a9a7-25d8-4521-91f7-27fd8c9919b6",
-                            RoleId = "80108e5d-aa70-42f2-ab65-c38208c28a8b"
+                            UserId = "a29e0df9-3eb3-4f66-92e2-a69168f61468",
+                            RoleId = "4425cdbf-decb-42d2-a980-8f6a4fa1ca8c"
                         },
                         new
                         {
-                            UserId = "3ca65c7c-ca6a-49d0-b00d-70b475e5979c",
-                            RoleId = "80108e5d-aa70-42f2-ab65-c38208c28a8b"
+                            UserId = "5323ca7a-13f4-4bb5-a0c4-69f51584b27a",
+                            RoleId = "4425cdbf-decb-42d2-a980-8f6a4fa1ca8c"
                         },
                         new
                         {
-                            UserId = "d15d36c0-f706-4323-aa37-74024adb3291",
-                            RoleId = "80108e5d-aa70-42f2-ab65-c38208c28a8b"
+                            UserId = "2b26e93b-fb65-4f91-a24d-5f2313f02b9d",
+                            RoleId = "4425cdbf-decb-42d2-a980-8f6a4fa1ca8c"
                         },
                         new
                         {
-                            UserId = "f3639403-467a-4c34-88bd-c855ca583925",
-                            RoleId = "80108e5d-aa70-42f2-ab65-c38208c28a8b"
+                            UserId = "9762298a-db23-4fce-a190-9ed853a2e0b5",
+                            RoleId = "4425cdbf-decb-42d2-a980-8f6a4fa1ca8c"
                         },
                         new
                         {
-                            UserId = "6b84c195-30c2-4e06-98cb-f6e5665264eb",
-                            RoleId = "80108e5d-aa70-42f2-ab65-c38208c28a8b"
+                            UserId = "9ddc724b-1543-4ce2-8edf-afa6d3239bb8",
+                            RoleId = "4425cdbf-decb-42d2-a980-8f6a4fa1ca8c"
                         },
                         new
                         {
-                            UserId = "a187f91d-c6b3-4041-aae2-dbba299ffc44",
-                            RoleId = "80108e5d-aa70-42f2-ab65-c38208c28a8b"
+                            UserId = "baa4d49a-b70e-40a9-a7d0-a3597f8c646a",
+                            RoleId = "4425cdbf-decb-42d2-a980-8f6a4fa1ca8c"
                         },
                         new
                         {
-                            UserId = "86af69bf-cc78-4264-870a-49137c75556c",
-                            RoleId = "80108e5d-aa70-42f2-ab65-c38208c28a8b"
+                            UserId = "c6ee570c-500d-4c78-a29d-44755ab605a6",
+                            RoleId = "4425cdbf-decb-42d2-a980-8f6a4fa1ca8c"
                         },
                         new
                         {
-                            UserId = "94c61502-2554-4b39-9bf1-f7854310337c",
-                            RoleId = "80108e5d-aa70-42f2-ab65-c38208c28a8b"
+                            UserId = "af88986c-281e-48b9-b4b9-f97942dc9a84",
+                            RoleId = "4425cdbf-decb-42d2-a980-8f6a4fa1ca8c"
                         },
                         new
                         {
-                            UserId = "66b89ddf-f1e2-4254-aad9-b6e5534bc1e6",
-                            RoleId = "80108e5d-aa70-42f2-ab65-c38208c28a8b"
+                            UserId = "6b5a3284-b71f-48a9-9631-3f2a4c117546",
+                            RoleId = "4425cdbf-decb-42d2-a980-8f6a4fa1ca8c"
                         },
                         new
                         {
-                            UserId = "89d7b0eb-69b6-4941-a414-4fd4df08456c",
-                            RoleId = "27049112-ce59-4d38-befd-91575888e8a5"
+                            UserId = "447de64b-34d7-49ff-8b33-1db3328938a7",
+                            RoleId = "cdd1d0c1-9b00-4de9-abe1-0158fd9f477f"
                         },
                         new
                         {
-                            UserId = "31e2943c-14c9-42d3-96a0-fd704a964c82",
-                            RoleId = "27049112-ce59-4d38-befd-91575888e8a5"
+                            UserId = "776eb689-ffc7-4715-80b6-9586009b7c3e",
+                            RoleId = "cdd1d0c1-9b00-4de9-abe1-0158fd9f477f"
                         },
                         new
                         {
-                            UserId = "4b3ccc9e-7a5e-4cf5-8955-e705047afdfe",
-                            RoleId = "27049112-ce59-4d38-befd-91575888e8a5"
+                            UserId = "ac276751-8f40-4d8c-928a-dbad034f6e98",
+                            RoleId = "cdd1d0c1-9b00-4de9-abe1-0158fd9f477f"
                         },
                         new
                         {
-                            UserId = "57252b05-f93d-4ff6-8f44-428f7575a032",
-                            RoleId = "27049112-ce59-4d38-befd-91575888e8a5"
+                            UserId = "1937b64a-9bc6-496f-8305-9e6879b3df5e",
+                            RoleId = "cdd1d0c1-9b00-4de9-abe1-0158fd9f477f"
                         },
                         new
                         {
-                            UserId = "4c9f733d-222e-4384-a9b0-b04e63e53280",
-                            RoleId = "27049112-ce59-4d38-befd-91575888e8a5"
+                            UserId = "28e67e95-fa20-451c-a9f0-583722d24200",
+                            RoleId = "cdd1d0c1-9b00-4de9-abe1-0158fd9f477f"
                         },
                         new
                         {
-                            UserId = "475f90ef-58eb-4859-82a8-6f0ae71eac16",
-                            RoleId = "27049112-ce59-4d38-befd-91575888e8a5"
+                            UserId = "59ede6e1-c871-40f1-aa50-640f86835ed2",
+                            RoleId = "cdd1d0c1-9b00-4de9-abe1-0158fd9f477f"
                         },
                         new
                         {
-                            UserId = "76ebe4bc-a654-4efc-8ec1-6eff31f247d9",
-                            RoleId = "27049112-ce59-4d38-befd-91575888e8a5"
+                            UserId = "9c4d427a-c0b1-4893-99e1-e50aad36fd56",
+                            RoleId = "cdd1d0c1-9b00-4de9-abe1-0158fd9f477f"
                         },
                         new
                         {
-                            UserId = "2f2c96bb-12de-40e1-9127-4b3617d0f4ad",
-                            RoleId = "27049112-ce59-4d38-befd-91575888e8a5"
+                            UserId = "2b19b395-3462-42ea-a0df-a0ae4b89ab0b",
+                            RoleId = "cdd1d0c1-9b00-4de9-abe1-0158fd9f477f"
                         });
                 });
 
@@ -250,122 +250,263 @@ namespace PrivateLesson.Data.Migrations
                         {
                             Id = 1,
                             BranchName = "Matamatik",
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4145),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8332),
                             Description = "Matematik Dersleri",
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4153),
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8336),
                             Url = "matematik"
                         },
                         new
                         {
                             Id = 2,
                             BranchName = "Fizik",
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4157),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8341),
                             Description = "Fizik Dersleri",
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4158),
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8342),
                             Url = "fizik"
                         },
                         new
                         {
                             Id = 3,
                             BranchName = "Kimya",
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4160),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8343),
                             Description = "Kimya Dersleri",
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4160),
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8344),
                             Url = "kimya"
                         },
                         new
                         {
                             Id = 4,
                             BranchName = "Biyoloji",
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4162),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8345),
                             Description = "Biyoloji Dersleri",
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4162),
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8346),
                             Url = "biyoloji"
                         },
                         new
                         {
                             Id = 5,
                             BranchName = "Tarih",
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4163),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8347),
                             Description = "Tarih Dersleri",
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4164),
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8348),
                             Url = "tarih"
                         },
                         new
                         {
                             Id = 6,
                             BranchName = "Coğrafya",
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4165),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8349),
                             Description = "Coğrafya Dersleri",
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4166),
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8350),
                             Url = "cografya"
                         },
                         new
                         {
                             Id = 7,
                             BranchName = "İngilizce",
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4167),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8351),
                             Description = "İngilizce Dersleri",
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4167),
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8351),
                             Url = "ingilizce"
                         },
                         new
                         {
                             Id = 8,
                             BranchName = "Almanca",
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4169),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8353),
                             Description = "Almanca Dersleri",
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4169),
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8353),
                             Url = "almanca"
                         },
                         new
                         {
                             Id = 9,
                             BranchName = "Fransızca",
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4170),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8355),
                             Description = "Fransızca Dersleri",
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4171),
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8355),
                             Url = "fransizca"
                         },
                         new
                         {
                             Id = 10,
                             BranchName = "Felsefe",
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4172),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8356),
                             Description = "Felsefe Dersleri",
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4172),
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8357),
                             Url = "felsefe"
                         },
                         new
                         {
                             Id = 11,
                             BranchName = "Müzik",
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4174),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8358),
                             Description = "Müzik Dersleri",
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4174),
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8359),
                             Url = "muzik"
                         },
                         new
                         {
                             Id = 12,
                             BranchName = "Resim",
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4176),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8360),
                             Description = "Resim Dersleri",
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(4176),
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 543, DateTimeKind.Local).AddTicks(8361),
                             Url = "resim"
                         });
+                });
+
+            modelBuilder.Entity("PrivateLesson.Entity.Concrete.Cart", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
+
+                    b.ToTable("Carts");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            UserId = "4f67603c-224f-43bc-a46c-c09a4ceb48a9"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            UserId = "aa91d4a0-9b30-4593-82a6-051048902a2f"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            UserId = "a29e0df9-3eb3-4f66-92e2-a69168f61468"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            UserId = "5323ca7a-13f4-4bb5-a0c4-69f51584b27a"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            UserId = "2b26e93b-fb65-4f91-a24d-5f2313f02b9d"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            UserId = "9762298a-db23-4fce-a190-9ed853a2e0b5"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            UserId = "9ddc724b-1543-4ce2-8edf-afa6d3239bb8"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            UserId = "baa4d49a-b70e-40a9-a7d0-a3597f8c646a"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            UserId = "c6ee570c-500d-4c78-a29d-44755ab605a6"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            UserId = "af88986c-281e-48b9-b4b9-f97942dc9a84"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            UserId = "6b5a3284-b71f-48a9-9631-3f2a4c117546"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            UserId = "447de64b-34d7-49ff-8b33-1db3328938a7"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            UserId = "776eb689-ffc7-4715-80b6-9586009b7c3e"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            UserId = "ac276751-8f40-4d8c-928a-dbad034f6e98"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            UserId = "1937b64a-9bc6-496f-8305-9e6879b3df5e"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            UserId = "28e67e95-fa20-451c-a9f0-583722d24200"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            UserId = "59ede6e1-c871-40f1-aa50-640f86835ed2"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            UserId = "9c4d427a-c0b1-4893-99e1-e50aad36fd56"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            UserId = "2b19b395-3462-42ea-a0df-a0ae4b89ab0b"
+                        });
+                });
+
+            modelBuilder.Entity("PrivateLesson.Entity.Concrete.CartItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Amount")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("CartId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<decimal?>("Price")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("TeacherId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CartId");
+
+                    b.HasIndex("TeacherId");
+
+                    b.ToTable("CartItems");
                 });
 
             modelBuilder.Entity("PrivateLesson.Entity.Concrete.Identity.Role", b =>
@@ -399,21 +540,21 @@ namespace PrivateLesson.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "31dc642c-b780-4cfd-a253-fa5bcdb2c574",
+                            Id = "6b588377-b6bc-440d-813a-771eeaa79253",
                             Description = "Yöneticiler",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "27049112-ce59-4d38-befd-91575888e8a5",
+                            Id = "cdd1d0c1-9b00-4de9-abe1-0158fd9f477f",
                             Description = "Öğretmenler",
                             Name = "Ogretmen",
                             NormalizedName = "OGRETMEN"
                         },
                         new
                         {
-                            Id = "80108e5d-aa70-42f2-ab65-c38208c28a8b",
+                            Id = "4425cdbf-decb-42d2-a980-8f6a4fa1ca8c",
                             Description = "Öğrenciler",
                             Name = "Ogrenci",
                             NormalizedName = "OGRENCI"
@@ -450,6 +591,9 @@ namespace PrivateLesson.Data.Migrations
 
                     b.Property<string>("Gender")
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("ImageId")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("LastName")
                         .HasColumnType("TEXT");
@@ -492,6 +636,8 @@ namespace PrivateLesson.Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ImageId");
+
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
 
@@ -504,440 +650,460 @@ namespace PrivateLesson.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "29d7ab6f-9b07-40a6-9d56-d3df22c4365d",
+                            Id = "4f67603c-224f-43bc-a46c-c09a4ceb48a9",
                             AccessFailedCount = 0,
                             City = "İstanbul",
-                            ConcurrencyStamp = "fdf7b513-ac36-4060-a56b-5cc3a49df7f9",
+                            ConcurrencyStamp = "79a01474-3c20-47fb-a28f-e6d81dcb153c",
                             DateOfBirth = new DateTime(1998, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "ahmetovali1903@gmail.com",
                             EmailConfirmed = true,
                             FirstName = "Ahmet",
                             Gender = "Erkek",
+                            ImageId = 5,
                             LastName = "Ovalı",
                             LockoutEnabled = false,
                             NormalizedEmail = "AHMETOVALI1903@GMAIL.COM",
                             NormalizedUserName = "AHMETOVALI",
-                            PasswordHash = "AQAAAAIAAYagAAAAECnZg6/idbLF5Np2jdxQWAvjZhBwgfxe0LdqVGu62sN1tdtCFMwFDCgaAzz5eiR0ZQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEG1LBTNOSG32ErUBP8VMYl6hZI7LpSeIo1zzLTaAO0mweMhvL/obpx7EsIGqq0wqoA==",
                             Phone = "5555555555",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "6591ff91-8bb9-4995-b74c-f8ddd20c5176",
+                            SecurityStamp = "b84771f0-fe16-444a-9271-a396582b8abc",
                             TwoFactorEnabled = false,
                             UserName = "ahmetovali"
                         },
                         new
                         {
-                            Id = "28e85c10-3800-4a53-9961-96f4e1f4186c",
+                            Id = "aa91d4a0-9b30-4593-82a6-051048902a2f",
                             AccessFailedCount = 0,
                             City = "Ankara",
-                            ConcurrencyStamp = "21555c75-8040-4d68-9e39-74fa93c1f208",
+                            ConcurrencyStamp = "49250853-23f2-414a-8aea-fbd0bc3a90e5",
                             DateOfBirth = new DateTime(1988, 3, 22, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "ahmet.yilmaz@example.com",
                             EmailConfirmed = true,
                             FirstName = "Ahmet",
                             Gender = "Erkek",
+                            ImageId = 5,
                             LastName = "Yılmaz",
                             LockoutEnabled = false,
                             NormalizedEmail = "AHMET.YILMAZ@EXAMPLE.COM",
                             NormalizedUserName = "AHMETYILMAZ",
-                            PasswordHash = "AQAAAAIAAYagAAAAEMmQXkbXi+8Qcu8d0+eUZw+bfCYmaBUvd9SWLowKll1CZaEJvb19ZFMNkw1W5PSQNw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEC3cMQgGBSxuwTwad0O8EBSHWvI9T9y0ZaYQQNFx20AGk4LNFHq02uO/eMALdfDB2A==",
                             Phone = "5551234567",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "9ad0f15b-9a62-4994-bedf-399e84ef3d24",
+                            SecurityStamp = "7b5aa0d0-48e5-4b35-aac8-965975ee7c28",
                             TwoFactorEnabled = false,
                             UserName = "ahmetyilmaz"
                         },
                         new
                         {
-                            Id = "2e75a9a7-25d8-4521-91f7-27fd8c9919b6",
+                            Id = "a29e0df9-3eb3-4f66-92e2-a69168f61468",
                             AccessFailedCount = 0,
                             City = "İzmir",
-                            ConcurrencyStamp = "e236fb2f-dcbe-42e5-8ae4-c024efb65190",
+                            ConcurrencyStamp = "1084754c-b822-40a1-961c-a92e0785b6f0",
                             DateOfBirth = new DateTime(1995, 5, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "selin.ozcan@example.com",
                             EmailConfirmed = true,
                             FirstName = "Selin",
                             Gender = "Kadın",
+                            ImageId = 5,
                             LastName = "Özcan",
                             LockoutEnabled = false,
                             NormalizedEmail = "SELIN.OZCAN@EXAMPLE.COM",
                             NormalizedUserName = "SELINOZCAN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEJmOalm/n+3su7c211U3W9/999WJnBl1JXfEffPThPK0QRNWuwN4DMcnRVevFxxkMA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEBw+6oYhqRzhE3Q1VlQYbJ0/iY7LsDRiPrzaLz/RGA+IOW1tQ+OEoYxIOBdNrAxGHA==",
                             Phone = "5559876543",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "aa1a3972-d661-4e5d-977b-dbfde966b673",
+                            SecurityStamp = "10cef4f0-0e54-4982-b0ec-cbaa3cf46710",
                             TwoFactorEnabled = false,
                             UserName = "selinozcan"
                         },
                         new
                         {
-                            Id = "3ca65c7c-ca6a-49d0-b00d-70b475e5979c",
+                            Id = "5323ca7a-13f4-4bb5-a0c4-69f51584b27a",
                             AccessFailedCount = 0,
                             City = "Antalya",
-                            ConcurrencyStamp = "ec213b02-ea46-463b-8778-986ac136a077",
+                            ConcurrencyStamp = "5107fb6d-bb23-4fd8-8970-9502f5a676cf",
                             DateOfBirth = new DateTime(1990, 11, 7, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "mehmet.kaya@example.com",
                             EmailConfirmed = true,
                             FirstName = "Mehmet",
                             Gender = "Erkek",
+                            ImageId = 5,
                             LastName = "Kaya",
                             LockoutEnabled = false,
                             NormalizedEmail = "MEHMET.KAYA@EXAMPLE.COM",
                             NormalizedUserName = "MEHMETKAYA",
-                            PasswordHash = "AQAAAAIAAYagAAAAEJr8XmO81vNScFkultyApXkFKSyxcKVcxa9vzIB+bBiaZoBQmsZtTjNYPqejA+QASw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEL4F0wlAPKqC2IkYd4OGwNNG99qNxU1scERFijYce3HSPaAZBO3JkZqlzW4s3rhjig==",
                             Phone = "5551112233",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "6b063368-4f00-4711-8bf7-5b5a7d0dd9b8",
+                            SecurityStamp = "6346c395-9233-49af-a948-134d21b6aec2",
                             TwoFactorEnabled = false,
                             UserName = "mehmetkaya"
                         },
                         new
                         {
-                            Id = "d15d36c0-f706-4323-aa37-74024adb3291",
+                            Id = "2b26e93b-fb65-4f91-a24d-5f2313f02b9d",
                             AccessFailedCount = 0,
                             City = "Bursa",
-                            ConcurrencyStamp = "8fb3baa5-8b9b-4a80-b6dc-7020a5c13779",
+                            ConcurrencyStamp = "2a6215cf-8074-442d-9aa3-c266b7c74d4b",
                             DateOfBirth = new DateTime(1998, 2, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "seda.dogan@example.com",
                             EmailConfirmed = true,
                             FirstName = "Seda",
                             Gender = "Kadın",
+                            ImageId = 5,
                             LastName = "Doğan",
                             LockoutEnabled = false,
                             NormalizedEmail = "SEDA.DOGAN@EXAMPLE.COM",
                             NormalizedUserName = "SEDADOGAN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEEjowSiyRdJO3aQUViS9/PgsqV3u1zAY6k1WR36SJL2wBG+YJOR5/pO8gE7T9vTV4w==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEHaF0c1SGU9c+wU24DNZv0PpvcqdCLiAR/p6UPeX6sMfY4LBG985yeNYhnC3TF07kw==",
                             Phone = "5554445566",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "6de90389-2ac4-4c12-9e77-45864b034962",
+                            SecurityStamp = "daec400e-f329-40fa-9e48-d2155bc367c3",
                             TwoFactorEnabled = false,
                             UserName = "sedadogan"
                         },
                         new
                         {
-                            Id = "f3639403-467a-4c34-88bd-c855ca583925",
+                            Id = "9762298a-db23-4fce-a190-9ed853a2e0b5",
                             AccessFailedCount = 0,
                             City = "İstanbul",
-                            ConcurrencyStamp = "673cddc9-abb3-4001-b2eb-4def20277844",
+                            ConcurrencyStamp = "d200d823-1908-47e2-8dd5-5bb3f6359c24",
                             DateOfBirth = new DateTime(1985, 9, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "murat.gunes@example.com",
                             EmailConfirmed = true,
                             FirstName = "Murat",
                             Gender = "Erkek",
+                            ImageId = 5,
                             LastName = "Güneş",
                             LockoutEnabled = false,
                             NormalizedEmail = "MURAT.GUNES@EXAMPLE.COM",
                             NormalizedUserName = "MURATGUNES",
-                            PasswordHash = "AQAAAAIAAYagAAAAEM+dRcl7jGUjyv7cWDNl/MDCrreoIWuLmF5YzxDkrh6AhjeKYZppZaz3SBdx1juD7Q==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEDGcgs85UPBrwPb4thmUEwO4CjMT30Skh4VfLWjcBB0xS/0gbpcoF23R7ietHSZv0A==",
                             Phone = "5558889999",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "e6f8a8d2-4b9c-4e1b-b27f-e9307b07504c",
+                            SecurityStamp = "47780a85-f16c-47b0-b403-d725dc0637d5",
                             TwoFactorEnabled = false,
                             UserName = "muratgunes"
                         },
                         new
                         {
-                            Id = "6b84c195-30c2-4e06-98cb-f6e5665264eb",
+                            Id = "9ddc724b-1543-4ce2-8edf-afa6d3239bb8",
                             AccessFailedCount = 0,
                             City = "Ankara",
-                            ConcurrencyStamp = "8db3f7ac-8504-4e29-ada9-552849df940a",
+                            ConcurrencyStamp = "a3afec62-7076-4b83-94e8-8b21c4f15281",
                             DateOfBirth = new DateTime(1991, 12, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "ayse.yildiz@example.com",
                             EmailConfirmed = true,
                             FirstName = "Ayşe",
                             Gender = "Kadın",
+                            ImageId = 5,
                             LastName = "Yıldız",
                             LockoutEnabled = false,
                             NormalizedEmail = "AYSE.YILDIZ@EXAMPLE.COM",
                             NormalizedUserName = "AYSEYILDIZ",
-                            PasswordHash = "AQAAAAIAAYagAAAAEEf8fveM7UAb8XNC5OYzHInw28sqOYE0NcnB6YIdhw2UITqAt1VM7+Aqdgi/K3ksuQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEG8BXeGSDeau2AZ+E0WGmOdRst/RFtT4u/pUXIYYHVGvi5r17mDPgKfP+65F0JHZ9g==",
                             Phone = "5553334444",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "f92dd67a-d88b-4d48-84c5-20ed1a5a3fef",
+                            SecurityStamp = "d66493ac-5bc6-4cea-822b-1003cd58d19b",
                             TwoFactorEnabled = false,
                             UserName = "ayseyildiz"
                         },
                         new
                         {
-                            Id = "a187f91d-c6b3-4041-aae2-dbba299ffc44",
+                            Id = "baa4d49a-b70e-40a9-a7d0-a3597f8c646a",
                             AccessFailedCount = 0,
                             City = "İzmir",
-                            ConcurrencyStamp = "a7e13458-daf3-4817-befb-b64b34f5a74f",
+                            ConcurrencyStamp = "20419a0d-3db8-460d-8177-333363e48bb7",
                             DateOfBirth = new DateTime(1980, 6, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "ercan.ozturk@example.com",
                             EmailConfirmed = true,
                             FirstName = "Ercan",
                             Gender = "Erkek",
+                            ImageId = 5,
                             LastName = "Öztürk",
                             LockoutEnabled = false,
                             NormalizedEmail = "ERCAN.OZTURK@EXAMPLE.COM",
                             NormalizedUserName = "ERCANOZTURK",
-                            PasswordHash = "AQAAAAIAAYagAAAAEGO2g+R6lp1haWli8MNP+GdOsjuM9RIUqkQB69NT109x+6+aCNrIOHQXB7HwmdGErA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEAmmmimXhOWhtDcJ/Aybo/IKzjSH2QD2AsK+bM8g8RqHj7rQTX/6RCyMXCH6EvSnDg==",
                             Phone = "5552223344",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "fefd629c-de62-45ee-a4b0-9ad5a989a16a",
+                            SecurityStamp = "5b46e1da-ba5e-44fd-a368-8a97a61be5d6",
                             TwoFactorEnabled = false,
                             UserName = "ercanozturk"
                         },
                         new
                         {
-                            Id = "86af69bf-cc78-4264-870a-49137c75556c",
+                            Id = "c6ee570c-500d-4c78-a29d-44755ab605a6",
                             AccessFailedCount = 0,
                             City = "Adana",
-                            ConcurrencyStamp = "581e4aa3-53ae-4a07-bfa0-ad38527d76a7",
+                            ConcurrencyStamp = "23cc5c80-bdf6-4c0e-bcaf-9c69262a125d",
                             DateOfBirth = new DateTime(1996, 4, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "ali.guler@example.com",
                             EmailConfirmed = true,
                             FirstName = "Ali",
                             Gender = "Erkek",
+                            ImageId = 5,
                             LastName = "Güler",
                             LockoutEnabled = false,
                             NormalizedEmail = "ALI.GULER@EXAMPLE.COM",
                             NormalizedUserName = "ALIGULER",
-                            PasswordHash = "AQAAAAIAAYagAAAAEFyIfPrifjEEeo/ZZkrAMvzyc27U4k8JN/v7i+E10cmKSW5tRlMd2ch2mp89El/yzA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFqQDkF6Siqg0yrmnwM42r977eGgeVIZk6Lgk6rk6oUO6Xlyp+MMD2znrrS2cOsWFg==",
                             Phone = "5557778899",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "25b21c5e-2e7a-49fb-84c6-eb3bb4625fbd",
+                            SecurityStamp = "35f68058-7573-43e6-91a4-9aebcb733bbe",
                             TwoFactorEnabled = false,
                             UserName = "aliguler"
                         },
                         new
                         {
-                            Id = "94c61502-2554-4b39-9bf1-f7854310337c",
+                            Id = "af88986c-281e-48b9-b4b9-f97942dc9a84",
                             AccessFailedCount = 0,
                             City = "İstanbul",
-                            ConcurrencyStamp = "7f16b922-ea00-4ee5-9487-4ac78e6b86c8",
+                            ConcurrencyStamp = "c2af6261-c091-4601-85af-e39ef4c64aee",
                             DateOfBirth = new DateTime(1992, 11, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "hatice.aydin@example.com",
                             EmailConfirmed = true,
                             FirstName = "Hatice",
                             Gender = "Kadın",
+                            ImageId = 5,
                             LastName = "Aydın",
                             LockoutEnabled = false,
                             NormalizedEmail = "HATICE.AYDIN@EXAMPLE.COM",
                             NormalizedUserName = "HATICEAYDIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAED6a2DVTjrH/Z91dLv/2kP6WrzuPismL0NoUxLZqgptQzI0MniDOUiQsaJw4jDLyog==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEAEqquqE9QldcHRYhQep3q5geaBWioMSKBZ/fhX7M3x8jbEFNHNL4v8/46Z/mLw5eg==",
                             Phone = "5551234567",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "f966768b-3b4a-475e-b658-81ee4c4a203b",
+                            SecurityStamp = "8885c1cf-7eea-4b2f-bc83-c0e6658b0b76",
                             TwoFactorEnabled = false,
                             UserName = "haticeaydin"
                         },
                         new
                         {
-                            Id = "66b89ddf-f1e2-4254-aad9-b6e5534bc1e6",
+                            Id = "6b5a3284-b71f-48a9-9631-3f2a4c117546",
                             AccessFailedCount = 0,
                             City = "Ankara",
-                            ConcurrencyStamp = "95e9fb11-c34c-4bae-b3e7-b95c3d61d65d",
+                            ConcurrencyStamp = "5a8e220e-645b-4208-ae2d-b2cacb87ffbe",
                             DateOfBirth = new DateTime(1987, 8, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "mert.kilic@example.com",
                             EmailConfirmed = true,
                             FirstName = "Mert",
                             Gender = "Erkek",
+                            ImageId = 5,
                             LastName = "Kılıç",
                             LockoutEnabled = false,
                             NormalizedEmail = "MERT.KILIC@EXAMPLE.COM",
                             NormalizedUserName = "MERTKILIC",
-                            PasswordHash = "AQAAAAIAAYagAAAAEDH3xhz5Z7m9sMwsesa+B9VnRjgE6O9+yAj8PsUuFKYcEAF2iAD7vzy3hseQ0+ADIg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEJdghufyd3/f3pSrNPfJCA7wwaXY5UyYz7L2smXYlW3Srsz8YHZsq+rRiLZFPY0Weg==",
                             Phone = "5551112233",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "efbdd84f-828c-4b15-af10-a2d8ee1b2ffc",
+                            SecurityStamp = "7e3ebafe-ea8b-421e-9011-69b899d530b0",
                             TwoFactorEnabled = false,
                             UserName = "mertkilic"
                         },
                         new
                         {
-                            Id = "89d7b0eb-69b6-4941-a414-4fd4df08456c",
+                            Id = "447de64b-34d7-49ff-8b33-1db3328938a7",
                             AccessFailedCount = 0,
                             City = "Bursa",
-                            ConcurrencyStamp = "ff17353c-b871-4cf4-8fc8-e263e2a39306",
+                            ConcurrencyStamp = "62fe2b00-cc73-4a91-af72-f21ad10b4b94",
                             DateOfBirth = new DateTime(1994, 1, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "asli.yilmaz@example.com",
                             EmailConfirmed = true,
                             FirstName = "Aslı",
                             Gender = "Kadın",
+                            ImageId = 5,
                             LastName = "Yılmaz",
                             LockoutEnabled = false,
                             NormalizedEmail = "ASLI.YILMAZ@EXAMPLE.COM",
                             NormalizedUserName = "ASLIYILMAZ",
-                            PasswordHash = "AQAAAAIAAYagAAAAENzUQO8RbLgC6FA0F+/nQcOgDn+3Nd2YjoyP2INxqY5Bxb1JHuyQZ4esFzmm7zNJ1A==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIqbkt97/PuxB+hrbJy2+14FILm7jRHesvUSekQ4N7sSbUZcWP0On5vIQ6cmHiB5aQ==",
                             Phone = "5555556677",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "144d0b59-851f-4c91-9e57-8120bb180bf7",
+                            SecurityStamp = "9ff10a86-0122-4b92-95b7-4ce03b9b41f7",
                             TwoFactorEnabled = false,
                             UserName = "asliyilmaz"
                         },
                         new
                         {
-                            Id = "31e2943c-14c9-42d3-96a0-fd704a964c82",
+                            Id = "776eb689-ffc7-4715-80b6-9586009b7c3e",
                             AccessFailedCount = 0,
                             City = "İzmir",
-                            ConcurrencyStamp = "c149299a-473b-44a0-b1d9-fdc1e85c6727",
+                            ConcurrencyStamp = "dcd9bd82-bc53-45d0-88b6-f0f14bd018f5",
                             DateOfBirth = new DateTime(1991, 5, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "emre.yildir@example.com",
                             EmailConfirmed = true,
                             FirstName = "Emre",
                             Gender = "Erkek",
+                            ImageId = 1,
                             LastName = "Yıldır",
                             LockoutEnabled = false,
                             NormalizedEmail = "EMRE.YILDIR@EXAMPLE.COM",
                             NormalizedUserName = "EMREYILDIR",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPvjgsuMsADoUxCnhSe31x3a+f0tyxzZ69zzBACxeu4902IHx5v++coWqSagKs1u9Q==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMNdPS6QNxw5wsjm9hlrmK/Wf1wxoTea02PClhQ/2Ya6jfAuPAnBNl27AFo2PLMDyA==",
                             Phone = "5558887744",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "f5d715f3-cc77-4ccb-b7ea-2612958bade1",
+                            SecurityStamp = "359c31e2-edc8-465b-9b49-0cf9b52601f0",
                             TwoFactorEnabled = false,
                             UserName = "emreyildir"
                         },
                         new
                         {
-                            Id = "4b3ccc9e-7a5e-4cf5-8955-e705047afdfe",
+                            Id = "ac276751-8f40-4d8c-928a-dbad034f6e98",
                             AccessFailedCount = 0,
                             City = "Antalya",
-                            ConcurrencyStamp = "47744209-81ad-4273-a8cc-02f6907c8ede",
+                            ConcurrencyStamp = "aaeb5b4f-7eb0-4a2a-a13e-6d4b86f3dff8",
                             DateOfBirth = new DateTime(1985, 12, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "ebru.ozturk@example.com",
                             EmailConfirmed = true,
                             FirstName = "Ebru",
                             Gender = "Kadın",
+                            ImageId = 2,
                             LastName = "Öztürk",
                             LockoutEnabled = false,
                             NormalizedEmail = "EBRU.OZTURK@EXAMPLE.COM",
                             NormalizedUserName = "EBRUOZTURK",
-                            PasswordHash = "AQAAAAIAAYagAAAAEEq81MHvJUxdBQazhmQVEbAIFvKsQIDRnhgLcghhAiErOB7xBQAIwkGJMeFRXddi1A==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEK91g5fHOdxMKKTfsP+BRcoCclL7GJl5Ps9oBg/f9cS+1X6aEvthaNbELOYWlJbYqw==",
                             Phone = "5552221133",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "40a6ac50-19d0-44b3-9910-6a9f209143dd",
+                            SecurityStamp = "18e47780-6f23-4a84-b84d-4ae61572625a",
                             TwoFactorEnabled = false,
                             UserName = "ebruozturk"
                         },
                         new
                         {
-                            Id = "57252b05-f93d-4ff6-8f44-428f7575a032",
+                            Id = "1937b64a-9bc6-496f-8305-9e6879b3df5e",
                             AccessFailedCount = 0,
                             City = "Ankara",
-                            ConcurrencyStamp = "8d3eff63-42ca-474b-9c7c-1d242dfa9c7c",
+                            ConcurrencyStamp = "5d0f6fe5-714c-4e56-8398-21d03f162f8f",
                             DateOfBirth = new DateTime(1999, 2, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "umut.celik@example.com",
                             EmailConfirmed = true,
                             FirstName = "Umut",
                             Gender = "Erkek",
+                            ImageId = 3,
                             LastName = "Çelik",
                             LockoutEnabled = false,
                             NormalizedEmail = "UMUT.CELIK@EXAMPLE.COM",
                             NormalizedUserName = "UMUTCELIK",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIvWv/8AxTBxdqy2BnUX0f7nbpbAkjF/vBi+wwHSfPKD2WpQf2JF3IYJhiYZbEArIA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEAsUDPyTUaRnZR1351fMKcthj2Q3BsfOZk5vRWzW5Hj/C29JyGBYyRz9AOeg8TleDw==",
                             Phone = "5552223344",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "534d5cc4-6e58-488a-ab2d-f5e0f08d1f21",
+                            SecurityStamp = "2ebf2478-b876-48d3-a7e4-a057d7f52617",
                             TwoFactorEnabled = false,
                             UserName = "umutcelik"
                         },
                         new
                         {
-                            Id = "4c9f733d-222e-4384-a9b0-b04e63e53280",
+                            Id = "28e67e95-fa20-451c-a9f0-583722d24200",
                             AccessFailedCount = 0,
                             City = "İstanbul",
-                            ConcurrencyStamp = "0f706797-80cd-4cc3-959d-3f5ab204e871",
+                            ConcurrencyStamp = "0d0c6d50-f073-40d4-8b4c-63aa6bfc087d",
                             DateOfBirth = new DateTime(1988, 7, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "aylin.demir@example.com",
                             EmailConfirmed = true,
                             FirstName = "Aylin",
                             Gender = "Kadın",
+                            ImageId = 4,
                             LastName = "Demir",
                             LockoutEnabled = false,
                             NormalizedEmail = "AYLIN.DEMIR@EXAMPLE.COM",
                             NormalizedUserName = "AYLINDEMIR",
-                            PasswordHash = "AQAAAAIAAYagAAAAEDbqctN6I4FncxJzV5BLXiKuDA0RDxpKuJ623SNQpPn7z510MAMm6Z92ZnYas6aVnQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELW+YJQZyeqw4ucIFXnex0tmyWClHl5BTbPEgByH0zeJBGXHfwSbp3DZjHDNoqDuIA==",
                             Phone = "5557779900",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "477aa8f5-26e3-4466-b020-b68b3728fdf0",
+                            SecurityStamp = "49c90e37-0557-49a5-9326-91a42fa1854a",
                             TwoFactorEnabled = false,
                             UserName = "aylindemir"
                         },
                         new
                         {
-                            Id = "475f90ef-58eb-4859-82a8-6f0ae71eac16",
+                            Id = "59ede6e1-c871-40f1-aa50-640f86835ed2",
                             AccessFailedCount = 0,
                             City = "İzmir",
-                            ConcurrencyStamp = "358ae5b7-cfd8-4c2d-9ec9-72d9b8e530b6",
+                            ConcurrencyStamp = "4818699b-8e86-4b22-bbf2-12b30d0a1f63",
                             DateOfBirth = new DateTime(1997, 12, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "murat.can@example.com",
                             EmailConfirmed = true,
                             FirstName = "Murat",
                             Gender = "Erkek",
+                            ImageId = 5,
                             LastName = "Can",
                             LockoutEnabled = false,
                             NormalizedEmail = "MURAT.CAN@EXAMPLE.COM",
                             NormalizedUserName = "MURATCAN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEJV5TNgXtO9OD76sA8bwdypsM6/j66GWxM4FYU5EtMx1RwZnlkf6nWvC21ubCznQpA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEC7Q0rg0iN8xtwtU+bD+4hMuGBr6UU/+K75hO+0ExNHbrOU6d28pk04t9lzuzzgAcA==",
                             Phone = "5556667788",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "11443373-6525-46b2-94e0-9b73acc521ce",
+                            SecurityStamp = "f73ddc86-3d6b-4d49-bf70-376b6c556326",
                             TwoFactorEnabled = false,
                             UserName = "muratcan"
                         },
                         new
                         {
-                            Id = "76ebe4bc-a654-4efc-8ec1-6eff31f247d9",
+                            Id = "9c4d427a-c0b1-4893-99e1-e50aad36fd56",
                             AccessFailedCount = 0,
                             City = "Ankara",
-                            ConcurrencyStamp = "84238209-3218-47de-8221-e4ec5aa4dba9",
+                            ConcurrencyStamp = "f205c7a6-f2ce-4570-ae93-766cbb83516e",
                             DateOfBirth = new DateTime(1994, 3, 27, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "elif.akyildiz@example.com",
                             EmailConfirmed = true,
                             FirstName = "Elif",
                             Gender = "Kadın",
+                            ImageId = 5,
                             LastName = "Akyıldız",
                             LockoutEnabled = false,
                             NormalizedEmail = "ELIF.AKYILDIZ@EXAMPLE.COM",
                             NormalizedUserName = "ELIFAKYILDIZ",
-                            PasswordHash = "AQAAAAIAAYagAAAAEJFk44nASTtREdE5DkSpRAnWtEAxHzPHGJW9/8PCMWSmxo2UwtmkTUn7v7ZYq/OxWw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEA92S1U161kzqB1r1hk08+L10+EAkBHR8r7IMQyISxnqcydfMxNE05Uff4KrwiVMwA==",
                             Phone = "5558887766",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "4077a8a8-0f62-4b57-b26c-c6f819412159",
+                            SecurityStamp = "1821cccf-c921-4dca-a68e-479c1bff8b42",
                             TwoFactorEnabled = false,
                             UserName = "elifakyildiz"
                         },
                         new
                         {
-                            Id = "2f2c96bb-12de-40e1-9127-4b3617d0f4ad",
+                            Id = "2b19b395-3462-42ea-a0df-a0ae4b89ab0b",
                             AccessFailedCount = 0,
                             City = "İstanbul",
-                            ConcurrencyStamp = "544fc094-edb0-4869-96d3-5d8e134877a8",
+                            ConcurrencyStamp = "89509709-61fa-42c8-a6bc-1060a3dac4f0",
                             DateOfBirth = new DateTime(1992, 11, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "goksu.demir@example.com",
                             EmailConfirmed = true,
                             FirstName = "Göksu",
                             Gender = "Kadın",
+                            ImageId = 5,
                             LastName = "Demir",
                             LockoutEnabled = false,
                             NormalizedEmail = "GOKSU.DEMIR@EXAMPLE.COM",
                             NormalizedUserName = "GOKSUDEMIR",
-                            PasswordHash = "AQAAAAIAAYagAAAAEDtmbskNPUKQwwwVQfS7wKb8V2T5fTSiEfr7E7IjnqEluuopN+YTQLBUx3s4e1bzeQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEO6a2av+1N+CLpB8NNRbDtVJP0Y5HPTC2S9AAKfkA3Rn07T2SOMp9hGAds8hPc/7pA==",
                             Phone = "5554443322",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "154f09f9-3d96-4426-b14e-35b633b53994",
+                            SecurityStamp = "b36d0e22-0602-4be8-a206-502fe3c8430d",
                             TwoFactorEnabled = false,
                             UserName = "goksudemir"
                         },
                         new
                         {
-                            Id = "89415615-faeb-4a23-ba99-76f1099866d7",
+                            Id = "c460bb67-ff96-462a-88bb-67fdde388e51",
                             AccessFailedCount = 0,
                             City = "Ankara",
-                            ConcurrencyStamp = "1b888ff3-b044-43ac-8036-ae45a4e6f24f",
+                            ConcurrencyStamp = "1c0c58fc-0b3b-4a4a-85eb-dc94cebd47d5",
                             DateOfBirth = new DateTime(1985, 5, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "emre.yildiz@example.com",
                             EmailConfirmed = true,
                             FirstName = "Emre",
                             Gender = "Erkek",
+                            ImageId = 5,
                             LastName = "Yıldız",
                             LockoutEnabled = false,
                             NormalizedEmail = "EMRE.YILDIZ@EXAMPLE.COM",
                             NormalizedUserName = "EMREYILDIZ",
                             Phone = "5301234567",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "f18e5856-6b9d-4764-8022-4e55027ce78a",
+                            SecurityStamp = "7aa96fee-e4b7-4347-978e-a700687cceaa",
                             TwoFactorEnabled = false,
                             UserName = "emreyildiz"
                         });
@@ -969,43 +1135,117 @@ namespace PrivateLesson.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(6290),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 544, DateTimeKind.Local).AddTicks(6514),
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(6292),
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 544, DateTimeKind.Local).AddTicks(6516),
                             Url = "1.jpg"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(6294),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 544, DateTimeKind.Local).AddTicks(6518),
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(6294),
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 544, DateTimeKind.Local).AddTicks(6518),
                             Url = "2.jpg"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(6296),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 544, DateTimeKind.Local).AddTicks(6520),
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(6296),
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 544, DateTimeKind.Local).AddTicks(6520),
                             Url = "3.jpg"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(6297),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 544, DateTimeKind.Local).AddTicks(6521),
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(6298),
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 544, DateTimeKind.Local).AddTicks(6522),
                             Url = "4.jpg"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(6299),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 544, DateTimeKind.Local).AddTicks(6523),
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 15, 763, DateTimeKind.Local).AddTicks(6299),
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 11, 544, DateTimeKind.Local).AddTicks(6523),
                             Url = "5.jpg"
                         });
+                });
+
+            modelBuilder.Entity("PrivateLesson.Entity.Concrete.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Address")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("City")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("NormalizedName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("OrderState")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("OrderType")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Phone")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("PrivateLesson.Entity.Concrete.OrderItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Amount")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<decimal?>("Price")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("TeacherId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("TeacherId");
+
+                    b.ToTable("OrderItems");
                 });
 
             modelBuilder.Entity("PrivateLesson.Entity.Concrete.Student", b =>
@@ -1017,7 +1257,7 @@ namespace PrivateLesson.Data.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("ImageId")
+                    b.Property<int?>("ImageId")
                         .HasColumnType("INTEGER");
 
                     b.Property<bool>("IsApproved")
@@ -1030,14 +1270,14 @@ namespace PrivateLesson.Data.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("UserId")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ImageId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UserId")
+                        .IsUnique();
 
                     b.ToTable("Students");
 
@@ -1045,92 +1285,82 @@ namespace PrivateLesson.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 908, DateTimeKind.Local).AddTicks(9811),
-                            ImageId = 5,
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3362),
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 908, DateTimeKind.Local).AddTicks(9830),
-                            UserId = "28e85c10-3800-4a53-9961-96f4e1f4186c"
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3378),
+                            UserId = "aa91d4a0-9b30-4593-82a6-051048902a2f"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 908, DateTimeKind.Local).AddTicks(9852),
-                            ImageId = 5,
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3391),
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 908, DateTimeKind.Local).AddTicks(9853),
-                            UserId = "2e75a9a7-25d8-4521-91f7-27fd8c9919b6"
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3392),
+                            UserId = "a29e0df9-3eb3-4f66-92e2-a69168f61468"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 908, DateTimeKind.Local).AddTicks(9858),
-                            ImageId = 5,
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3440),
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 908, DateTimeKind.Local).AddTicks(9859),
-                            UserId = "3ca65c7c-ca6a-49d0-b00d-70b475e5979c"
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3441),
+                            UserId = "5323ca7a-13f4-4bb5-a0c4-69f51584b27a"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 908, DateTimeKind.Local).AddTicks(9863),
-                            ImageId = 5,
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3443),
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 908, DateTimeKind.Local).AddTicks(9864),
-                            UserId = "d15d36c0-f706-4323-aa37-74024adb3291"
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3444),
+                            UserId = "2b26e93b-fb65-4f91-a24d-5f2313f02b9d"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 908, DateTimeKind.Local).AddTicks(9869),
-                            ImageId = 5,
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3445),
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 908, DateTimeKind.Local).AddTicks(9871),
-                            UserId = "f3639403-467a-4c34-88bd-c855ca583925"
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3446),
+                            UserId = "9762298a-db23-4fce-a190-9ed853a2e0b5"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 908, DateTimeKind.Local).AddTicks(9875),
-                            ImageId = 5,
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3449),
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 908, DateTimeKind.Local).AddTicks(9877),
-                            UserId = "6b84c195-30c2-4e06-98cb-f6e5665264eb"
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3449),
+                            UserId = "9ddc724b-1543-4ce2-8edf-afa6d3239bb8"
                         },
                         new
                         {
                             Id = 7,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 908, DateTimeKind.Local).AddTicks(9880),
-                            ImageId = 5,
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3452),
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 908, DateTimeKind.Local).AddTicks(9881),
-                            UserId = "a187f91d-c6b3-4041-aae2-dbba299ffc44"
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3452),
+                            UserId = "baa4d49a-b70e-40a9-a7d0-a3597f8c646a"
                         },
                         new
                         {
                             Id = 8,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 908, DateTimeKind.Local).AddTicks(9885),
-                            ImageId = 5,
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3454),
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 908, DateTimeKind.Local).AddTicks(9886),
-                            UserId = "86af69bf-cc78-4264-870a-49137c75556c"
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3455),
+                            UserId = "c6ee570c-500d-4c78-a29d-44755ab605a6"
                         },
                         new
                         {
                             Id = 9,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 908, DateTimeKind.Local).AddTicks(9889),
-                            ImageId = 5,
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3457),
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 908, DateTimeKind.Local).AddTicks(9890),
-                            UserId = "94c61502-2554-4b39-9bf1-f7854310337c"
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3458),
+                            UserId = "af88986c-281e-48b9-b4b9-f97942dc9a84"
                         },
                         new
                         {
                             Id = 10,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 908, DateTimeKind.Local).AddTicks(9896),
-                            ImageId = 5,
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3460),
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 908, DateTimeKind.Local).AddTicks(9897),
-                            UserId = "66b89ddf-f1e2-4254-aad9-b6e5534bc1e6"
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3460),
+                            UserId = "6b5a3284-b71f-48a9-9631-3f2a4c117546"
                         });
                 });
 
@@ -1147,7 +1377,7 @@ namespace PrivateLesson.Data.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("ImageId")
+                    b.Property<int?>("ImageId")
                         .HasColumnType("INTEGER");
 
                     b.Property<bool>("IsApproved")
@@ -1166,7 +1396,8 @@ namespace PrivateLesson.Data.Migrations
 
                     b.HasIndex("ImageId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UserId")
+                        .IsUnique();
 
                     b.ToTable("Teachers");
 
@@ -1174,82 +1405,74 @@ namespace PrivateLesson.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 909, DateTimeKind.Local).AddTicks(5),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3516),
                             Graduation = "Kırıkkale Üniversitesi",
-                            ImageId = 1,
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 909, DateTimeKind.Local).AddTicks(7),
-                            UserId = "89d7b0eb-69b6-4941-a414-4fd4df08456c"
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3517),
+                            UserId = "447de64b-34d7-49ff-8b33-1db3328938a7"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 909, DateTimeKind.Local).AddTicks(36),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3526),
                             Graduation = "Orta Doğu Teknik Üniversitesi",
-                            ImageId = 2,
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 909, DateTimeKind.Local).AddTicks(38),
-                            UserId = "31e2943c-14c9-42d3-96a0-fd704a964c82"
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3527),
+                            UserId = "776eb689-ffc7-4715-80b6-9586009b7c3e"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 909, DateTimeKind.Local).AddTicks(42),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3529),
                             Graduation = "İstanbul Teknik Üniversitesi",
-                            ImageId = 3,
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 909, DateTimeKind.Local).AddTicks(43),
-                            UserId = "4b3ccc9e-7a5e-4cf5-8955-e705047afdfe"
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3529),
+                            UserId = "ac276751-8f40-4d8c-928a-dbad034f6e98"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 909, DateTimeKind.Local).AddTicks(47),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3531),
                             Graduation = "Yıldız Teknik Üniversitesi",
-                            ImageId = 4,
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 909, DateTimeKind.Local).AddTicks(48),
-                            UserId = "57252b05-f93d-4ff6-8f44-428f7575a032"
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3532),
+                            UserId = "1937b64a-9bc6-496f-8305-9e6879b3df5e"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 909, DateTimeKind.Local).AddTicks(52),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3534),
                             Graduation = "Akdeniz Üniversitesi",
-                            ImageId = 5,
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 909, DateTimeKind.Local).AddTicks(53),
-                            UserId = "4c9f733d-222e-4384-a9b0-b04e63e53280"
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3535),
+                            UserId = "28e67e95-fa20-451c-a9f0-583722d24200"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 909, DateTimeKind.Local).AddTicks(59),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3538),
                             Graduation = "Erciyes Üniversitesi",
-                            ImageId = 5,
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 909, DateTimeKind.Local).AddTicks(60),
-                            UserId = "475f90ef-58eb-4859-82a8-6f0ae71eac16"
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3539),
+                            UserId = "59ede6e1-c871-40f1-aa50-640f86835ed2"
                         },
                         new
                         {
                             Id = 7,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 909, DateTimeKind.Local).AddTicks(64),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3540),
                             Graduation = "Çukurova Üniversitesi",
-                            ImageId = 5,
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 909, DateTimeKind.Local).AddTicks(65),
-                            UserId = "76ebe4bc-a654-4efc-8ec1-6eff31f247d9"
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3541),
+                            UserId = "9c4d427a-c0b1-4893-99e1-e50aad36fd56"
                         },
                         new
                         {
                             Id = 8,
-                            CreatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 909, DateTimeKind.Local).AddTicks(69),
+                            CreatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3543),
                             Graduation = "Uludağ Üniversitesi",
-                            ImageId = 5,
                             IsApproved = true,
-                            UpdatedDate = new DateTime(2023, 4, 28, 16, 19, 13, 909, DateTimeKind.Local).AddTicks(70),
-                            UserId = "2f2c96bb-12de-40e1-9127-4b3617d0f4ad"
+                            UpdatedDate = new DateTime(2023, 5, 1, 18, 20, 9, 668, DateTimeKind.Local).AddTicks(3543),
+                            UserId = "2b19b395-3462-42ea-a0df-a0ae4b89ab0b"
                         });
                 });
 
@@ -1423,7 +1646,36 @@ namespace PrivateLesson.Data.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("PrivateLesson.Entity.Concrete.Student", b =>
+            modelBuilder.Entity("PrivateLesson.Entity.Concrete.Cart", b =>
+                {
+                    b.HasOne("PrivateLesson.Entity.Concrete.Identity.User", "User")
+                        .WithOne("Cart")
+                        .HasForeignKey("PrivateLesson.Entity.Concrete.Cart", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("PrivateLesson.Entity.Concrete.CartItem", b =>
+                {
+                    b.HasOne("PrivateLesson.Entity.Concrete.Cart", "Cart")
+                        .WithMany("CartItems")
+                        .HasForeignKey("CartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("PrivateLesson.Entity.Concrete.Teacher", "Teacher")
+                        .WithMany()
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cart");
+
+                    b.Navigation("Teacher");
+                });
+
+            modelBuilder.Entity("PrivateLesson.Entity.Concrete.Identity.User", b =>
                 {
                     b.HasOne("PrivateLesson.Entity.Concrete.Image", "Image")
                         .WithMany()
@@ -1431,11 +1683,48 @@ namespace PrivateLesson.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("Image");
+                });
+
+            modelBuilder.Entity("PrivateLesson.Entity.Concrete.Order", b =>
+                {
                     b.HasOne("PrivateLesson.Entity.Concrete.Identity.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
+                        .WithOne("Order")
+                        .HasForeignKey("PrivateLesson.Entity.Concrete.Order", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("PrivateLesson.Entity.Concrete.OrderItem", b =>
+                {
+                    b.HasOne("PrivateLesson.Entity.Concrete.Order", "Order")
+                        .WithMany("OrderItems")
+                        .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("PrivateLesson.Entity.Concrete.Teacher", "Teacher")
+                        .WithMany()
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+
+                    b.Navigation("Teacher");
+                });
+
+            modelBuilder.Entity("PrivateLesson.Entity.Concrete.Student", b =>
+                {
+                    b.HasOne("PrivateLesson.Entity.Concrete.Image", "Image")
+                        .WithMany()
+                        .HasForeignKey("ImageId");
+
+                    b.HasOne("PrivateLesson.Entity.Concrete.Identity.User", "User")
+                        .WithOne("Student")
+                        .HasForeignKey("PrivateLesson.Entity.Concrete.Student", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.Navigation("Image");
 
@@ -1446,13 +1735,12 @@ namespace PrivateLesson.Data.Migrations
                 {
                     b.HasOne("PrivateLesson.Entity.Concrete.Image", "Image")
                         .WithMany()
-                        .HasForeignKey("ImageId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ImageId");
 
                     b.HasOne("PrivateLesson.Entity.Concrete.Identity.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId");
+                        .WithOne("Teacher")
+                        .HasForeignKey("PrivateLesson.Entity.Concrete.Teacher", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.Navigation("Image");
 
@@ -1500,6 +1788,27 @@ namespace PrivateLesson.Data.Migrations
             modelBuilder.Entity("PrivateLesson.Entity.Concrete.Branch", b =>
                 {
                     b.Navigation("TeacherBranches");
+                });
+
+            modelBuilder.Entity("PrivateLesson.Entity.Concrete.Cart", b =>
+                {
+                    b.Navigation("CartItems");
+                });
+
+            modelBuilder.Entity("PrivateLesson.Entity.Concrete.Identity.User", b =>
+                {
+                    b.Navigation("Cart");
+
+                    b.Navigation("Order");
+
+                    b.Navigation("Student");
+
+                    b.Navigation("Teacher");
+                });
+
+            modelBuilder.Entity("PrivateLesson.Entity.Concrete.Order", b =>
+                {
+                    b.Navigation("OrderItems");
                 });
 
             modelBuilder.Entity("PrivateLesson.Entity.Concrete.Student", b =>

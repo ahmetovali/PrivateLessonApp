@@ -16,5 +16,11 @@ namespace PrivateLesson.Entity.Concrete.Identity
         public DateTime? DateOfBirth { get; set; }
         public string City { get; set; }
         public string Phone { get; set; }
+        public Teacher? Teacher { get; set; }
+        public Student? Student { get; set; }
+        public Cart Cart { get; set; }
+        public Order? Order { get; set; }
+        public int ImageId { get; set; }
+        public Image Image { get; set; }
     }
 }

@@ -47,6 +47,10 @@ namespace PrivateLesson.Business.Concrete
         {
             return await _studentRepository.GetStudentFullDataAsync(id);
         }
+        public async Task<List<Student>> GetStudentsByTeacher(int id)
+        {
+            return await _studentRepository.GetStudentsByTeacher(id);
+        }
 
         public void Update(Student student)
         {

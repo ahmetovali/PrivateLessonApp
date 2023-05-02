@@ -69,7 +69,7 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                User user = await _userManager.FindByEmailAsync(userUpdateViewModel.Id);
+                User user = await _userManager.FindByIdAsync(userUpdateViewModel.Id);
                 if (user == null) { return NotFound();}
                 user.FirstName = userUpdateViewModel.FirstName;
                 user.LastName = userUpdateViewModel.LastName;
@@ -95,6 +95,14 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
                 Description = r.Description
             }).ToList();
             return View(userUpdateViewModel);
+        }
+
+        public async Task<IActionResult> Delete(string id)
+        {
+            User user = await _userManager.FindByIdAsync(id);
+            if (user == null) { return NotFound(); };
+            await _userManager.DeleteAsync(user);
+            return Redirect("/admin/Users");
         }
         public async Task<IActionResult> ConfirmEmail(string id)
         {

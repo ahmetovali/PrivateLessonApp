@@ -41,7 +41,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     DateOfBirth=new DateTime(1998,5,15),
                     City="İstanbul",
                     Phone = "5555555555",
-                    EmailConfirmed=true
+                    EmailConfirmed=true,
+                    ImageId = 5
                 },
 
                 //Students
@@ -56,7 +57,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     DateOfBirth = new DateTime(1988, 3, 22),
                     City = "Ankara",
                     Phone = "5551234567",
-                    EmailConfirmed = true
+                    EmailConfirmed = true,
+                    ImageId = 5
                 },
 
                 new User {
@@ -70,7 +72,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     DateOfBirth = new DateTime(1995, 5, 12),
                     City = "İzmir",
                     Phone = "5559876543",
-                    EmailConfirmed = true
+                    EmailConfirmed = true,
+                    ImageId = 5
                 },
                 new User {
                     FirstName = "Mehmet",
@@ -83,7 +86,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     DateOfBirth = new DateTime(1990, 11, 7),
                     City = "Antalya",
                     Phone = "5551112233",
-                    EmailConfirmed = true
+                    EmailConfirmed = true,
+                    ImageId = 5
                 },
                 new User {
                     FirstName = "Seda",
@@ -96,7 +100,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     DateOfBirth = new DateTime(1998, 2, 25),
                     City = "Bursa",
                     Phone = "5554445566",
-                    EmailConfirmed = true
+                    EmailConfirmed = true,
+                    ImageId = 5
                 },
                 new User {
                     FirstName = "Murat",
@@ -109,7 +114,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     DateOfBirth = new DateTime(1985, 9, 3),
                     City = "İstanbul",
                     Phone = "5558889999",
-                    EmailConfirmed = true
+                    EmailConfirmed = true,
+                    ImageId = 5
                 },
                 new User {
                     FirstName = "Ayşe",
@@ -122,7 +128,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     DateOfBirth = new DateTime(1991, 12, 15),
                     City = "Ankara",
                     Phone = "5553334444",
-                    EmailConfirmed = true
+                    EmailConfirmed = true,
+                    ImageId = 5
                 },
                 new User {
                     FirstName = "Ercan",
@@ -135,7 +142,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     DateOfBirth = new DateTime(1980, 6, 8),
                     City = "İzmir",
                     Phone = "5552223344",
-                    EmailConfirmed = true
+                    EmailConfirmed = true,
+                    ImageId = 5
                 },
 
                 new User {
@@ -149,7 +157,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     DateOfBirth = new DateTime(1996, 4, 10),
                     City = "Adana",
                     Phone = "5557778899",
-                    EmailConfirmed = true
+                    EmailConfirmed = true,
+                    ImageId = 5
                 },
                 new User {
                     FirstName = "Hatice",
@@ -162,7 +171,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     DateOfBirth = new DateTime(1992, 11, 21),
                     City = "İstanbul",
                     Phone = "5551234567",
-                    EmailConfirmed = true
+                    EmailConfirmed = true, 
+                    ImageId = 5
                 },
                 new User {
                     FirstName = "Mert",
@@ -175,7 +185,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     DateOfBirth = new DateTime(1987, 8, 5),
                     City = "Ankara",
                     Phone = "5551112233",
-                    EmailConfirmed = true
+                    EmailConfirmed = true,
+                    ImageId = 5
                 },
                 new User {
                     FirstName = "Aslı",
@@ -188,7 +199,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     DateOfBirth = new DateTime(1994, 1, 28),
                     City = "Bursa",
                     Phone = "5555556677",
-                    EmailConfirmed = true
+                    EmailConfirmed = true,
+                    ImageId = 5
                 },
 
                 //Teachers
@@ -203,7 +215,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                         DateOfBirth = new DateTime(1991, 5, 17),
                         City = "İzmir",
                         Phone = "5558887744",
-                        EmailConfirmed = true
+                        EmailConfirmed = true,
+                        ImageId=1
                     },
                     new User {
                         FirstName = "Ebru",
@@ -216,7 +229,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                         DateOfBirth = new DateTime(1985, 12, 3),
                         City = "Antalya",
                         Phone = "5552221133",
-                        EmailConfirmed = true
+                        EmailConfirmed = true,
+                        ImageId=2
                     },
                     new User {
                         FirstName = "Umut",
@@ -229,7 +243,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                         DateOfBirth = new DateTime(1999, 2, 14),
                         City = "Ankara",
                         Phone = "5552223344",
-                        EmailConfirmed = true
+                        EmailConfirmed = true,
+                        ImageId=3
                     },
                     new User {
                         FirstName = "Aylin",
@@ -242,7 +257,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                         DateOfBirth = new DateTime(1988, 7, 8),
                         City = "İstanbul",
                         Phone = "5557779900",
-                        EmailConfirmed = true
+                        EmailConfirmed = true,
+                        ImageId=4
                     },
                     new User {
                         FirstName = "Murat",
@@ -255,7 +271,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                         DateOfBirth = new DateTime(1997, 12, 20),
                         City = "İzmir",
                         Phone = "5556667788",
-                        EmailConfirmed = true
+                        EmailConfirmed = true,
+                        ImageId=5
                     },
                     new User {
                         FirstName = "Elif",
@@ -268,7 +285,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                         DateOfBirth = new DateTime(1994, 3, 27),
                         City = "Ankara",
                         Phone = "5558887766",
-                        EmailConfirmed = true
+                        EmailConfirmed = true,
+                        ImageId=5
                     },
                     new User {
                         FirstName = "Göksu",
@@ -281,7 +299,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                         DateOfBirth = new DateTime(1992, 11, 29),
                         City = "İstanbul",
                         Phone = "5554443322",
-                        EmailConfirmed = true
+                        EmailConfirmed = true,
+                        ImageId=5
                     },
                     new User {
                         FirstName = "Emre",
@@ -294,7 +313,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                         DateOfBirth = new DateTime(1985, 5, 17),
                         City = "Ankara",
                         Phone = "5301234567",
-                        EmailConfirmed = true
+                        EmailConfirmed = true,
+                        ImageId=5
                     }
             };
             modelBuilder.Entity<User>().HasData(users);
@@ -308,7 +328,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                 CreatedDate = DateTime.Now,
                 UpdatedDate = DateTime.Now,
                 IsApproved = true,
-                ImageId = 5,
                 UserId = users[1].Id
                 },
                  new Student
@@ -316,8 +335,7 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     Id = 2,
                     CreatedDate = DateTime.Now,
                     UpdatedDate = DateTime.Now,
-                    IsApproved = true,
-                    ImageId = 5,
+                    IsApproved = true,                   
                     UserId=users[2].Id
                 },
                 new Student
@@ -326,7 +344,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     CreatedDate = DateTime.Now,
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
-                    ImageId = 5,
                     UserId=users[3].Id
                 },
                 new Student
@@ -335,7 +352,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     CreatedDate = DateTime.Now,
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
-                    ImageId = 5,
                     UserId=users[4].Id
                 },
                 new Student
@@ -344,7 +360,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     CreatedDate = DateTime.Now,
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
-                    ImageId = 5,
                     UserId=users[5].Id
                 },
                 new Student
@@ -353,7 +368,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     CreatedDate = DateTime.Now,
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
-                    ImageId = 5,
                     UserId=users[6].Id
                 },
                 new Student
@@ -362,7 +376,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     CreatedDate = DateTime.Now,
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
-                    ImageId = 5,
                     UserId=users[7].Id
                 },
                 new Student
@@ -371,7 +384,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     CreatedDate = DateTime.Now,
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
-                    ImageId = 5,
                     UserId=users[8].Id
 
                 },
@@ -381,7 +393,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     CreatedDate = DateTime.Now,
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
-                    ImageId = 5,
                     UserId=users[9].Id
                 },
                 new Student
@@ -390,8 +401,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     CreatedDate = DateTime.Now,
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
-                    ImageId = 5,
-                    UserId=users[10].Id
+                    UserId=users[10].Id                  
+
                 }
             };
             modelBuilder.Entity<Student>().HasData(students);
@@ -407,7 +418,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     UpdatedDate= DateTime.Now,
                     IsApproved= true,
                     Graduation= "Kırıkkale Üniversitesi",
-                    ImageId=1,
                     UserId=users[11].Id
                 },
                 new Teacher
@@ -417,7 +427,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
                     Graduation = "Orta Doğu Teknik Üniversitesi",
-                    ImageId = 2,
                     UserId=users[12].Id
                 },
                 new Teacher
@@ -427,8 +436,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
                     Graduation = "İstanbul Teknik Üniversitesi",
-
-                    ImageId = 3,
                     UserId=users[13].Id
                 },
                 new Teacher
@@ -438,7 +445,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
                     Graduation = "Yıldız Teknik Üniversitesi",
-                    ImageId = 4,
                     UserId=users[14].Id
                 },
                 new Teacher
@@ -448,7 +454,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
                     Graduation = "Akdeniz Üniversitesi",
-                    ImageId = 5,
                     UserId=users[15].Id
                 },
                 new Teacher
@@ -458,7 +463,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
                     Graduation = "Erciyes Üniversitesi",
-                    ImageId = 5,
                     UserId=users[16].Id
                 },
                 new Teacher
@@ -468,7 +472,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
                     Graduation = "Çukurova Üniversitesi",
-                    ImageId = 5,
                     UserId=users[17].Id
                 },
                 new Teacher
@@ -478,7 +481,6 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
                     Graduation = "Uludağ Üniversitesi",
-                    ImageId = 5,
                     UserId=users[18].Id
                 }
             };
@@ -546,6 +548,34 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
             modelBuilder.Entity<IdentityUserRole<string>>().HasData(userRoles);
 
             #endregion
+
+            #region AlışVeriş Sepeti İşlemleri
+            List<Cart> carts = new List<Cart>
+            {
+                new Cart{Id=1, UserId=users[0].Id},
+                new Cart{Id=2, UserId=users[1].Id},
+                new Cart{Id=3, UserId=users[2].Id},
+                new Cart{Id=4, UserId=users[3].Id},
+                new Cart{Id=5, UserId=users[4].Id},
+                new Cart{Id=6, UserId=users[5].Id},
+                new Cart{Id=7, UserId=users[6].Id},
+                new Cart{Id=8, UserId=users[7].Id},
+                new Cart{Id=9, UserId=users[8].Id},
+                new Cart{Id=10, UserId=users[9].Id},
+                new Cart{Id=11, UserId=users[10].Id},
+                new Cart{Id=12, UserId=users[11].Id},
+                new Cart{Id=13, UserId=users[12].Id},
+                new Cart{Id=14, UserId=users[13].Id},
+                new Cart{Id=15, UserId=users[14].Id},
+                new Cart{Id=16, UserId=users[15].Id},
+                new Cart{Id=17, UserId=users[16].Id},
+                new Cart{Id=18, UserId=users[17].Id},
+                new Cart{Id=19, UserId=users[18].Id},
+            };
+            modelBuilder.Entity<Cart>().HasData(carts);
+
+            #endregion
+
         }
     }
 }

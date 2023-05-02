@@ -13,5 +13,8 @@ namespace PrivateLesson.Data.Abstract
         Task CreateTeacher(Teacher teacher, int[] SelectedBranches);
         Task<Teacher> GetTeacherFullDataAsync(int id);
         Task UpdateTeacher(Teacher teacher, int[] SelectedBranches);
+        Task<List<Teacher>> GetTeachersByBranch(int id);
+        Task<List<Teacher>> GetTeachersByStudent(int id);
+
     }
 }
