@@ -34,7 +34,6 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
             }).ToListAsync();
             return View(users);
         }
-
         [HttpGet]
         public async Task<IActionResult> Edit(string id)
         {
@@ -43,7 +42,8 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
                 return NotFound();
             }
             User user = await _userManager.FindByIdAsync(id);
-            if (user == null) { return  NotFound(); }
+            if (user == null) { return NotFound(); }
+
             UserUpdateViewModel userUpdateViewModel = new UserUpdateViewModel
             {
                 Id = user.Id,
@@ -53,38 +53,40 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
                 Email = user.Email,
                 EmailConfirmed = user.EmailConfirmed,
                 SelectedRoles = await _userManager.GetRolesAsync(user),
-                Roles = _roleManager.Roles.Select(r=> new RoleViewModel
+                Roles = _roleManager.Roles.Select(r => new RoleViewModel
                 {
-                    Id =r.Id,
+                    Id = r.Id,
                     Name = r.Name,
                     Description = r.Description
                 }).ToList()
             };
-
             return View(userUpdateViewModel);
         }
-
         [HttpPost]
         public async Task<IActionResult> Edit(UserUpdateViewModel userUpdateViewModel)
         {
             if (ModelState.IsValid)
             {
                 User user = await _userManager.FindByIdAsync(userUpdateViewModel.Id);
-                if (user == null) { return NotFound();}
+                if (user == null) { return NotFound(); }
                 user.FirstName = userUpdateViewModel.FirstName;
                 user.LastName = userUpdateViewModel.LastName;
                 user.UserName = userUpdateViewModel.UserName;
                 user.Email = userUpdateViewModel.Email;
                 user.EmailConfirmed = userUpdateViewModel.EmailConfirmed;
 
-                var result  = await _userManager.UpdateAsync(user);
+                var result = await _userManager.UpdateAsync(user);
                 if (!result.Succeeded) { return NotFound(); }
 
                 var userRoles = await _userManager.GetRolesAsync(user);
 
-                await _userManager.AddToRolesAsync(user, userUpdateViewModel.SelectedRoles.Except(userRoles).ToList<string>());
+                await _userManager.AddToRolesAsync(
+                    user,
+                    userUpdateViewModel.SelectedRoles.Except(userRoles).ToList<string>());
 
-                await _userManager.RemoveFromRolesAsync(user, userRoles.Except(userUpdateViewModel.SelectedRoles).ToList<string>());
+                await _userManager.RemoveFromRolesAsync(
+                    user,
+                    userRoles.Except(userUpdateViewModel.SelectedRoles).ToList<string>());
 
                 return RedirectToAction("Index", "Users");
             }
@@ -95,14 +97,6 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
                 Description = r.Description
             }).ToList();
             return View(userUpdateViewModel);
-        }
-
-        public async Task<IActionResult> Delete(string id)
-        {
-            User user = await _userManager.FindByIdAsync(id);
-            if (user == null) { return NotFound(); };
-            await _userManager.DeleteAsync(user);
-            return Redirect("/admin/Users");
         }
         public async Task<IActionResult> ConfirmEmail(string id)
         {

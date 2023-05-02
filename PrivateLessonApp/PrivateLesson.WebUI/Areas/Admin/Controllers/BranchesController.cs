@@ -22,6 +22,7 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
         {
             List<Branch> branchList = await _branchService.GetAllBranchesFullDataAsync(branchListViewModel.ApprovedStatus);
             List<BranchViewModel> branches = new List<BranchViewModel>();
+
             foreach (var branch in branchList)
             {
                 branches.Add(new BranchViewModel
@@ -33,7 +34,7 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
                     UpdatedDate = branch.UpdatedDate,
                     IsApproved = branch.IsApproved,
                     Url = branch.Url,
-                    Teachers= branch.TeacherBranches.Select(tb => new TeacherViewModel
+                    Teachers = branch.TeacherBranches.Select(tb => new TeacherViewModel
                     {
                         Id = tb.Teacher.Id,
                         User = tb.Teacher.User,
@@ -56,23 +57,23 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(BranchViewModel branchViewModel)
+        public async Task<IActionResult> Create(BranchAddViewModel branchAddViewModel)
         {
             if (ModelState.IsValid)
             {
                 Branch branch = new Branch
                 {
-                    BranchName = branchViewModel.BranchName,
-                    Description = branchViewModel.Description,
+                    BranchName = branchAddViewModel.BranchName,
+                    Description = branchAddViewModel.Description,
                     CreatedDate = DateTime.Now,
                     UpdatedDate = DateTime.Now,
-                    Url = Jobs.GetUrl(branchViewModel.BranchName),
+                    Url = Jobs.GetUrl(branchAddViewModel.BranchName),
                     IsApproved = true
                 };
                 await _branchService.CreateAsync(branch);
                 return RedirectToAction("Index");
             }
-            return View(branchViewModel);
+            return View(branchAddViewModel);
         }
 
         [HttpGet]
@@ -90,6 +91,7 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
             };
             return View(branchUpdateViewModel);
         }
+
         [HttpPost]
         public async Task<IActionResult> Edit(BranchUpdateViewModel branchUpdateViewModel)
         {
@@ -107,6 +109,7 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
             return View(branchUpdateViewModel);
         }
 
+
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
@@ -115,12 +118,11 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
             {
                 Id = deletedBranch.Id,
                 BranchName = deletedBranch.BranchName,
-                Description = deletedBranch.Description
+                Description = deletedBranch.Description,
             };
             return View(branchViewModel);
         }
 
-        [HttpPost]
         public async Task<IActionResult> Delete(BranchViewModel branchViewModel)
         {
             Branch deletedBranch = await _branchService.GetBranchFullDataAsync(branchViewModel.Id);

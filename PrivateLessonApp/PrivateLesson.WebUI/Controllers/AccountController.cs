@@ -43,12 +43,19 @@ namespace PrivateLesson.WebUI.Controllers
                 {
                     UserName = registerViewModel.UserName,
                     Email = registerViewModel.Email,
-                    FirstName= registerViewModel.FirstName,
-                    LastName= registerViewModel.LastName,
-                    Gender=registerViewModel.Gender,
-                    DateOfBirth=registerViewModel.DateOfBirth,
-                    City=registerViewModel.City,
-                    Phone=registerViewModel.Phone,
+                    FirstName = registerViewModel.FirstName,
+                    LastName = registerViewModel.LastName,
+                    Gender = registerViewModel.Gender,
+                    DateOfBirth = registerViewModel.DateOfBirth,
+                    City = registerViewModel.City,
+                    Phone = registerViewModel.Phone,
+                    Image = new Image
+                    {
+                        CreatedDate = DateTime.Now,
+                        UpdatedDate = DateTime.Now,
+                        IsApproved = true,
+                        Url = Jobs.UploadImage(registerViewModel.Image)
+                    }
                 };
                 var result = await _userManager.CreateAsync(user, registerViewModel.Password);
 
@@ -64,18 +71,14 @@ namespace PrivateLesson.WebUI.Controllers
                         User = user,
                         IsApproved = true,
                         UserId = user.Id,
-                        Image = new Image
-                        {
-                            CreatedDate = DateTime.Now,
-                            UpdatedDate = DateTime.Now,
-                            IsApproved = true,
-                            Url = Jobs.UploadImage(registerViewModel.Image)
-                        }
+
 
                     };
                     await _teacherService.CreateTeacher(teacher, registerViewModel.SelectedBranches);
                     return RedirectToAction("Login", "Account");
                 }
+
+
             }
             registerViewModel.Branches = await _branchService.GetBranchesAsync(true);
             return View(registerViewModel);
@@ -87,7 +90,6 @@ namespace PrivateLesson.WebUI.Controllers
             return View(new LoginViewModel { ReturnUrl = returnUrl });
         }
 
-        [HttpPost]  
         public async Task<IActionResult> Login(LoginViewModel loginViewModel)
         {
             if (ModelState.IsValid)

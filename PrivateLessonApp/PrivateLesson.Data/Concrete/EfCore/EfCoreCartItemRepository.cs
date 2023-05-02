@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using PrivateLesson.Data.Abstract;
 using PrivateLesson.Data.Concrete.EfCore.Context;
 using PrivateLesson.Entity.Concrete;
@@ -19,6 +20,20 @@ namespace PrivateLesson.Data.Concrete.EfCore
         {
             get { return _dbContext as PrivateLessonContext; }
         }
-    
+
+        public async Task ChangeAmountAsync(CartItem cartItem, int amount)
+        {
+            cartItem.Amount = amount;
+            AppContext.CartItems.Update(cartItem);
+            await AppContext.SaveChangesAsync();
+        }
+
+        public void ClearCart(int cartId)
+        {
+            AppContext
+                 .CartItems
+                 .Where(ci => ci.CartId == cartId)
+                 .ExecuteDelete();
+        }
     }
 }

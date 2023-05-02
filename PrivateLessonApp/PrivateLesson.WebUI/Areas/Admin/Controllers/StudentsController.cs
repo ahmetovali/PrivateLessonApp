@@ -53,8 +53,9 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
                         LastName = ts.Teacher.User.LastName,
                         Url = ts.Teacher.Url
                     }).ToList(),
-                    Image = student.Image
+                    Image = student.User.Image
                 });
+
             }
             studentListViewModel.Students = students;
             return View(studentListViewModel);
@@ -78,13 +79,7 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
                     Url = Jobs.GetUrl(studentAddViewModel.FirstName + studentAddViewModel.LastName),
-                    Image = new Image
-                    {
-                        CreatedDate = DateTime.Now,
-                        UpdatedDate = DateTime.Now,
-                        IsApproved = true,
-                        Url = Jobs.UploadImage(studentAddViewModel.Image)
-                    }
+
                 };
                 User user = new User
                 {
@@ -95,7 +90,14 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
                     City = studentAddViewModel.City,
                     UserName = studentAddViewModel.UserName,
                     Email = studentAddViewModel.Email,
-                    Phone = studentAddViewModel.Phone
+                    Phone = studentAddViewModel.Phone,
+                    Image = new Image
+                    {
+                        CreatedDate = DateTime.Now,
+                        UpdatedDate = DateTime.Now,
+                        IsApproved = true,
+                        Url = Jobs.UploadImage(studentAddViewModel.Image)
+                    }
                 };
                 await _userManager.CreateAsync(user, studentAddViewModel.Password);
                 student.User = user;
@@ -123,7 +125,7 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
                 CreatedDate = student.CreatedDate,
                 UpdatedDate = DateTime.Now,
                 IsApproved = student.IsApproved,
-                Image = student.Image
+                Image = student.User.Image
             };
             return View(studentUpdateViewModel);
         }
@@ -131,7 +133,7 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(StudentUpdateViewModel studentUpdateViewModel)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 Student student = await _studentService.GetStudentFullDataAsync(studentUpdateViewModel.Id);
                 student.User.FirstName = studentUpdateViewModel.FirstName;
@@ -144,22 +146,26 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
                 student.IsApproved = studentUpdateViewModel.IsApproved;
                 student.User.UserName = studentUpdateViewModel.UserName;
                 student.User.Email = studentUpdateViewModel.Email;
+
                 if (studentUpdateViewModel.ImageFile != null)
                 {
-                    student.Image = new Image
+                    student.User.Image = new Image
                     {
                         CreatedDate = DateTime.Now,
                         UpdatedDate = DateTime.Now,
                         IsApproved = true,
                         Url = Jobs.UploadImage(studentUpdateViewModel.ImageFile)
                     };
-                    await _imageService.CreateAsync(student.Image);
+                    await _imageService.CreateAsync(student.User.Image);
                 }
+
                 _studentService.Update(student);
                 return RedirectToAction("Index");
             }
             return View(studentUpdateViewModel);
+
         }
+
 
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
@@ -174,26 +180,25 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
                 DateOfBirth = deletedStudent.User.DateOfBirth,
                 City = deletedStudent.User.City,
                 Phone = deletedStudent.User.Phone,
-                Image = deletedStudent.Image,
-                User=deletedStudent.User
+                Image = deletedStudent.User.Image,
+                User = deletedStudent.User
             };
             return View(studentViewModel);
         }
 
-
-
         [HttpPost]
         public async Task<IActionResult> Delete(StudentViewModel studentViewModel)
         {
-            Student deletedStudent = await _studentService.GetStudentFullDataAsync(studentViewModel.Id);
+            //Student deletedStudent = await _studentService.GetStudentFullDataAsync(studentViewModel.Id);
             User deletedStudentByUser = await _userManager.FindByIdAsync(studentViewModel.User.Id);
             if (deletedStudentByUser != null)
             {
-                _studentService.Delete(deletedStudent);
+                //_studentService.Delete(deletedStudent);
                 await _userManager.DeleteAsync(deletedStudentByUser);
             }
             return RedirectToAction("Index");
         }
+
         public async Task<IActionResult> UpdateIsApproved(int id, bool ApprovedStatus)
         {
             Student student = await _studentService.GetByIdAsync(id);
@@ -207,6 +212,47 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
                 ApprovedStatus = ApprovedStatus
             };
             return RedirectToAction("Index", studentListViewModel);
+        }
+
+        public async Task<IActionResult> GetStudentsByTeacher(int id)
+        {
+            List<Student> studentList = await _studentService.GetStudentsByTeacher(id);
+            List<StudentViewModel> students = new List<StudentViewModel>();
+            foreach (var student in studentList)
+            {
+                students.Add(new StudentViewModel
+                {
+                    Id = student.Id,
+                    FirstName = student.User.FirstName,
+                    LastName = student.User.LastName,
+                    Gender = student.User.Gender,
+                    Phone = student.User.Phone,
+                    City = student.User.City,
+                    DateOfBirth = student.User.DateOfBirth,
+                    CreatedDate = student.CreatedDate,
+                    UpdatedDate = student.UpdatedDate,
+                    IsApproved = student.IsApproved,
+                    Url = student.Url,
+                    UserId = student.UserId,
+                    User = student.User,
+                    Teachers = student.TeacherStudents.Select(ts => new TeacherViewModel
+                    {
+                        Id = ts.Teacher.Id,
+                        User = ts.Teacher.User,
+                        FirstName = ts.Teacher.User.FirstName,
+                        LastName = ts.Teacher.User.LastName,
+                        Url = ts.Teacher.Url
+                    }).ToList(),
+                    Image = student.User.Image
+                });
+
+            }
+            StudentListViewModel studentListViewModel = new StudentListViewModel()
+            {
+                Students = students,
+                ApprovedStatus = true
+            };
+            return View("Index", studentListViewModel);
         }
 
     }

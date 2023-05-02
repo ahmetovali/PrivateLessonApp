@@ -23,15 +23,15 @@ namespace PrivateLesson.Data.Concrete.EfCore
 
         public async Task CreateTeacher(Teacher teacher, int[] SelectedBranches)
         {
-           await AppContext.Teachers.AddAsync(teacher);
+            await AppContext.Teachers.AddAsync(teacher);
             await AppContext.SaveChangesAsync();
             List<TeacherBranch> teacherBranches = new List<TeacherBranch>();
             foreach (var branchId in SelectedBranches)
             {
                 teacherBranches.Add(new TeacherBranch
                 {
-                    BranchId= branchId,
-                    TeacherId= teacher.Id
+                    BranchId = branchId,
+                    TeacherId = teacher.Id
                 });
             }
             AppContext.TeacherBranches.AddRange(teacherBranches);
@@ -40,33 +40,35 @@ namespace PrivateLesson.Data.Concrete.EfCore
 
         public async Task<List<Teacher>> GetAllTeachersFullDataAsync(bool ApprovedStatus, string branchurl = null)
         {
-            var teachers = AppContext.Teachers.Where(t => t.IsApproved == ApprovedStatus).Include(u => u.User).Include(u => u.Image).Include(x=>x.TeacherBranches).ThenInclude(x=>x.Branch)
-                 
-                 .AsQueryable();
+            var teachers = AppContext
+                .Teachers
+                .Where(t => t.IsApproved == ApprovedStatus)
+                .Include(u => u.User)
+                .ThenInclude(i => i.Image)
+                .Include(t => t.TeacherBranches)
+                .ThenInclude(tb => tb.Branch)
+                .AsQueryable();
             if (branchurl != null)
             {
-                teachers = teachers
-                    .Where(t => t.TeacherBranches.Any(tb => tb.Branch.Url == branchurl));
+                teachers = teachers.Where(t => t.TeacherBranches.Any(tb => tb.Branch.Url == branchurl));
             }
-            return await teachers
-                .Include(t=>t.TeacherStudents)
-                .ThenInclude(ts=>ts.Student)
-                .ThenInclude(tu=> tu.User)
-                .ToListAsync();
+            return await teachers.Include(t => t.TeacherStudents).ThenInclude(ts => ts.Student).ThenInclude(tu => tu.User).ToListAsync();
         }
 
         public async Task<Teacher> GetTeacherFullDataAsync(int id)
         {
-            var teacher  = await AppContext
+            var teacher = await AppContext
                 .Teachers
-                .Where(t=> t.Id == id)
-                .Include(u => u.User)
-                .Include(t=>t.TeacherBranches)
-                .ThenInclude(tb=> tb.Branch)
-                .Include(t=>t.Image)
+                .Where(t => t.Id == id)
+                .Include(t => t.User)
+                .ThenInclude(t => t.Image)
+                .Include(t => t.TeacherBranches)
+                .ThenInclude(tb => tb.Branch)
                 .FirstOrDefaultAsync();
             return teacher;
         }
+
+
 
         public async Task<List<Teacher>> GetTeachersByBranch(int id)
         {
@@ -107,10 +109,11 @@ namespace PrivateLesson.Data.Concrete.EfCore
         public async Task UpdateTeacher(Teacher teacher, int[] SelectedBranches)
         {
             Teacher updateTeacher = AppContext
-               .Teachers
-               .Include(t => t.User)
-               .Include(t => t.TeacherBranches)
-               .FirstOrDefault(t => t.Id == teacher.Id);
+                .Teachers
+                .Include(t => t.User)
+                .ThenInclude(t => t.Image)
+                .Include(t => t.TeacherBranches)
+                .FirstOrDefault(t => t.Id == teacher.Id);
             updateTeacher.User.FirstName = teacher.User.FirstName;
             updateTeacher.User.LastName = teacher.User.LastName;
             updateTeacher.User.DateOfBirth = teacher.User.DateOfBirth;
@@ -120,7 +123,7 @@ namespace PrivateLesson.Data.Concrete.EfCore
             updateTeacher.IsApproved = teacher.IsApproved;
             updateTeacher.UpdatedDate = teacher.UpdatedDate;
             updateTeacher.Graduation = teacher.Graduation;
-            updateTeacher.Image = teacher.Image;
+            updateTeacher.User.Image = teacher.User.Image;
             updateTeacher.TeacherBranches = SelectedBranches
                 .Select(sb => new TeacherBranch
                 {

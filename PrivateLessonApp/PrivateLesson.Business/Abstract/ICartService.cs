@@ -1,3 +1,4 @@
+using PrivateLesson.Entity.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,5 +9,7 @@ namespace PrivateLesson.Business.Abstract
 {
     public interface ICartService
     {
+        Task<Cart> GetCartByUserId(string userId);
+        Task AddToCart(string userId, int teacherId, int amount);
     }
 }

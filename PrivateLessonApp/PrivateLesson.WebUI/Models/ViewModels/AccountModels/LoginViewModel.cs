@@ -6,7 +6,7 @@ namespace PrivateLesson.WebUI.Models.ViewModels.AccountModels
     public class LoginViewModel
     {
         [DisplayName("Kullanıcı Adı")]
-        [Required(ErrorMessage ="Kullanıcı Adı boş bırakılmamalıdır.")]
+        [Required(ErrorMessage = "Kullanıcı adı boş bırakılmamalıdır")]
         public string UserName { get; set; }
 
         [DisplayName("Parola")]

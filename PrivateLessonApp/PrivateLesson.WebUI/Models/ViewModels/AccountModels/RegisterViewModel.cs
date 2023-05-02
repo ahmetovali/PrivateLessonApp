@@ -30,8 +30,9 @@ namespace PrivateLesson.WebUI.Models.ViewModels.AccountModels
         [Required(ErrorMessage = "Telefon alanı boş bırakılmamalıdır")]
         public string Phone { get; set; }
         public string Graduation { get; set; }
-       
+        public decimal? Price { get; set; }
         public IFormFile Image { get; set; }
+
         public int[] SelectedBranches { get; set; }
         public List<Branch> Branches { get; set; }
 

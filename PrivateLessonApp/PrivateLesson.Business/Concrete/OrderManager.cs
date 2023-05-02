@@ -1,5 +1,6 @@
 using PrivateLesson.Business.Abstract;
 using PrivateLesson.Data.Abstract;
+using PrivateLesson.Entity.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,20 @@ namespace PrivateLesson.Business.Concrete
         {
             _orderRepository = orderRepository;
         }
-    
+
+        public async Task CreateAsync(Order order)
+        {
+            await _orderRepository.CreateAsync(order);
+        }
+
+        public async Task<List<Order>> GetAllOrdersAsync(string userId = null, bool dateSort = false)
+        {
+            return await _orderRepository.GetAllOrdersAsync(userId, dateSort);
+        }
+
+        public async Task<List<Order>> SearchOrderByUser(string keyword, bool dateSort = false)
+        {
+            return await _orderRepository.SearchOrderByUser(keyword, dateSort);
+        }
     }
 }

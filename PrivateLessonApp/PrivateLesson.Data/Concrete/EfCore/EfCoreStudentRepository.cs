@@ -22,42 +22,48 @@ namespace PrivateLesson.Data.Concrete.EfCore
 
         public async Task<List<Student>> GetAllStudentsWithTeachersAsync(bool ApprovedStatus)
         {
-            List<Student> students = await AppContext.Students
+            List<Student> students = await AppContext
+                .Students
                 .Where(s => s.IsApproved == ApprovedStatus)
                 .Include(u => u.User)
-                .Include(i => i.Image)
+                .ThenInclude(i => i.Image)
                 .Include(s => s.TeacherStudents)
                 .ThenInclude(s => s.Teacher)
-                .ThenInclude(u => u.User)
+                .ThenInclude(s => s.User)
+                .ThenInclude(s => s.Image)
                 .ToListAsync();
             return students;
         }
 
         public Task<Student> GetStudentFullDataAsync(int id)
         {
-            var student = AppContext.Students
+            var student = AppContext
+                .Students
                 .Where(s => s.Id == id)
                 .Include(u => u.User)
+                .ThenInclude(i => i.Image)
                 .Include(t => t.TeacherStudents)
                 .ThenInclude(ts => ts.Teacher)
-                .Include(i => i.Image)
+                 .ThenInclude(s => s.User)
+                .ThenInclude(s => s.Image)
                 .FirstOrDefaultAsync();
+
             return student;
         }
 
         public async Task<List<Student>> GetStudentsByTeacher(int id)
         {
             List<Student> students = await AppContext
-               .Students
-               .Where(t => t.IsApproved == true)
-               .Include(tu => tu.User)
-               .ThenInclude(t => t.Image)
-              .Include(t => t.TeacherStudents)
-               .ThenInclude(ts => ts.Teacher)
-               .ThenInclude(tu => tu.User)
-               .ThenInclude(t => t.Image)
-               .Where(t => t.TeacherStudents.Any(x => x.StudentId == id))
-              .ToListAsync();
+                .Students
+                .Where(t => t.IsApproved == true)
+                .Include(tu => tu.User)
+                .ThenInclude(t => t.Image)
+               .Include(t => t.TeacherStudents)
+                .ThenInclude(ts => ts.Teacher)
+                .ThenInclude(tu => tu.User)
+                .ThenInclude(t => t.Image)
+                .Where(t => t.TeacherStudents.Any(x => x.StudentId == id))
+               .ToListAsync();
             return students;
         }
     }

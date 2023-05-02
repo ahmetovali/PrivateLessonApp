@@ -148,13 +148,6 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
 
             return View(roleUsersViewModel);
         }
-        public async Task<IActionResult> Delete(string id)
-        {
-            Role role = await _roleManager.FindByIdAsync(id);
-            if (role == null) { return NotFound(); };
-            await _roleManager.DeleteAsync(role);
-            return Redirect("/admin/Roles");
-        }
         [HttpPost]
         public async Task<IActionResult> RoleAssignment(RoleUpdateViewModel roleUpdateViewModel)
         {

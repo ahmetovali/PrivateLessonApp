@@ -1,5 +1,6 @@
 using PrivateLesson.Business.Abstract;
 using PrivateLesson.Data.Abstract;
+using PrivateLesson.Entity.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,15 @@ namespace PrivateLesson.Business.Concrete
         {
             _cartRepository = cartRepository;
         }
-    
+
+        public async Task AddToCart(string userId, int teacherId, int amount)
+        {
+            await _cartRepository.AddToCart(userId, teacherId, amount);
+        }
+
+        public async Task<Cart> GetCartByUserId(string userId)
+        {
+            return await _cartRepository.GetCartByUserId(userId);
+        }
     }
 }

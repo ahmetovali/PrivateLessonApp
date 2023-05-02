@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace PrivateLesson.Data.Concrete.EfCore.Config
 {
     public class BranchConfig : IEntityTypeConfiguration<Branch>
-    {       
+    {
 
         public void Configure(EntityTypeBuilder<Branch> builder)
         {
@@ -27,11 +27,10 @@ namespace PrivateLesson.Data.Concrete.EfCore.Config
                     CreatedDate = DateTime.Now,
                     UpdatedDate = DateTime.Now,
                     IsApproved = true,
-                    BranchName = "Matamatik",
-                    Description= "Matematik Dersleri",
-                    Url= "matematik"
+                    BranchName = "Matematik",
+                    Description = "Matematik Dersleri",
+                    Url = "matematik"
                 },
-
                 new Branch
                 {
                     Id = 2,
@@ -41,7 +40,8 @@ namespace PrivateLesson.Data.Concrete.EfCore.Config
                     BranchName = "Fizik",
                     Description = "Fizik Dersleri",
                     Url = "fizik"
-                }, new Branch
+                },
+                new Branch
                 {
                     Id = 3,
                     CreatedDate = DateTime.Now,
