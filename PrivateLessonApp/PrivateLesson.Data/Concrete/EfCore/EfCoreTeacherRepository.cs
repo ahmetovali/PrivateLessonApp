@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+    using Microsoft.EntityFrameworkCore;
 using PrivateLesson.Data.Abstract;
 using PrivateLesson.Data.Concrete.EfCore.Context;
 using PrivateLesson.Entity.Concrete;
@@ -55,6 +55,16 @@ namespace PrivateLesson.Data.Concrete.EfCore
             return await teachers.Include(t => t.TeacherStudents).ThenInclude(ts => ts.Student).ThenInclude(tu => tu.User).ToListAsync();
         }
 
+        public Task<int> GetByUrlAsync(string url)
+        {
+            var result = AppContext
+                .Teachers
+                .Where(t => t.Url == url)
+                .Select(t => t.Id)
+                .FirstOrDefaultAsync();
+            return result;
+        }
+
         public async Task<Teacher> GetTeacherFullDataAsync(int id)
         {
             var teacher = await AppContext
@@ -68,7 +78,18 @@ namespace PrivateLesson.Data.Concrete.EfCore
             return teacher;
         }
 
-
+        public async Task<Teacher> GetTeacherFullDataAsync(string id)
+        {
+            var teacher = await AppContext
+                .Teachers
+                .Where(t => t.User.Id == id)
+                .Include(t => t.User)
+                .ThenInclude(t => t.Image)
+                .Include(t => t.TeacherBranches)
+                .ThenInclude(tb => tb.Branch)
+                .FirstOrDefaultAsync();
+            return teacher;
+        }
 
         public async Task<List<Teacher>> GetTeachersByBranch(int id)
         {

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "rBHzEewbOQsfkdZp4vdRfAqni/PSQ22zP3WwS6pIhd4+eo6ptUTiH0YYTDqqbsO4FNslqnepivw6o4CaXFjQgQ==",
+  "dgSpecHash": "e9whJyKZZ24yHuJ3+hIuP/cNGHaqNefJiup+4j8G9IwK93CZJJiUa8hvDFtqLCRT3nkJY06f9b0gEXrRdR+Rsw==",
   "success": true,
   "projectFilePath": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.Core\\PrivateLesson.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmet\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\ahmet\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
   ],
   "logs": []

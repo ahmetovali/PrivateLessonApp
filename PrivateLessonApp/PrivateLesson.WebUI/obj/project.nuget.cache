@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1rp3NSbes3QzzG9KcM82FZkWiubtrOU1EIJEQ4oXQowgDAs346xzLO0z+RDCwJl6756nqXmtq8xwmcxoFZ7cYg==",
+  "dgSpecHash": "CwA1FfCON8gHog0zGZljTjY/LDPbKhesZIeL2lMgkOSo5Fy77WZ6SMYUko26/WjG7OFsYNkaExEpVojFd/K2Lg==",
   "success": true,
   "projectFilePath": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\PrivateLesson.WebUI.csproj",
   "expectedPackageFiles": [
@@ -68,7 +68,7 @@
     "C:\\Users\\ahmet\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
-    "C:\\Users\\ahmet\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\ahmet\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\nuget.common\\6.3.1\\nuget.common.6.3.1.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\nuget.configuration\\6.3.1\\nuget.configuration.6.3.1.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\nuget.dependencyresolver.core\\6.3.1\\nuget.dependencyresolver.core.6.3.1.nupkg.sha512",

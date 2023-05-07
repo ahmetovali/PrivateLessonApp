@@ -71,5 +71,15 @@ namespace PrivateLesson.Business.Concrete
         {
             await _teacherRepository.UpdateTeacher(teacher, SelectedBranches);
         }
+
+        public async Task<int> GetByUrlAsync(string url)
+        {
+            return await _teacherRepository.GetByUrlAsync(url);
+        }
+
+        public async Task<Teacher> GetTeacherFullDataAsync(string id)
+        {
+            return await _teacherRepository.GetTeacherFullDataAsync(id);
+        }
     }
 }

@@ -27,6 +27,7 @@ namespace PrivateLesson.Data.Concrete.EfCore.Context
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<TeacherBranch> TeacherBranches { get; set; }
         public DbSet<TeacherStudent> TeacherStudents { get; set; }
+        public DbSet<Advert> Adverts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelbuilder)
         {

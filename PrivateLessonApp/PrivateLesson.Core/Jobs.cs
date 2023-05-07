@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -75,7 +76,19 @@ namespace PrivateLesson.Core
 
             return randomName;
         }
-       
+
+        public static string CreateMessage(string title, string message, string alertType)
+        {
+            AlertMessage msg = new AlertMessage
+            {
+                Title = title,
+                Message = message,
+                AlertType = alertType
+            };
+            string result = JsonConvert.SerializeObject(msg);
+            return result;
+        }
+
 
     }
 }

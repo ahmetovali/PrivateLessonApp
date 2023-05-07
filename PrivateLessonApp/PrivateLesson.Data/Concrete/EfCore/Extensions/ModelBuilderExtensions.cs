@@ -334,6 +334,14 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
             modelBuilder.Entity<Cart>().HasData(carts);
 
             #endregion
+
+            List<Advert> adverts = new List<Advert>()
+            {
+                new Advert{Id=1, TeacherId= 4, Description="ilan", Price=45, CreatedDate = DateTime.Now,
+                    UpdatedDate = DateTime.Now,
+                    IsApproved = true, Url="ilan" }
+            };
+            modelBuilder.Entity<Advert>().HasData(adverts);
         }
 
     }

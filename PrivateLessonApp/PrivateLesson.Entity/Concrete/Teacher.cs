@@ -20,6 +20,7 @@ namespace PrivateLesson.Entity.Concrete
         public User User { get; set; }
         public List<TeacherStudent> TeacherStudents { get; set; }
         public List<TeacherBranch> TeacherBranches { get; set; }
-        
+        public List<Advert> Adverts { get; set; }
+
     }
 }

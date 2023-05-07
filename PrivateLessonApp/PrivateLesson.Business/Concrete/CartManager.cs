@@ -18,9 +18,9 @@ namespace PrivateLesson.Business.Concrete
             _cartRepository = cartRepository;
         }
 
-        public async Task AddToCart(string userId, int teacherId, int amount)
+        public async Task AddToCart(string userId, int advertId, int amount)
         {
-            await _cartRepository.AddToCart(userId, teacherId, amount);
+            await _cartRepository.AddToCart(userId, advertId, amount);
         }
 
         public async Task<Cart> GetCartByUserId(string userId)

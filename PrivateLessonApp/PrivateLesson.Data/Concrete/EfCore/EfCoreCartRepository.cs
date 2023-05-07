@@ -21,20 +21,19 @@ namespace PrivateLesson.Data.Concrete.EfCore
             get { return _dbContext as PrivateLessonContext; }
         }
 
-        public async Task AddToCart(string userId, int teacherId, int amount)
+        public async Task AddToCart(string userId, int advertId, int amount)
         {
-           var cart  = await GetCartByUserId(userId);
+            var cart = await GetCartByUserId(userId);
             if (cart != null)
             {
-                var index = cart.CartItems.FindIndex(ci => ci.TeacherId == teacherId);
+                var index = cart.CartItems.FindIndex(ci => ci.AdvertId == advertId);
                 if (index < 0)
                 {
                     cart.CartItems.Add(new CartItem
                     {
-                        TeacherId = teacherId,
+                        AdvertId = advertId,
                         CartId = cart.Id,
                         Amount = amount
-
                     });
                 }
                 else
@@ -49,8 +48,9 @@ namespace PrivateLesson.Data.Concrete.EfCore
         public async Task<Cart> GetCartByUserId(string userId)
         {
             return await AppContext
-                .Carts
+                 .Carts
                  .Include(c => c.CartItems)
+                 .ThenInclude(ci => ci.Advert)
                  .ThenInclude(ci => ci.Teacher)
                  .ThenInclude(ci => ci.User)
                  .ThenInclude(ci => ci.Image)
