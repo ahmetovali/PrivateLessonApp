@@ -31,6 +31,8 @@ namespace PrivateLesson.WebUI.Models.ViewModels.AccountModels
         public string Phone { get; set; }
         public string Graduation { get; set; }
         public decimal? Price { get; set; }
+        [DisplayName("Resim")]
+        [Required(ErrorMessage = "Resim alanı boş bırakılmamalıdır")]
         public IFormFile Image { get; set; }
 
         public int[] SelectedBranches { get; set; }

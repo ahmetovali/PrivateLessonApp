@@ -15,5 +15,6 @@ namespace PrivateLesson.Business.Abstract
         void Update(Advert advert);
         void Delete(Advert advert);
         Task<List<Advert>> GetAdvertsFullDataAsync(string id, bool approvedStatus);
+        Task<List<Advert>> GetAllAdvertsAsync(bool approvedStatus);
     }
 }

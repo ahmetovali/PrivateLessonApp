@@ -29,6 +29,8 @@ namespace PrivateLesson.WebUI.Models.ViewModels.AccountModels
         [DisplayName("Telefon")]
         [Required(ErrorMessage = "Telefon alanı boş bırakılmamalıdır")]
         public string Phone { get; set; }
+        [DisplayName("Resim")]
+        [Required(ErrorMessage = "Resim alanı boş bırakılmamalıdır")]
         public IFormFile Image { get; set; }
 
         [DisplayName("Kullanıcı Adı")]

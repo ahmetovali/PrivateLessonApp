@@ -39,5 +39,20 @@ namespace PrivateLesson.Data.Concrete.EfCore
             }
             return adverts.ToListAsync();
         }
+
+        public Task<List<Advert>> GetAllAdvertsAsync(bool approvedStatus)
+        {
+            var adverts = AppContext
+                        .Adverts
+                        .Where(a => a.IsApproved == approvedStatus)
+                        .Include(a => a.Teacher)
+                        .ThenInclude(u => u.User)
+                        .ThenInclude(i => i.Image)
+                        .Include(a => a.Teacher)
+                        .ThenInclude(t => t.TeacherBranches)
+                        .ThenInclude(tb => tb.Branch)
+                        .ToListAsync();
+            return adverts;
+        }
     }
 }

@@ -12,12 +12,14 @@ namespace PrivateLesson.WebUI.Controllers
         private ITeacherService _teacherService;
         private IBranchService _branchService;
         private IImageService _imageService;
+        private IAdvertService _advertService;
 
-        public HomeController(ITeacherService teacherService, IBranchService branchService, IImageService imageService)
+        public HomeController(ITeacherService teacherService, IBranchService branchService, IImageService imageService, IAdvertService advertService)
         {
             _teacherService = teacherService;
             _branchService = branchService;
             _imageService = imageService;
+            _advertService = advertService;
         }
 
         public async Task<IActionResult> Index(string branchurl)
@@ -48,6 +50,7 @@ namespace PrivateLesson.WebUI.Controllers
             return View(teacherModelList);
         }
 
+       
 
 
     }

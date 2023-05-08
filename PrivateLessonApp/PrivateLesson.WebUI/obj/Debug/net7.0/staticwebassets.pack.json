@@ -493,6 +493,14 @@
       "PackagePath": "staticwebassets\\images\\1.jpg"
     },
     {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\11c62b46-664a-4fb2-9d84-c594d09a5ab9.jpg",
+      "PackagePath": "staticwebassets\\images\\11c62b46-664a-4fb2-9d84-c594d09a5ab9.jpg"
+    },
+    {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\13989530-4a69-43a3-851c-e7021aa10119.jpg",
+      "PackagePath": "staticwebassets\\images\\13989530-4a69-43a3-851c-e7021aa10119.jpg"
+    },
+    {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\18c785f9-2e08-4d12-bea0-aa927cea674c.jpg",
       "PackagePath": "staticwebassets\\images\\18c785f9-2e08-4d12-bea0-aa927cea674c.jpg"
     },
@@ -673,6 +681,10 @@
       "PackagePath": "staticwebassets\\images\\blog_large_1.jpg"
     },
     {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\c257cd61-f8bf-4ea1-8582-5ec7e6776736.jpg",
+      "PackagePath": "staticwebassets\\images\\c257cd61-f8bf-4ea1-8582-5ec7e6776736.jpg"
+    },
+    {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\c8155a81-0a7b-4eb3-b215-597c42e160bb.jpg",
       "PackagePath": "staticwebassets\\images\\c8155a81-0a7b-4eb3-b215-597c42e160bb.jpg"
     },
@@ -771,6 +783,10 @@
     {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\fa574f37-0022-4bec-b518-6f4dff7058a1.jpg",
       "PackagePath": "staticwebassets\\images\\fa574f37-0022-4bec-b518-6f4dff7058a1.jpg"
+    },
+    {
+      "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\fcb8e728-a174-4dab-ad26-02a51b5c3d61.jpg",
+      "PackagePath": "staticwebassets\\images\\fcb8e728-a174-4dab-ad26-02a51b5c3d61.jpg"
     },
     {
       "Id": "C:\\Git\\PrivateLesson\\PrivateLessonApp\\PrivateLessonApp\\PrivateLesson.WebUI\\wwwroot\\images\\header.png",

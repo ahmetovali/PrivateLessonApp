@@ -31,6 +31,11 @@ namespace PrivateLesson.Business.Concrete
             return await _advertRepository.GetAdvertsFullDataAsync(id, approvedStatus);
         }
 
+        public async Task<List<Advert>> GetAllAdvertsAsync(bool approvedStatus)
+        {
+            return await _advertRepository.GetAllAdvertsAsync(approvedStatus);
+        }
+
         public async Task<List<Advert>> GetAllAsync()
         {
             return await _advertRepository.GetAllAsync();

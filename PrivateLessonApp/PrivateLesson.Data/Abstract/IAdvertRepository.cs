@@ -10,5 +10,6 @@ namespace PrivateLesson.Data.Abstract
     public interface IAdvertRepository : IGenericRepository<Advert>
     {
         Task<List<Advert>> GetAdvertsFullDataAsync(string id, bool approvedStatus);
+        Task<List<Advert>> GetAllAdvertsAsync(bool approvedStatus);
     }
 }
