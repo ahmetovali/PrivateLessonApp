@@ -10,41 +10,56 @@
                     <img src="~/images/logo.jpg" alt="Image" class="img-fluid">
                 </a>
             </div>
-            <div class="mr-auto">
-                <nav class="site-navigation position-relative text-right" role="navigation">
-                    <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                        <li class="active">
-                            <a href="index.html" class="nav-link text-left">Home</a>
-                        </li>
-                        <li class="has-children">
-                            <a href="about.html" class="nav-link text-left">About Us</a>
-                            <ul class="dropdown">
-                                <li><a href="teachers.html">Our Teachers</a></li>
-                                <li><a href="about.html">Our School</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="admissions.html" class="nav-link text-left">Admissions</a>
-                        </li>
-                        <li>
-                            <a href="courses.html" class="nav-link text-left">Courses</a>
-                        </li>
-                        <li>
-                            <a href="contact.html" class="nav-link text-left">Contact</a>
-                        </li>
-                    </ul>
-                    </ul>
-                </nav>
-
-            </div>
+            
             <div class="ml-auto">
-                <div class="social-wrap">
-                    <a href="#"><span class="icon-facebook"></span></a>
-                    <a href="#"><span class="icon-twitter"></span></a>
-                    <a href="#"><span class="icon-linkedin"></span></a>
+                
+                    <a asp-area="" asp-controller="Home" asp-action="GetAllAdverts" class="small mr-3">
+                        <i class="fa fa-user"></i><span class="ms-2 d-none d-sm-inline-block">İlanlar</span>
+                    </a>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        if (User.IsInRole("Admin"))
+                        {
+                            <a class="small mr-3" asp-area="Admin" asp-controller="Home" asp-action="Index">Admin Paneli</a>
+                        }
+                        if (User.IsInRole("Ogretmen"))
+                        {
+                            <a class="small mr-3" asp-area="" asp-controller="Advert" asp-action="Index" asp-route-id="@User.Identity.Name">İlanlarım</a>
+                        }
 
+                        <a asp-area="" asp-controller="Cart" asp-action="Index" class="small mr-3">
+
+                            <i class="fa fa-shopping-cart"></i><span class="ms-2 d-none d-sm-inline-block">Sepetim</span>
+                        </a>
+                        <a asp-area="" asp-controller="Account" asp-action="Manage" asp-route-id="@User.Identity.Name"
+                           class="small mr-3">
+                            <i class="fa fa-user"></i><span class="ms-2 d-none d-sm-inline-block">Hesabım</span>
+                        </a>
+                        <a asp-area="" asp-controller="Account" asp-action="Logout" class="small">
+                            <i class="fa fa-user"></i><span class="ms-2 d-none d-sm-inline-block">Çıkış Yap</span>
+                        </a>
+                    }
+                    else
+                    {
+
+
+
+                        <a asp-area="" asp-controller="Account" asp-action="Login" class="small mr-3">
+                            <i class="fa fa-user"></i><span class="ms-2 d-none d-sm-inline-block">Giriş Yap</span>
+                        </a>
+                        <a asp-area="" asp-controller="Account" asp-action="TeacherRegister" class="small btn btn-primary px-4 py-2 rounded-0">
+                            <i class="fa fa-user"></i><span class="ms-2 d-none d-sm-inline-block">Öğretmen Kayıt Ol</span>
+                        </a>
+                        <a asp-area="" asp-controller="Account" asp-action="StudentRegister" class="small btn btn-primary px-4 py-2 rounded-0">
+                            <i class="fa fa-user"></i><span class="ms-2 d-none d-sm-inline-block">Öğrenci Kayıt Ol</span>
+                        </a>
+
+                    }
+                <div class="social-wrap">
                     <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black">
-                        <span class="icon-menu h3"></span>
+                        <span class="icon-menu h3">
+
+                        </span>
                     </a>
                 </div>
             </div>

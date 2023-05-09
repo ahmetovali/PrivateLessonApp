@@ -105,16 +105,16 @@ app.UseAuthorization();
 app.UseNotyf();
 
 app.MapControllerRoute(
-    name: "teacherdetails",
-    pattern: "teacherdetails/{url}",
-    defaults: new { controller = "Home", action = "TeacherDetails" }
+    name: "advertdetails",
+    pattern: "advertdetails/{url}",
+    defaults: new { controller = "Home", action = "AdvertDetails" }
     );
 
-app.MapControllerRoute(
-    name: "branches",
-    pattern: "teachers/{branchurl?}",
-    defaults: new { controller = "Home", action = "Index" }
-    );
+//app.MapControllerRoute(
+//    name: "branches",
+//    pattern: "teachers/{branchurl?}",
+//    defaults: new { controller = "Home", action = "Index" }
+//    );
 
 app.MapAreaControllerRoute(
     name: "Admin",

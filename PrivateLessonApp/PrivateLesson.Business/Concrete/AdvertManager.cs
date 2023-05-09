@@ -26,6 +26,11 @@ namespace PrivateLesson.Business.Concrete
             _advertRepository.Delete(advert);
         }
 
+        public async Task<Advert> GetAdvertFullDataAsync(int id)
+        {
+            return await _advertRepository.GetAdvertFullDataAsync(id);
+        }
+
         public async Task<List<Advert>> GetAdvertsFullDataAsync(string id, bool approvedStatus)
         {
             return await _advertRepository.GetAdvertsFullDataAsync(id, approvedStatus);
@@ -44,6 +49,11 @@ namespace PrivateLesson.Business.Concrete
         public async Task<Advert> GetByIdAsync(int id)
         {
             return await _advertRepository.GetByIdAsync(id);
+        }
+
+        public async Task<int> GetByUrlAsync(string url)
+        {
+            return await _advertRepository.GetByUrlAsync(url);
         }
 
         public void Update(Advert advert)

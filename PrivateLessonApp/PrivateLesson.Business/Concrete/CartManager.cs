@@ -27,5 +27,10 @@ namespace PrivateLesson.Business.Concrete
         {
             return await _cartRepository.GetCartByUserId(userId);
         }
+
+        public async Task InitializeCart(string userId)
+        {
+            await _cartRepository.CreateAsync(new Cart { UserId = userId });
+        }
     }
 }

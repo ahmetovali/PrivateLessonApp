@@ -16,7 +16,7 @@ namespace PrivateLesson.Data.Abstract
         Task<List<Teacher>> GetTeachersByBranch(int id);
         Task<List<Teacher>> GetTeachersByStudent(int id);
         Task<int> GetByUrlAsync(string url);
-        Task<Teacher> GetTeacherFullDataAsync(string id);
+        Task<Teacher> GetTeacherFullDataStringAsync(string id);
 
     }
 }

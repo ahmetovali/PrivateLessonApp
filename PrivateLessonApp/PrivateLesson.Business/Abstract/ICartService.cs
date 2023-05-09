@@ -11,5 +11,6 @@ namespace PrivateLesson.Business.Abstract
     {
         Task<Cart> GetCartByUserId(string userId);
         Task AddToCart(string userId, int advertId, int amount);
+        Task InitializeCart(string userId);
     }
 }

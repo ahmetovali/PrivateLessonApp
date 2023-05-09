@@ -11,5 +11,7 @@ namespace PrivateLesson.Data.Abstract
     {
         Task<List<Advert>> GetAdvertsFullDataAsync(string id, bool approvedStatus);
         Task<List<Advert>> GetAllAdvertsAsync(bool approvedStatus);
+        Task<int> GetByUrlAsync(string url);
+        Task<Advert> GetAdvertFullDataAsync(int id);
     }
 }

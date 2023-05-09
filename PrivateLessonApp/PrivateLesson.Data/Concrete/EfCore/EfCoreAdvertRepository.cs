@@ -20,6 +20,20 @@ namespace PrivateLesson.Data.Concrete.EfCore
             get { return _dbContext as PrivateLessonContext; }
         }
 
+        public async Task<Advert> GetAdvertFullDataAsync(int id)
+        {
+            var advert = await AppContext
+                            .Adverts
+                            .Where(b => b.Id == id)
+                            .Include(t => t.Teacher)
+                            .ThenInclude(bc => bc.TeacherBranches)
+                            .ThenInclude(tb => tb.Branch)
+                            .Include(t => t.Teacher)
+                            .ThenInclude(u => u.User)
+                            .ThenInclude(b => b.Image)
+                            .FirstOrDefaultAsync();
+            return advert;
+        }
 
         public Task<List<Advert>> GetAdvertsFullDataAsync(string id, bool approvedStatus)
         {
@@ -53,6 +67,16 @@ namespace PrivateLesson.Data.Concrete.EfCore
                         .ThenInclude(tb => tb.Branch)
                         .ToListAsync();
             return adverts;
+        }
+
+        public Task<int> GetByUrlAsync(string url)
+        {
+            var result = AppContext
+                           .Adverts
+                           .Where(b => b.Url == url)
+                           .Select(b => b.Id)
+                           .FirstOrDefaultAsync();
+            return result;
         }
     }
 }

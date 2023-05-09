@@ -76,10 +76,11 @@ namespace PrivateLesson.Business.Concrete
         {
             return await _teacherRepository.GetByUrlAsync(url);
         }
+              
 
-        public async Task<Teacher> GetTeacherFullDataAsync(string id)
+        public async Task<Teacher> GetTeacherFullDataStringAsync(string id)
         {
-            return await _teacherRepository.GetTeacherFullDataAsync(id);
+            return await _teacherRepository.GetTeacherFullDataStringAsync(id);
         }
     }
 }

@@ -78,7 +78,7 @@ namespace PrivateLesson.Data.Concrete.EfCore
             return teacher;
         }
 
-        public async Task<Teacher> GetTeacherFullDataAsync(string id)
+        public async Task<Teacher> GetTeacherFullDataStringAsync(string id)
         {
             var teacher = await AppContext
                 .Teachers

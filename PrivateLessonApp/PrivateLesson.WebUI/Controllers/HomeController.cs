@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using PrivateLesson.Business.Abstract;
 using PrivateLesson.Entity.Concrete;
 using PrivateLesson.WebUI.Models.ViewModels;
+using PrivateLesson.WebUI.Models.ViewModels.AdvertModels;
 using System.Diagnostics;
 
 namespace PrivateLesson.WebUI.Controllers
@@ -10,15 +11,13 @@ namespace PrivateLesson.WebUI.Controllers
     public class HomeController : Controller
     {
         private ITeacherService _teacherService;
-        private IBranchService _branchService;
-        private IImageService _imageService;
+        private IBranchService _branchService;       
         private IAdvertService _advertService;
 
-        public HomeController(ITeacherService teacherService, IBranchService branchService, IImageService imageService, IAdvertService advertService)
+        public HomeController(ITeacherService teacherService, IBranchService branchService, IAdvertService advertService)
         {
             _teacherService = teacherService;
-            _branchService = branchService;
-            _imageService = imageService;
+            _branchService = branchService;            
             _advertService = advertService;
         }
 
@@ -49,8 +48,62 @@ namespace PrivateLesson.WebUI.Controllers
 
             return View(teacherModelList);
         }
+        [HttpGet]
+        public async Task<IActionResult> GetAllAdverts(AdvertListViewModel advertListViewModel)
+        {
+            List<Advert> advertList;
+            if (advertListViewModel.Adverts == null)
+            {
+                advertList = await _advertService.GetAllAdvertsAsync(advertListViewModel.ApprovedStatus);
+                List<AdvertViewModel> adverts = new List<AdvertViewModel>();
+                foreach (var advert in advertList)
+                {
+                    adverts.Add(new AdvertViewModel
+                    {
+                        Id = advert.Id,
+                        FirstName = advert.Teacher.User.FirstName,
+                        LastName = advert.Teacher.User.LastName,
+                        CreatedDate = advert.CreatedDate,
+                        UpdatedDate = advert.UpdatedDate,
+                        IsApproved = advert.IsApproved,
+                        Graduation = advert.Teacher.Graduation,
+                        Price = advert.Price,
+                        Description = advert.Description,
+                        Url = advert.Url,
+                        Image = advert.Teacher.User.Image,
+                        Branches = advert.Teacher.TeacherBranches.Select(tb => tb.Branch).ToList()
+                        //Teacher=advert.Teacher
+                    });
+                }
+                advertListViewModel.Adverts = adverts;
+            }
+            return View(advertListViewModel);
+        }
 
-       
+        [HttpGet]
+        public async Task<IActionResult> AdvertDetails(string url)
+        {
+            var advertId = await _advertService.GetByUrlAsync(url);
+            Advert advert = await _advertService.GetAdvertFullDataAsync(advertId);
+            AdvertViewModel advertViewModel = new AdvertViewModel()
+            {
+                Id = advert.Id,
+                FirstName = advert.Teacher.User.FirstName,
+                LastName = advert.Teacher.User.LastName,
+                Graduation = advert.Teacher.Graduation,
+                Image = advert.Teacher.User.Image,
+                Description = advert.Description,
+                Price = advert.Price,
+                UpdatedDate = advert.UpdatedDate,
+                CreatedDate = advert.CreatedDate,
+                IsApproved = advert.IsApproved,
+                Url = advert.Url,
+                Branches = advert.Teacher.TeacherBranches.Select(tb => tb.Branch).ToList()
+            };
+            return View(advertViewModel);
+        }
+
+
 
 
     }
