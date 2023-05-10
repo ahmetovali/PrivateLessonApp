@@ -25,18 +25,20 @@
     <link rel="stylesheet" href="~/css/bootstrap-datepicker.css">
 
     <link rel="stylesheet" href="~/fonts/flaticon/font/flaticon.css">
+    @await RenderSectionAsync("Styles", required:false)
 
     <link rel="stylesheet" href="~/css/aos.css">
     <link href="~/css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
 
+
     <link rel="stylesheet" href="~/css/style.css">
 </head>
-<body>
-     @await Html.PartialAsync("_HeaderPartial")
-    <div class="container">
-        <main role="main" class="pb-3">
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+     @await Html.PartialAsync("_NewheaderPartial")
+    <div @*class="container"*@>
+        @*<main role="main" class="pb-3">*@
             @RenderBody()
-        </main>
+        @*</main>*@
     </div>
 
     @await Html.PartialAsync("_FooterPartial") 
