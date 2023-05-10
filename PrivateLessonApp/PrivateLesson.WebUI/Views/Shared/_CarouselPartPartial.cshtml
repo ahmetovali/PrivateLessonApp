@@ -3,24 +3,28 @@
 <div class="course-1-item">
     <figure class="thumnail">
         <a><img src="~/images/@Model.ImageUrl" alt="Image" class="img-fluid"></a>
-        <div class="price">$99.00</div>
+       
         <div class="category">
-            <h3>Mobile Application</h3>
+            @for (int i = 0; i < Model.TeacherBranches.Count; i++)
+            {
+                <span class="ps-3 text-center text-white">@Model.TeacherBranches[i].BranchName </span>
+            }
+           
         </div>
     </figure>
     <div class="course-1-content pb-4">
-        <h2>How To Create Mobile Apps Using Ionic</h2>
+        <h2>@Model.FirstName @Model.LastName</h2>
         <div class="rating text-center mb-3">
             <span class="icon-star2 text-warning"></span>
             <span class="icon-star2 text-warning"></span>
             <span class="icon-star2 text-warning"></span>
             <span class="icon-star2 text-warning"></span>
             <span class="icon-star2 text-warning"></span>
+            
         </div>
         <p class="desc mb-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique accusantium
-            ipsam.
+           @Model.Graduation
         </p>
-        <p><a href="course-single.html" class="btn btn-primary rounded-0 px-4">Enroll In This Course</a></p>
+        <p><a asp-area="" asp-controller="Home" asp-action="TeacherDetails" asp-route-id="@Model.Id" class="btn btn-primary rounded-0 px-4">İncele</a></p>
     </div>
 </div>

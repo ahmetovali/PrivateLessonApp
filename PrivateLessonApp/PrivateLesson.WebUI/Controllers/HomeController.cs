@@ -40,7 +40,7 @@ namespace PrivateLesson.WebUI.Controllers
                 TeacherBranches = t.TeacherBranches.Select(tb => tb.Branch).ToList(),
                 TeacherStudents = t.TeacherStudents.Select(ts => ts.Student).ToList(),
 
-            }).ToList();
+            }).Take(4).ToList();
             if (RouteData.Values["branchurl"] != null)
             {
                 ViewBag.SelectedBranchName = await _branchService.GetBranchNameByUrlAsync(RouteData.Values["branchurl"].ToString());
@@ -101,6 +101,25 @@ namespace PrivateLesson.WebUI.Controllers
                 Branches = advert.Teacher.TeacherBranches.Select(tb => tb.Branch).ToList()
             };
             return View(advertViewModel);
+        }
+        [HttpGet]
+        public async Task<IActionResult> TeacherDetails(int id)
+        {
+            Teacher teacher = await _teacherService.GetTeacherFullDataAsync(id);
+            TeacherModel teacherModel = new TeacherModel()
+            {
+                Id = teacher.Id,
+                FirstName = teacher.User.FirstName,
+                LastName = teacher.User.LastName,
+                Graduation = teacher.Graduation,
+                ImageUrl = teacher.User.Image.Url,
+                UpdatedDate = teacher.UpdatedDate,
+                CreatedDate = teacher.CreatedDate,
+                IsApproved = teacher.IsApproved,
+                Url = teacher.Url,
+                TeacherBranches = teacher.TeacherBranches.Select(tb => tb.Branch).ToList()
+            };
+            return View(teacherModel);
         }
 
 
