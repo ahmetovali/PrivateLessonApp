@@ -48,13 +48,19 @@ namespace PrivateLesson.Data.Concrete.EfCore
         public async Task<Cart> GetCartByUserId(string userId)
         {
             return await AppContext
-                 .Carts
-                 .Include(c => c.CartItems)
-                 .ThenInclude(ci => ci.Advert)
-                 .ThenInclude(ci => ci.Teacher)
-                 .ThenInclude(ci => ci.User)
-                 .ThenInclude(ci => ci.Image)
-                 .FirstOrDefaultAsync(c => c.UserId == userId);
+                .Carts
+                .Include(c => c.CartItems)
+                .ThenInclude(ci => ci.Advert)
+                .ThenInclude(ci => ci.Teacher)
+                .ThenInclude(ci => ci.TeacherBranches)
+                .ThenInclude(ci => ci.Branch)
+                .Include(c => c.CartItems)
+                .ThenInclude(ci => ci.Advert)
+                .ThenInclude(ci => ci.Teacher)
+                .ThenInclude(ci => ci.User)
+                .ThenInclude(ci => ci.Image)
+
+                .FirstOrDefaultAsync(c => c.UserId == userId);
         }
     }
 }

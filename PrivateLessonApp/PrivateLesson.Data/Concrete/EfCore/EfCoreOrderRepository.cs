@@ -25,7 +25,8 @@ namespace PrivateLesson.Data.Concrete.EfCore
             var orders = AppContext
                  .Orders
                  .Include(o => o.OrderItems)
-                 .ThenInclude(oi => oi.Teacher)
+                 .ThenInclude(oi => oi.Advert)
+                 .ThenInclude(oi => oi.Teacher)                 
                  .ThenInclude(oi => oi.User)
                  .ThenInclude(oi => oi.Image)
                  .AsQueryable();
@@ -49,6 +50,7 @@ namespace PrivateLesson.Data.Concrete.EfCore
             var orders = AppContext
                 .Orders
                 .Include(o => o.OrderItems)
+                .ThenInclude(oi => oi.Advert)
                 .ThenInclude(oi => oi.Teacher)
                 .ThenInclude(oi => oi.User)
                 .ThenInclude(oi => oi.Image)

@@ -19,5 +19,6 @@ namespace PrivateLesson.Business.Abstract
         Task<List<Branch>> GetAllBranchesFullDataAsync(bool ApprovedStatus);
 
         Task<Branch> GetBranchFullDataAsync(int id);
+        Task<List<Branch>> GetBranchesByTeacherAsync(int id);
     }
 }

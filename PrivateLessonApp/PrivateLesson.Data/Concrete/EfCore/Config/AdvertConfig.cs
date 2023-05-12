@@ -16,6 +16,7 @@ namespace PrivateLesson.Data.Concrete.EfCore.Config
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
             builder.HasOne(t => t.Teacher).WithMany(t => t.Adverts).HasForeignKey(t => t.TeacherId).OnDelete(DeleteBehavior.Cascade);
+            builder.HasOne(t => t.Branch).WithMany(t => t.Adverts).HasForeignKey(t => t.BranchId).OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

@@ -12,7 +12,7 @@ namespace PrivateLesson.Data.Abstract
         Task<string> GetBranchNameByUrlAsync(string url);
         Task<List<Branch>> GetBranchesAsync(bool ApprovedStatus);
         Task<List<Branch>> GetAllBranchesFullDataAsync(bool ApprovedStatus);
-
+        Task<List<Branch>> GetBranchesByTeacherAsync(int id);
         Task<Branch> GetBranchFullDataAsync(int id);
     }
 }

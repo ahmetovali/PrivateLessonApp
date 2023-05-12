@@ -339,7 +339,7 @@ namespace PrivateLesson.Data.Concrete.EfCore.Extensions
             {
                 new Advert{Id=1, TeacherId= 4, Description="ilan", Price=45, CreatedDate = DateTime.Now,
                     UpdatedDate = DateTime.Now,
-                    IsApproved = true, Url="ilan" }
+                    IsApproved = true, Url="ilan", BranchId=4 }
             };
             modelBuilder.Entity<Advert>().HasData(adverts);
         }
