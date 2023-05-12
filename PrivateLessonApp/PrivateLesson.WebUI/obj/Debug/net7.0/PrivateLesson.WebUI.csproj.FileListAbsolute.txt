@@ -1,3 +1,12 @@
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\obj\Debug\net7.0\PrivateLesson.WebUI.csproj.AssemblyReference.cache
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\obj\Debug\net7.0\PrivateLesson.WebUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\obj\Debug\net7.0\PrivateLesson.WebUI.AssemblyInfoInputs.cache
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\obj\Debug\net7.0\PrivateLesson.WebUI.AssemblyInfo.cs
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\obj\Debug\net7.0\PrivateLesson.WebUI.csproj.CoreCompileInputs.cache
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\obj\Debug\net7.0\PrivateLesson.WebUI.MvcApplicationPartsAssemblyInfo.cs
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\obj\Debug\net7.0\PrivateLesson.WebUI.MvcApplicationPartsAssemblyInfo.cache
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\obj\Debug\net7.0\PrivateLesson.WebUI.RazorAssemblyInfo.cache
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\obj\Debug\net7.0\PrivateLesson.WebUI.RazorAssemblyInfo.cs
 C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\bin\Debug\net7.0\appsettings.Development.json
 C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\bin\Debug\net7.0\appsettings.json
 C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\bin\Debug\net7.0\PrivateLesson.WebUI.staticwebassets.runtime.json
@@ -9,6 +18,7 @@ C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\bin\D
 C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\bin\Debug\net7.0\AspNetCoreHero.ToastNotification.Views.dll
 C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\bin\Debug\net7.0\AspNetCoreHero.ToastNotification.dll
 C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\bin\Debug\net7.0\Humanizer.dll
+C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\bin\Debug\net7.0\Iyzipay.dll
 C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -270,15 +280,6 @@ C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\bin\D
 C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\bin\Debug\net7.0\PrivateLesson.Core.pdb
 C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\bin\Debug\net7.0\PrivateLesson.Data.pdb
 C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\bin\Debug\net7.0\PrivateLesson.Entity.pdb
-C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\obj\Debug\net7.0\PrivateLesson.WebUI.csproj.AssemblyReference.cache
-C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\obj\Debug\net7.0\PrivateLesson.WebUI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\obj\Debug\net7.0\PrivateLesson.WebUI.AssemblyInfoInputs.cache
-C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\obj\Debug\net7.0\PrivateLesson.WebUI.AssemblyInfo.cs
-C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\obj\Debug\net7.0\PrivateLesson.WebUI.csproj.CoreCompileInputs.cache
-C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\obj\Debug\net7.0\PrivateLesson.WebUI.MvcApplicationPartsAssemblyInfo.cs
-C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\obj\Debug\net7.0\PrivateLesson.WebUI.MvcApplicationPartsAssemblyInfo.cache
-C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\obj\Debug\net7.0\PrivateLesson.WebUI.RazorAssemblyInfo.cache
-C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\obj\Debug\net7.0\PrivateLesson.WebUI.RazorAssemblyInfo.cs
 C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\obj\Debug\net7.0\staticwebassets\msbuild.PrivateLesson.WebUI.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\obj\Debug\net7.0\staticwebassets\msbuild.build.PrivateLesson.WebUI.props
 C:\Git\PrivateLesson\PrivateLessonApp\PrivateLessonApp\PrivateLesson.WebUI\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.PrivateLesson.WebUI.props

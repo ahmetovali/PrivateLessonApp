@@ -5,6 +5,7 @@ using PrivateLesson.Core;
 using PrivateLesson.Entity.Concrete.Identity;
 using PrivateLesson.Entity.Concrete;
 using PrivateLesson.WebUI.Models.ViewModels.AdvertModels;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace PrivateLesson.WebUI.Controllers
 {
@@ -13,15 +14,16 @@ namespace PrivateLesson.WebUI.Controllers
         private IAdvertService _advertService;
         private ITeacherService _teacherService;
         private UserManager<User> _userManager;
+        private IBranchService _branchService;
 
-        public AdvertController(IAdvertService advertService, ITeacherService teacherService, UserManager<User> userManager)
+        public AdvertController(IAdvertService advertService, ITeacherService teacherService, UserManager<User> userManager, IBranchService branchService)
         {
             _advertService = advertService;
             _teacherService = teacherService;
             _userManager = userManager;
+            _branchService = branchService;
         }
 
-        // GET: /<controller>/
         public async Task<IActionResult> Index(AdvertListViewModel advertListViewModel)
         {
             List<Advert> advertList;
@@ -30,6 +32,7 @@ namespace PrivateLesson.WebUI.Controllers
                 var userId = _userManager.GetUserId(User);
                 var teacher = _teacherService.GetTeacherFullDataStringAsync(userId);
                 advertList = await _advertService.GetAdvertsFullDataAsync(userId, advertListViewModel.ApprovedStatus);
+                var branches = await _branchService.GetBranchesByTeacherAsync(teacher.Id);
                 List<AdvertViewModel> adverts = new List<AdvertViewModel>();
                 foreach (var advert in advertList)
                 {
@@ -46,7 +49,8 @@ namespace PrivateLesson.WebUI.Controllers
                         Description = advert.Description,
                         Url = advert.Url,
                         Teacher = advert.Teacher,
-                        Image = advert.Teacher.User.Image
+                        Image = advert.Teacher.User.Image,
+                        BranchName = advert.Branch.BranchName
                     });
                 }
                 advertListViewModel.Adverts = adverts;
@@ -57,13 +61,35 @@ namespace PrivateLesson.WebUI.Controllers
         [HttpGet]
         public async Task<IActionResult> Create()
         {
+            int activeBranchId = 0;
             var userId = _userManager.GetUserId(User);
             Teacher teacher = await _teacherService.GetTeacherFullDataStringAsync(userId);
+            var branches = await _branchService.GetBranchesByTeacherAsync(teacher.Id);
+
             AdvertAddViewModel advertAddViewModel = new AdvertAddViewModel()
             {
                 Teacher = teacher,
-                TeacherId = teacher.Id
+                TeacherId = teacher.Id,
             };
+
+            if (advertAddViewModel.BranchId == 0)
+            {
+                activeBranchId = branches.FirstOrDefault().Id;
+            }
+            else
+            {
+                activeBranchId = advertAddViewModel.BranchId;
+
+            }
+
+            List<SelectListItem> selectBranchList = branches.Select(r => new SelectListItem
+            {
+                Text = r.BranchName,
+                Value = r.Id.ToString(),
+                Selected = r.Id == activeBranchId ? true : false
+            }).ToList();
+
+            advertAddViewModel.SelectBranchList = selectBranchList;
 
             return View(advertAddViewModel);
         }
@@ -71,8 +97,28 @@ namespace PrivateLesson.WebUI.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(AdvertAddViewModel advertAddViewModel)
         {
+            int activeBranchId = 0;
             var userId = _userManager.GetUserId(User);
             Teacher teacher = await _teacherService.GetTeacherFullDataStringAsync(userId);
+            var branches = await _branchService.GetBranchesByTeacherAsync(teacher.Id);
+            if (advertAddViewModel.BranchId == 0)
+            {
+                activeBranchId = branches.FirstOrDefault().Id;
+            }
+            else
+            {
+                activeBranchId = advertAddViewModel.BranchId;
+
+            }
+
+            List<SelectListItem> selectBranchList = branches.Select(r => new SelectListItem
+            {
+                Text = r.BranchName,
+                Value = r.Id.ToString(),
+                Selected = r.Id == activeBranchId ? true : false
+            }).ToList();
+
+            advertAddViewModel.SelectBranchList = selectBranchList;
             if (ModelState.IsValid)
             {
                 Advert advert = new Advert()
@@ -84,7 +130,8 @@ namespace PrivateLesson.WebUI.Controllers
                     Description = advertAddViewModel.Description,
                     TeacherId = teacher.Id,
                     Teacher = teacher,
-                    Url = Jobs.GetUrl(advertAddViewModel.Description)
+                    Url = Jobs.GetUrl(advertAddViewModel.Description),
+                    BranchId = activeBranchId
                 };
                 await _advertService.CreateAsync(advert);
                 return RedirectToAction("Index");
@@ -135,5 +182,6 @@ namespace PrivateLesson.WebUI.Controllers
             }
             return View(advertUpdateViewModel);
         }
+
     }
 }

@@ -18,11 +18,6 @@ namespace PrivateLesson.WebUI.Models.ViewModels
         public string LastName { get; set; }
 
 
-        //[DisplayName("Adres")]
-        //[Required(ErrorMessage = "Adres alanı boş bırakılmamalıdır.")]
-        //public string Address { get; set; }
-
-
         [DisplayName("Şehir")]
         [Required(ErrorMessage = "Şehir alanı boş bırakılmamalıdır.")]
         public string City { get; set; }
@@ -71,5 +66,6 @@ namespace PrivateLesson.WebUI.Models.ViewModels
         [DisplayName("Cvc No")]
         [Required(ErrorMessage = "Cvc bilgisi zorunludur")]
         public string Cvc { get; set; }
+
     }
 }

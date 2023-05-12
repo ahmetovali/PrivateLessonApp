@@ -38,9 +38,9 @@ namespace PrivateLesson.WebUI.Controllers
                 UserId = t.UserId,
                 ImageUrl = t.User.Image.Url,
                 TeacherBranches = t.TeacherBranches.Select(tb => tb.Branch).ToList(),
-                TeacherStudents = t.TeacherStudents.Select(ts => ts.Student).ToList(),
+                TeacherStudents = t.TeacherStudents.Select(ts => ts.Student).ToList()
 
-            }).Take(4).ToList();
+            }).ToList();
             if (RouteData.Values["branchurl"] != null)
             {
                 ViewBag.SelectedBranchName = await _branchService.GetBranchNameByUrlAsync(RouteData.Values["branchurl"].ToString());
@@ -48,6 +48,8 @@ namespace PrivateLesson.WebUI.Controllers
 
             return View(teacherModelList);
         }
+
+
         [HttpGet]
         public async Task<IActionResult> GetAllAdverts(AdvertListViewModel advertListViewModel)
         {
@@ -71,8 +73,7 @@ namespace PrivateLesson.WebUI.Controllers
                         Description = advert.Description,
                         Url = advert.Url,
                         Image = advert.Teacher.User.Image,
-                        Branches = advert.Teacher.TeacherBranches.Select(tb => tb.Branch).ToList()
-                        //Teacher=advert.Teacher
+                        BranchName = advert.Branch.BranchName                       
                     });
                 }
                 advertListViewModel.Adverts = adverts;
@@ -97,8 +98,8 @@ namespace PrivateLesson.WebUI.Controllers
                 UpdatedDate = advert.UpdatedDate,
                 CreatedDate = advert.CreatedDate,
                 IsApproved = advert.IsApproved,
+                BranchName =advert.Branch.BranchName,
                 Url = advert.Url,
-                Branches = advert.Teacher.TeacherBranches.Select(tb => tb.Branch).ToList()
             };
             return View(advertViewModel);
         }

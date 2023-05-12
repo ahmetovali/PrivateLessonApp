@@ -39,17 +39,17 @@
                                 <td>
                                     <form asp-area=""
                                   asp-controller="Cart"
-                                  asp-action="ChangeQuantity"
-                                  id="formQuantity_@cartItem.CartItemId"
+                                  asp-action="ChangeAmount"
+                                  id="formAmount_@cartItem.CartItemId"
                                   method="post">
                                         <input type="hidden" name="cartItemId" value="@cartItem.CartItemId" />
                                         <input type="number"
                                        class="form-control d-inline p-1"
-                                       name="Quantity"
+                                       name="Amount"
                                        value="@cartItem.Amount"
                                        min="1"
                                        max="10"
-                                       onchange="document.getElementById('formQuantity_@cartItem.CartItemId').submit();" />
+                                       onchange="document.getElementById('formAmount_@cartItem.CartItemId').submit();" />
 
                                     </form>
 

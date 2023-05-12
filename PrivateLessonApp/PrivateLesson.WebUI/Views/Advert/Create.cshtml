@@ -26,8 +26,21 @@
                     <span class="text-danger" asp-validation-for="Description"></span>
                 </div>
             </div>
-
         </div>
+
+
+        @if (Model.SelectBranchList.Count == 0)
+        {
+                <div class="alert alert-warning">
+                    Herhangi bir branş bilgisi bulunamamıştır!
+                </div>
+        }
+        else
+        {
+                <label class="form-label" asp-for="BranchId"></label>
+                <select asp-for="BranchId" asp-items="@Model.SelectBranchList" class="form-select">
+                </select>
+        }
 
         <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
             <button type="submit" class="btn btn-primary btn-lg">Kaydet</button>

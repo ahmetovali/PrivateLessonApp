@@ -33,6 +33,6 @@ namespace PrivateLesson.WebUI.Models.ViewModels.AdvertModels
         public bool IsApproved { get; set; }
         public string Url { get; set; }
         public Teacher Teacher { get; set; }
-        public List<Branch> Branches { get; set; }
+        public string BranchName { get; set; }
     }
 }
