@@ -19,7 +19,7 @@ namespace PrivateLesson.Entity.Concrete.Identity
         public Teacher? Teacher { get; set; }
         public Student? Student { get; set; }
         public Cart Cart { get; set; }
-        public Order? Order { get; set; }
+        public List<Order> Orders { get; set; }
         public int ImageId { get; set; }
         public Image Image { get; set; }
     }
