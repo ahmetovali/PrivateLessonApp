@@ -273,8 +273,8 @@ namespace PrivateLesson.WebUI.Controllers
         {
             #region Payment Options Created
             Options options = new Options();
-            options.ApiKey = "sandbox-xPm9h5LKCjVpF7R7hezHOxtpOu5wyx7m";
-            options.SecretKey = "sandbox-zp1uhqOPOrTOYxideUc619UVH0qbiBPd";
+            options.ApiKey = "sandbox-Fa5Q5a0XDNPbqzGfodcjnt5V0Fkc4NoO";
+            options.SecretKey = "sandbox-fyXwnU5QDz1CLZ3lCjmO2TEaIf3AuSzH";
             options.BaseUrl = "https://sandbox-api.iyzipay.com";
             #endregion
             #region Create Payment Request
