@@ -107,5 +107,14 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
             return RedirectToAction("Index", "Users");
         }
 
+        public async Task<IActionResult> Delete(string id)
+        {
+            User deletedUser = await _userManager.FindByIdAsync(id);
+            if (deletedUser != null)
+            {
+                await _userManager.DeleteAsync(deletedUser);
+            }
+            return RedirectToAction("Index");
+        }
     }
 }

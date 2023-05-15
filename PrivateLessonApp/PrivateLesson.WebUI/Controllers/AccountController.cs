@@ -1,12 +1,15 @@
 ﻿using AspNetCoreHero.ToastNotification.Abstractions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using PrivateLesson.Business.Abstract;
 using PrivateLesson.Core;
 using PrivateLesson.Entity.Concrete;
 using PrivateLesson.Entity.Concrete.Identity;
 using PrivateLesson.WebUI.EmailServices;
+using PrivateLesson.WebUI.Models.ViewModels;
 using PrivateLesson.WebUI.Models.ViewModels.AccountModels;
+
 
 namespace PrivateLesson.WebUI.Controllers
 {
@@ -19,8 +22,10 @@ namespace PrivateLesson.WebUI.Controllers
         private readonly IStudentService _studentService;
         private readonly INotyfService _notyfService;
         private readonly IEmailSender _emailSender;
+        private readonly IOrderService _orderService;
+        private readonly ICartService _cartService;
 
-        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager, ITeacherService teacherService, IBranchService branchService, IStudentService studentService, INotyfService notyfService, IEmailSender emailSender)
+        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager, ITeacherService teacherService, IBranchService branchService, IStudentService studentService, INotyfService notyfService, IEmailSender emailSender, IOrderService orderService, ICartService cartService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -29,6 +34,8 @@ namespace PrivateLesson.WebUI.Controllers
             _studentService = studentService;
             _notyfService = notyfService;
             _emailSender = emailSender;
+            _orderService = orderService;
+            _cartService = cartService;
         }
 
         [HttpGet]
@@ -70,6 +77,8 @@ namespace PrivateLesson.WebUI.Controllers
                 if (result.Succeeded)
                 {
                     await _userManager.AddToRoleAsync(user, "OGRETMEN");
+                    await _cartService.InitializeCart(user.Id);
+
                     Teacher teacher = new Teacher
                     {
                         CreatedDate = DateTime.Now,
@@ -120,12 +129,14 @@ namespace PrivateLesson.WebUI.Controllers
                         IsApproved = true,
                         Url = Jobs.UploadImage(studentRegisterViewModel.Image)
                     }
+
                 };
                 var result = await _userManager.CreateAsync(user, studentRegisterViewModel.Password);
 
                 if (result.Succeeded)
                 {
                     await _userManager.AddToRoleAsync(user, "OGRENCI");
+                    await _cartService.InitializeCart(user.Id);
                     Student student = new Student
                     {
                         CreatedDate = DateTime.Now,
@@ -135,12 +146,122 @@ namespace PrivateLesson.WebUI.Controllers
                         IsApproved = true,
                         UserId = user.Id,
                     };
+
                     await _studentService.CreateAsync(student);
                     return RedirectToAction("Login", "Account");
                 }
             }
             return View(studentRegisterViewModel);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Manage(string id)
+        {
+            string name = id;
+            if (String.IsNullOrEmpty(name))
+            {
+                return NotFound();
+            }
+            User user = await _userManager.FindByNameAsync(name);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            List<SelectListItem> genderList = new List<SelectListItem>();
+            genderList.Add(new SelectListItem
+            {
+                Text = "Kadın",
+                Value = "Kadın",
+                Selected = user.Gender == "Kadın" ? true : false
+            });
+            genderList.Add(new SelectListItem
+            {
+                Text = "Erkek",
+                Value = "Erkek",
+                Selected = user.Gender == "Erkek" ? true : false
+            });
+            UserManageViewModel userManageViewModel = new UserManageViewModel
+            {
+                Id = user.Id,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Gender = user.Gender,
+                DateOfBirth = user.DateOfBirth,
+                UserName = user.UserName,
+                City = user.City,
+                Email = user.Email,
+                GenderSelectList = genderList
+            };
+            var orderList = await _orderService.GetAllOrdersAsync(user.Id);
+            List<OrderViewModel> orders = orderList.Select(o => new OrderViewModel
+            {
+                Id = o.Id,
+                FirstName = o.FirstName,
+                LastName = o.LastName,
+                City = o.City,
+                Email = o.Email,
+                Phone = o.Phone,
+                OrderDate = o.OrderDate,
+                OrderItems = o.OrderItems.Select(oi => new CartItemViewModel
+                {
+                    CartItemId = oi.Id,
+                    AdvertId = oi.AdvertId,
+                    TeacherName = oi.Advert.Teacher.User.FirstName + oi.Advert.Teacher.User.LastName,
+                    ItemPrice = oi.Advert.Price,
+                    TeacherGraduation = oi.Advert.Teacher.Graduation,
+                    TeacherUrl = oi.Advert.Teacher.Url,
+                    BranchName = oi.Advert.Branch.BranchName,
+                    Description = oi.Advert.Description,
+                    Amount = oi.Amount,
+                    ImageUrl = oi.Advert.Teacher.User.Image.Url
+                }).ToList()
+            }).ToList();
+            userManageViewModel.Orders = orders;
+            return View(userManageViewModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Manage(UserManageViewModel userManageViewModel)
+        {
+            if (userManageViewModel == null) { return NotFound(); }
+            User user = await _userManager.FindByIdAsync(userManageViewModel.Id);
+            bool logOut = !(user.UserName == userManageViewModel.UserName);
+            user.FirstName = userManageViewModel.FirstName;
+            user.LastName = userManageViewModel.LastName;
+            user.Gender = userManageViewModel.Gender;
+            user.UserName = userManageViewModel.UserName;
+            user.City = userManageViewModel.City;
+            user.Email = userManageViewModel.Email;
+            user.DateOfBirth = userManageViewModel.DateOfBirth;
+            var result = await _userManager.UpdateAsync(user);
+            if (result.Succeeded)
+            {
+                if (logOut)
+                {
+                    TempData["Message"] = Jobs.CreateMessage("Başarılı", "Profiliniz başarıyla güncellenmiştir. Kullanıcı adınız değiştiği için yeniden giriş yapmalısınız!", "warning");
+                    return RedirectToAction("Logout");
+                }
+                _notyfService.Success("Profiliniz başarıyla güncellenmiştir.", 5);
+                return Redirect("/Account/Manage/" + user.UserName);
+            }
+            List<SelectListItem> genderList = new List<SelectListItem>();
+            genderList.Add(new SelectListItem
+            {
+                Text = "Kadın",
+                Value = "Kadın",
+                Selected = user.Gender == "Kadın" ? true : false
+            });
+            genderList.Add(new SelectListItem
+            {
+                Text = "Erkek",
+                Value = "Erkek",
+                Selected = user.Gender == "Erkek" ? true : false
+            });
+            userManageViewModel.GenderSelectList = genderList;
+            return View(userManageViewModel);
+
+        }
+
 
         [HttpGet]
         public IActionResult Login(string returnUrl = null)
@@ -224,7 +345,7 @@ namespace PrivateLesson.WebUI.Controllers
             await _emailSender.SendEmailAsync(
                 email,
                 "Ozel Ders Şifre Sıfırlama!",
-                $"Parolanızı yeniden belirlemek için <a href='http://localhost:5116/{url}'>tıklayınız</a>"
+                $"Parolanızı yeniden belirlemek için <a href='http://localhost:5168{url}'>tıklayınız</a>"
                 );
             TempData["Message"] = Jobs.CreateMessage(
                "BİLGİLENDİRME!",

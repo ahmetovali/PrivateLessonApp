@@ -1,4 +1,5 @@
-﻿using PrivateLesson.Entity.Concrete;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using PrivateLesson.Entity.Concrete;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
@@ -20,6 +21,8 @@ namespace PrivateLesson.WebUI.Models.ViewModels.AccountModels
 
         [DisplayName("Doğum Tarihi")]
         [Required(ErrorMessage = "Doğum tarihi alanı boş bırakılmamalıdır")]
+        [DataType(DataType.Date)]
+
         public DateTime? DateOfBirth { get; set; }
 
         [DisplayName("Şehir")]
@@ -31,8 +34,6 @@ namespace PrivateLesson.WebUI.Models.ViewModels.AccountModels
         public string Phone { get; set; }
         public string Graduation { get; set; }
         public decimal? Price { get; set; }
-        [DisplayName("Resim")]
-        [Required(ErrorMessage = "Resim alanı boş bırakılmamalıdır")]
         public IFormFile Image { get; set; }
 
         public int[] SelectedBranches { get; set; }
@@ -56,5 +57,6 @@ namespace PrivateLesson.WebUI.Models.ViewModels.AccountModels
         [Required(ErrorMessage = "Parola tekrar alanı boş bırakılmamalıdır")]
         [DataType(DataType.Password)]
         public string RePassword { get; set; }
+        public List<SelectListItem> GenderSelectList { get; set; }
     }
 }

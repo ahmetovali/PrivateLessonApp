@@ -73,7 +73,9 @@ namespace PrivateLesson.WebUI.Controllers
                         Description = advert.Description,
                         Url = advert.Url,
                         Image = advert.Teacher.User.Image,
-                        BranchName = advert.Branch.BranchName                       
+                        BranchName = advert.Branch.BranchName
+                        //Branches=advert.Teacher.TeacherBranches.Select(tb=>tb.Branch).ToList()
+                        //Teacher=advert.Teacher
                     });
                 }
                 advertListViewModel.Adverts = adverts;
@@ -98,29 +100,10 @@ namespace PrivateLesson.WebUI.Controllers
                 UpdatedDate = advert.UpdatedDate,
                 CreatedDate = advert.CreatedDate,
                 IsApproved = advert.IsApproved,
-                BranchName =advert.Branch.BranchName,
+                BranchName = advert.Branch.BranchName,
                 Url = advert.Url,
             };
             return View(advertViewModel);
-        }
-        [HttpGet]
-        public async Task<IActionResult> TeacherDetails(int id)
-        {
-            Teacher teacher = await _teacherService.GetTeacherFullDataAsync(id);
-            TeacherModel teacherModel = new TeacherModel()
-            {
-                Id = teacher.Id,
-                FirstName = teacher.User.FirstName,
-                LastName = teacher.User.LastName,
-                Graduation = teacher.Graduation,
-                ImageUrl = teacher.User.Image.Url,
-                UpdatedDate = teacher.UpdatedDate,
-                CreatedDate = teacher.CreatedDate,
-                IsApproved = teacher.IsApproved,
-                Url = teacher.Url,
-                TeacherBranches = teacher.TeacherBranches.Select(tb => tb.Branch).ToList()
-            };
-            return View(teacherModel);
         }
 
 

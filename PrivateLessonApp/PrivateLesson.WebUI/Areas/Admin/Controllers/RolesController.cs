@@ -174,5 +174,14 @@ namespace PrivateLesson.WebUI.Areas.Admin.Controllers
             roleUsersViewModel.Role = role;
             return View("RoleAssignment", roleUsersViewModel);
         }
+        public async Task<IActionResult> Delete(string id)
+        {
+            Role deletedRole = await _roleManager.FindByIdAsync(id);
+            if (deletedRole != null)
+            {
+                await _roleManager.DeleteAsync(deletedRole);
+            }
+            return RedirectToAction("Index");
+        }
     }
 }

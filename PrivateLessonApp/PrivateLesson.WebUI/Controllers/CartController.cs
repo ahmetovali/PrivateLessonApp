@@ -118,7 +118,7 @@ namespace PrivateLesson.WebUI.Controllers
                        {
                            CartItemId = ci.Id,
                            AdvertId = ci.AdvertId,
-                           TeacherName = ci.Advert.Teacher.User.FirstName + ci.Advert.Teacher.User.LastName,
+                           TeacherName = ci.Advert.Teacher.User.FirstName + " " + ci.Advert.Teacher.User.LastName,
                            ItemPrice = ci.Advert.Price,
                            Amount = ci.Amount,
                            TeacherGraduation = ci.Advert.Teacher.Graduation,
@@ -146,7 +146,7 @@ namespace PrivateLesson.WebUI.Controllers
                     {
                         CartItemId = ci.Id,
                         AdvertId = ci.AdvertId,
-                        TeacherName = ci.Advert.Teacher.User.FirstName + ci.Advert.Teacher.User.LastName,
+                        TeacherName = ci.Advert.Teacher.User.FirstName + " " + ci.Advert.Teacher.User.LastName,
                         ItemPrice = ci.Advert.Price,
                         Amount = ci.Amount,
                         TeacherGraduation = ci.Advert.Teacher.Graduation,
@@ -193,6 +193,8 @@ namespace PrivateLesson.WebUI.Controllers
                     BranchName = ci.Advert.Branch.BranchName
                 }).ToList()
             };
+
+
             return View(orderViewModel);
         }
 
@@ -223,6 +225,22 @@ namespace PrivateLesson.WebUI.Controllers
             await _orderService.CreateAsync(order);
         }
 
+        //[NonAction]
+        //private async void SaveStudent(OrderViewModel orderViewModel, string userId)
+        //{
+        //    TeacherStudent teacherStudent = new TeacherStudent();
+        //    teacherStudent.StudentId = 1;
+        //    teacherStudent.TeacherId = 1;
+
+        //    foreach (var cartItem in orderViewModel.Cart.CartItems)
+        //    {
+        //        Entity.Concrete.OrderItem orderItem = new Entity.Concrete.OrderItem();
+
+        //        orderItem.Advert.Teacher.Id= teacherStudent.TeacherId;
+        //        order.OrderItems.Add(orderItem);
+        //    }
+        //    await _orderService.CreateAsync(order);
+        //}
 
         [NonAction]
         private bool CardNumberControl(string cardNumber)
@@ -255,8 +273,8 @@ namespace PrivateLesson.WebUI.Controllers
         {
             #region Payment Options Created
             Options options = new Options();
-            options.ApiKey = "sandbox-Fa5Q5a0XDNPbqzGfodcjnt5V0Fkc4NoO";
-            options.SecretKey = "sandbox-fyXwnU5QDz1CLZ3lCjmO2TEaIf3AuSzH";
+            options.ApiKey = "sandbox-xPm9h5LKCjVpF7R7hezHOxtpOu5wyx7m";
+            options.SecretKey = "sandbox-zp1uhqOPOrTOYxideUc619UVH0qbiBPd";
             options.BaseUrl = "https://sandbox-api.iyzipay.com";
             #endregion
             #region Create Payment Request

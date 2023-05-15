@@ -26,6 +26,9 @@ namespace PrivateLesson.Data.Concrete.EfCore
                  .Orders
                  .Include(o => o.OrderItems)
                  .ThenInclude(oi => oi.Advert)
+                 .ThenInclude(oi => oi.Branch)
+                .Include(o => o.OrderItems)
+                .ThenInclude(oi => oi.Advert)
                  .ThenInclude(oi => oi.Teacher)                 
                  .ThenInclude(oi => oi.User)
                  .ThenInclude(oi => oi.Image)
