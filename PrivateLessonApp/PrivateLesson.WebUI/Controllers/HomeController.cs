@@ -106,7 +106,25 @@ namespace PrivateLesson.WebUI.Controllers
             return View(advertViewModel);
         }
 
-
+        [HttpGet]
+        public async Task<IActionResult> TeacherDetails(int id)
+        {
+            Teacher teacher = await _teacherService.GetTeacherFullDataAsync(id);
+            TeacherModel teacherModel = new TeacherModel()
+            {
+                Id = teacher.Id,
+                FirstName = teacher.User.FirstName,
+                LastName = teacher.User.LastName,
+                Graduation = teacher.Graduation,
+                ImageUrl = teacher.User.Image.Url,
+                UpdatedDate = teacher.UpdatedDate,
+                CreatedDate = teacher.CreatedDate,
+                IsApproved = teacher.IsApproved,
+                Url = teacher.Url,
+                TeacherBranches = teacher.TeacherBranches.Select(tb => tb.Branch).ToList()
+            };
+            return View(teacherModel);
+        }
 
 
     }
